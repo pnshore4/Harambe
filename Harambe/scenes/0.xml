@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<scene depth="1" desc="" eventsnippetid="0" extheight="608" extwidth="768" extx="-64" exty="-64" format="3.4.0" gravx="-0.0" gravy="45.0" height="480" id="0" name="CaveScene" revision="" savecount="0" tiled="1" tileh="64" tilew="64" type="standard" width="640">
+    <layers>
+        <color-bg blue="255" green="255" red="255"/>
+        <background blendMode="normal" customScrollFactor="false" id="1" locked="true" name="CaveBackground" opacity="100" order="1" rid="2" scrollFactorX="1.0" scrollFactorY="1.0" visible="true"/>
+        <layer blendMode="normal" color="100,168,234" id="0" locked="false" name="Layer 0" opacity="100" order="0" scrollFactorX="1.0" scrollFactorY="1.0" visible="true"/>
+    </layers>
+    <joints/>
+    <regions/>
+    <terrainRegions/>
+    <actors>
+        <actor a="0.0" aid="3" c="true" group="0" id="3" name="harambe 3" sx="1.0" sy="1.0" x="241" y="297" z="0">
+            <snippets>
+                <s enabled="true" id="1"/>
+                <s enabled="true" id="3">
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                    <prop id="1" list="0" val="walk"/>
+                    <prop id="2" list="0" val="idle"/>
+                    <prop id="3" list="0" val="Jump"/>
+                    <prop id="4" list="0" val="false"/>
+                    <prop id="5" list="0" val="false"/>
+                </s>
+            </snippets>
+        </actor>
+        <actor a="359.7157" aid="6" c="true" group="4" id="7" name="Movable Block 6" sx="1.0" sy="1.0" x="122" y="273" z="0">
+            <snippets>
+                <s enabled="true" id="5"/>
+            </snippets>
+        </actor>
+        <actor a="0.0" aid="7" c="false" group="4" id="9" name="moving platform 7" sx="1.0" sy="0.2" x="195" y="119" z="0"/>
+        <actor a="0.0" aid="10" c="false" group="3" id="11" name="spit 10" sx="1.0" sy="1.0" x="-487" y="-166" z="0"/>
+        <actor a="0.0" aid="12" c="true" group="4" id="5" name="bat 12" sx="1.0" sy="1.0" x="540" y="175" z="0">
+            <snippets>
+                <s enabled="true" id="2"/>
+                <s enabled="true" id="4">
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                    <prop id="1" list="0" val="3"/>
+                    <prop id="2" list="0" val="false"/>
+                    <prop id="3" list="0" val="Attack"/>
+                    <prop id="4" list="0" val="Idle"/>
+                    <prop id="5" list="0" val="0"/>
+                    <prop id="6" list="0" val="11"/>
+                    <prop id="7" list="0" val="0"/>
+                    <prop id="8" list="0" val="0"/>
+                </s>
+            </snippets>
+        </actor>
+    </actors>
+    <snippets/>
+    <terrain>
+        <p pts="6,640.0,192.0,0.0,192.0,0.0,128.0,512.0,128.0,512.0,0.0,640.0,0.0" x="0.0" y="256.0"/>
+        <p pts="6,64.0,0.0,64.0,64.0,192.0,64.0,192.0,128.0,0.0,128.0,0.0,0.0" x="0.0" y="0.0"/>
+    </terrain>
+    <atlases members="" retainAtlases="true"/>
+</scene>
