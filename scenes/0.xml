@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<scene depth="1" desc="" eventsnippetid="0" extheight="608" extwidth="768" extx="-64" exty="-64" format="3.4.0" gravx="-0.0" gravy="45.0" height="480" id="0" name="CaveScene" revision="" savecount="0" tiled="1" tileh="64" tilew="64" type="standard" width="640">
+<scene depth="1" desc="" eventsnippetid="0" extheight="736" extwidth="1728" extx="-64" exty="-64" format="3.4.0" gravx="-0.0" gravy="45.0" height="608" id="0" name="CaveScene" revision="" savecount="0" tiled="1" tileh="64" tilew="64" type="standard" width="1600">
     <layers>
         <color-bg blue="255" green="255" red="255"/>
         <background blendMode="normal" customScrollFactor="false" id="1" locked="true" name="CaveBackground" opacity="100" order="1" rid="2" scrollFactorX="1.0" scrollFactorY="1.0" visible="true"/>
@@ -9,7 +9,7 @@
     <regions/>
     <terrainRegions/>
     <actors>
-        <actor a="0.0" aid="3" c="true" group="0" id="3" name="harambe 3" sx="1.0" sy="1.0" x="241" y="297" z="0">
+        <actor a="0.0" aid="3" c="true" group="0" id="3" name="harambe 3" sx="1.0" sy="1.0" x="241" y="425" z="0">
             <snippets>
                 <s enabled="true" id="1"/>
                 <s enabled="true" id="3">
@@ -19,23 +19,26 @@
                     <prop id="3" list="0" val="Jump"/>
                     <prop id="4" list="0" val="false"/>
                     <prop id="5" list="0" val="false"/>
+                    <prop id="6" list="0" val="false"/>
                 </s>
-            </snippets>
-        </actor>
-        <actor a="359.7157" aid="6" c="true" group="4" id="7" name="Movable Block 6" sx="1.0" sy="1.0" x="111" y="267" z="0">
-            <snippets>
-                <s enabled="true" id="5">
+                <s enabled="true" id="10">
+                    <prop id="2147483647" list="0" val="thisactor"/>
                     <prop id="1" list="0" val="0.0"/>
-                    <prop id="2" list="0" val=""/>
-                    <prop id="3" list="0" val="false"/>
-                    <prop id="4" list="0" val=""/>
-                    <prop id="5" list="0" val=""/>
+                    <prop id="4" list="0" val="0.0"/>
+                    <prop id="6" list="0" val="0.0"/>
+                    <prop id="8" list="0" val="0.0"/>
+                    <prop id="9" list="0" val="0.0"/>
                 </s>
             </snippets>
         </actor>
-        <actor a="0.0" aid="7" c="false" group="4" id="9" name="moving platform 7" sx="1.0" sy="0.2" x="195" y="119" z="0"/>
+        <actor a="359.7157" aid="6" c="true" group="4" id="7" name="Movable Block 6" sx="1.0" sy="1.0" x="165" y="396" z="0">
+            <snippets>
+                <s enabled="true" id="5"/>
+            </snippets>
+        </actor>
+        <actor a="0.0" aid="7" c="false" group="4" id="9" name="moving platform 7" sx="1.0" sy="0.2" x="195" y="247" z="0"/>
         <actor a="0.0" aid="10" c="false" group="3" id="11" name="spit 10" sx="1.0" sy="1.0" x="-487" y="-166" z="0"/>
-        <actor a="0.0" aid="11" c="true" group="4" id="5" name="bat 11" sx="1.0" sy="1.0" x="483" y="109" z="0">
+        <actor a="0.0" aid="11" c="true" group="4" id="5" name="bat 11" sx="1.0" sy="1.0" x="689" y="381" z="0">
             <snippets>
                 <s enabled="true" id="2"/>
                 <s enabled="true" id="4">
@@ -53,6 +56,8 @@
                 </s>
             </snippets>
         </actor>
+        <actor a="0.0" aid="12" c="false" group="3" id="13" name="Heart 12" sx="1.0" sy="1.0" x="64" y="113" z="0"/>
+        <actor a="0.0" aid="13" c="false" group="3" id="23" name="Door 13" sx="3.525" sy="3.525" x="979" y="323" z="0"/>
     </actors>
     <snippets>
         <s enabled="true" id="8">
@@ -63,8 +68,7 @@
         </s>
     </snippets>
     <terrain>
-        <p pts="6,64.0,0.0,64.0,64.0,192.0,64.0,192.0,128.0,0.0,128.0,0.0,0.0" x="0.0" y="0.0"/>
-        <p pts="6,640.0,192.0,0.0,192.0,0.0,128.0,512.0,128.0,512.0,0.0,640.0,0.0" x="0.0" y="256.0"/>
+        <p pts="18,704.0,512.0,1152.0,512.0,1152.0,576.0,0.0,576.0,0.0,0.0,1344.0,0.0,1344.0,64.0,64.0,64.0,64.0,192.0,192.0,192.0,192.0,256.0,64.0,256.0,64.0,512.0,512.0,512.0,512.0,384.0,640.0,384.0,640.0,448.0,704.0,448.0" x="0.0" y="0.0"/>
     </terrain>
     <atlases members="" retainAtlases="true"/>
 </scene>

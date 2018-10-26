@@ -1,2 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<groups/>
+<groups>
+    <group eventID="1" id="0">
+        <event-collide-typetotype comment="false" x="577" y="316">
+            <group eventID="1" id="-1"/>
+            <actortype eid="3" id="0"/>
+            <actortype eid="13" id="1"/>
+        </event-collide-typetotype>
+    </group>
+    <group eventID="1" id="-1"/>
+</groups>

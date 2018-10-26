@@ -69,67 +69,25 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class ActorEvents_9 extends ActorScript
+class ActorEvents_23 extends ActorScript
 {
-	public var _OriginXPosition:Float;
-	public var _WalkAnimation:String;
-	public var _InAir:Bool;
-	public var _Grounded:Bool;
-	public var _JumpAnimation:String;
-	public var _finishedmovingright:Actor;
-	public var _DoneMovingRight:Bool;
-	public var _test:Float;
 	
 	
 	public function new(dummy:Int, actor:Actor, dummy2:Engine)
 	{
 		super(actor);
-		nameMap.set("Origin X Position", "_OriginXPosition");
-		_OriginXPosition = 0.0;
-		nameMap.set("Walk Animation", "_WalkAnimation");
-		nameMap.set("In Air?", "_InAir");
-		_InAir = false;
-		nameMap.set("Grounded?", "_Grounded");
-		_Grounded = false;
-		nameMap.set("Jump Animation", "_JumpAnimation");
-		nameMap.set("finished moving right", "_finishedmovingright");
-		nameMap.set("Done Moving Right", "_DoneMovingRight");
-		_DoneMovingRight = false;
-		nameMap.set("test", "_test");
-		_test = 0;
 		
 	}
 	
 	override public function init()
 	{
 		
-		/* ======================== When Creating ========================= */
-		_OriginXPosition = asNumber(actor.getX());
-		propertyChanged("_OriginXPosition", _OriginXPosition);
-		
-		/* ======================== When Updating ========================= */
-		addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
+		/* ========================= Type & Type ========================== */
+		addSceneCollisionListener(getActorType(3).ID, getActorType(23).ID, function(event:Collision, list:Array<Dynamic>):Void
 		{
 			if(wrapper.enabled)
 			{
-				if(_DoneMovingRight)
-				{
-					actor.setXVelocity(-14);
-					runLater(1000 * 3, function(timeTask:TimedTask):Void
-					{
-						_DoneMovingRight = false;
-						propertyChanged("_DoneMovingRight", _DoneMovingRight);
-					}, actor);
-				}
-				else
-				{
-					actor.setXVelocity(14);
-					runLater(1000 * 3, function(timeTask:TimedTask):Void
-					{
-						_DoneMovingRight = true;
-						propertyChanged("_DoneMovingRight", _DoneMovingRight);
-					}, actor);
-				}
+				switchScene(GameModel.get().scenes.get(1).getID(), createFadeOut(2, Utils.getColorRGB(0,0,0)), createFadeIn(2, Utils.getColorRGB(0,0,0)));
 			}
 		});
 		

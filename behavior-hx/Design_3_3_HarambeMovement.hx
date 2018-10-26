@@ -76,6 +76,7 @@ class Design_3_3_HarambeMovement extends ActorScript
 	public var _JumpAnimation:String;
 	public var _Grounded:Bool;
 	public var _InAir:Bool;
+	public var _testing:Bool;
 	
 	
 	public function new(dummy:Int, actor:Actor, dummy2:Engine)
@@ -89,6 +90,8 @@ class Design_3_3_HarambeMovement extends ActorScript
 		_Grounded = false;
 		nameMap.set("In Air?", "_InAir");
 		_InAir = false;
+		nameMap.set("testing", "_testing");
+		_testing = false;
 		
 	}
 	
