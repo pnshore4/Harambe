@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <event-collide-typetotype comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <if comment="false" x="26" y="47">
+                    <group eventID="1" id="-1">
+                        <set-val-8-4 comment="false" x="37" y="77">
+                            <true comment="false" id="0" x="0" y="0"/>
+                        </set-val-8-4>
+                        <dolater comment="false" x="37" y="102">
+                            <group eventID="1" id="-1">
+                                <set-val-8-4 comment="false" x="48" y="129">
+                                    <false comment="false" id="0" x="0" y="0"/>
+                                </set-val-8-4>
+                            </group>
+                            <int id="0" val="2"/>
+                            <ACTOR eid="lastcreated" id="2"/>
+                        </dolater>
+                        <set-val-8-1 comment="false" x="37" y="166">
+                            <minus comment="false" id="0" x="0" y="0">
+                                <get-val-8-1 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="1"/>
+                            </minus>
+                        </set-val-8-1>
+                        <die comment="false" x="37" y="196">
+                            <get-item comment="false" id="0" x="0" y="0">
+                                <get-val-8-3 comment="false" id="0" x="0" y="0"/>
+                                <minus comment="false" id="1" x="0" y="0">
+                                    <length-list comment="false" id="0" x="0" y="0">
+                                        <get-val-8-3 comment="false" id="0" x="0" y="0"/>
+                                    </length-list>
+                                    <int id="1" val="1"/>
+                                </minus>
+                            </get-item>
+                        </die>
+                        <remove-index comment="false" x="37" y="243">
+                            <get-val-8-3 comment="false" id="0" x="0" y="0"/>
+                            <minus comment="false" id="1" x="0" y="0">
+                                <length-list comment="false" id="0" x="0" y="0">
+                                    <get-val-8-3 comment="false" id="0" x="0" y="0"/>
+                                </length-list>
+                                <int id="1" val="1"/>
+                            </minus>
+                        </remove-index>
+                        <if comment="false" x="37" y="278">
+                            <group eventID="1" id="-1">
+                                <scene-reload-color comment="false" x="48" y="308">
+                                    <int id="0" val="0"/>
+                                    <int id="1" val="2"/>
+                                    <color b="0" g="0" id="2" r="0"/>
+                                    <int id="3" val="0"/>
+                                    <int id="4" val="2"/>
+                                    <color b="0" g="0" id="5" r="0"/>
+                                </scene-reload-color>
+                            </group>
+                            <eq comment="false" id="0" x="0" y="0">
+                                <get-val-8-1 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="0"/>
+                            </eq>
+                        </if>
+                    </group>
+                    <not comment="false" id="0" x="0" y="0">
+                        <get-val-8-4 comment="false" id="0" x="0" y="0"/>
+                    </not>
+                </if>
+            </group>
+            <actortype eid="3" id="0"/>
+            <actortype eid="11" id="1"/>
+        </event-collide-typetotype>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <set-val-8-3 comment="false" x="26" y="40">
+                    <create-list comment="false" id="0" x="0" y="0"/>
+                </set-val-8-3>
+                <repeat comment="false" x="26" y="65">
+                    <group eventID="2" id="-1">
+                        <create-actor3 comment="false" x="37" y="90">
+                            <get-val-8-2 comment="false" id="0" x="0" y="0"/>
+                            <times comment="false" id="1" x="0" y="0">
+                                <loopindex comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="32"/>
+                            </times>
+                            <int id="2" val="0"/>
+                            <int id="3" val="0"/>
+                        </create-actor3>
+                        <anchor-screen comment="false" x="37" y="127">
+                            <ACTOR eid="lastcreated" id="0"/>
+                        </anchor-screen>
+                        <add-list comment="false" x="37" y="154">
+                            <get-val-8-3 comment="false" id="0" x="0" y="0"/>
+                            <actor comment="false" id="1" x="0" y="0">
+                                <ACTOR eid="lastcreated" id="0"/>
+                            </actor>
+                        </add-list>
+                    </group>
+                    <get-val-8-1 comment="false" id="0" x="0" y="0"/>
+                </repeat>
+            </group>
+        </init>
+    </group>
+    <group eventID="2" id="-1"/>
+</groups>
