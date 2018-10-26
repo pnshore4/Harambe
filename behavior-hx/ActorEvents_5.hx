@@ -71,11 +71,13 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 class ActorEvents_5 extends ActorScript
 {
+	public var _sqash:String;
 	
 	
 	public function new(dummy:Int, actor:Actor, dummy2:Engine)
 	{
 		super(actor);
+		nameMap.set("sqash", "_sqash");
 		
 	}
 	

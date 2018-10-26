@@ -171,6 +171,19 @@ class Design_4_4_batbehavior extends ActorScript
 			}
 		});
 		
+		/* ========================= Type & Type ========================== */
+		addSceneCollisionListener(getActorType(5).ID, getActorType(3).ID, function(event:Collision, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled)
+			{
+				if(event.thisFromTop)
+				{
+					actor.setAnimation("" + _AttackAnimation);
+					recycleActor(actor);
+				}
+			}
+		});
+		
 	}
 	
 	override public function forwardMessage(msg:String)

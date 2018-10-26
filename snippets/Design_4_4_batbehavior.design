@@ -246,4 +246,28 @@
         </init>
     </group>
     <group eventID="2" id="-1"/>
+    <group eventID="3" id="0">
+        <event-collide-typetotype comment="false" x="15" y="15">
+            <group eventID="3" id="-1">
+                <if comment="false" x="26" y="47">
+                    <group eventID="3" id="-1">
+                        <setanim comment="false" x="37" y="80">
+                            <ACTOR eid="this" id="0"/>
+                            <get-val-4-3 comment="false" id="1" x="0" y="0"/>
+                        </setanim>
+                        <die comment="false" x="37" y="112">
+                            <ACTOR eid="this" id="0"/>
+                        </die>
+                    </group>
+                    <collision-top comment="false" id="0" x="0" y="0">
+                        <int id="0" val="0"/>
+                        <int id="1" val="0"/>
+                    </collision-top>
+                </if>
+            </group>
+            <actortype eid="5" id="0"/>
+            <actortype eid="3" id="1"/>
+        </event-collide-typetotype>
+    </group>
+    <group eventID="3" id="-1"/>
 </groups>

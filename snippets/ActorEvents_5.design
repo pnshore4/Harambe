@@ -1,2 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<groups/>
+<groups>
+    <group eventID="1" id="0">
+        <event-collide-typetotype comment="false" x="149" y="161">
+            <group eventID="1" id="-1">
+                <if comment="false" x="160" y="193">
+                    <group eventID="1" id="-1">
+                        <setanim comment="false" x="171" y="226">
+                            <ACTOR eid="this" id="0"/>
+                            <get-val-2-1 comment="false" id="1" x="0" y="0"/>
+                        </setanim>
+                        <die comment="false" x="171" y="258">
+                            <ACTOR eid="this" id="0"/>
+                        </die>
+                    </group>
+                    <collision-top comment="false" id="0" x="0" y="0">
+                        <int id="0" val="0"/>
+                        <int id="1" val="0"/>
+                    </collision-top>
+                </if>
+            </group>
+            <actortype eid="5" id="0"/>
+            <actortype eid="3" id="1"/>
+        </event-collide-typetotype>
+    </group>
+    <group eventID="1" id="-1"/>
+</groups>
