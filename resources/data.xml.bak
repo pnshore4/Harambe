@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <pack>
-    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="2" fixedrot="true" fric="0.2" gid="4" id="5" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="bat" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="6" static="false">
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="2" fixedrot="true" fric="0.2" gid="4" id="5" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Beatle" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="6" static="false">
         <snippets>
             <s enabled="true" id="4">
                 <prop id="2147483647" list="0" val="thisactor"/>
@@ -140,6 +140,14 @@
             <poly data="4,0,0,80,0,80,80,0,80" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="80" id="37" name="Door" shared="false" width="80">
+        <anim across="1" down="1" durations="100" height="80" id="0" loop="true" name="Animation 0" numframes="1" originx="40" originy="40" sync="false" version="2" width="80">
+            <poly data="4,20,40,60,40,60,80,20,80" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="18" fixedrot="false" fric="0.2" gid="3" id="36" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Door To Tree Level" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="37" static="true">
+        <snippets/>
+    </actor>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="120" id="6" name="Enemy 1" shared="false" width="120">
         <anim across="1" down="1" durations="100" height="120" id="0" loop="true" name="Idle" numframes="1" originx="60" originy="0" sync="false" version="2" width="120">
             <poly data="4,20,70,100,70,100,120,20,120" density="0.1" fric="0.2" gid="4" id="0" name="Idle" rest="0.0" sensor="false"/>
@@ -203,7 +211,12 @@
         <blank name="Amount" order="1" type="number"/>
     </custom-block>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="9" fixedrot="true" fric="0.2" gid="3" id="13" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="Heart" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="14" static="true">
-        <snippets/>
+        <snippets>
+            <s enabled="true" id="16">
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="1" list="0" val=""/>
+            </s>
+        </snippets>
     </actor>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="80" id="14" name="Heart" shared="false" width="80">
         <anim across="1" down="1" durations="100" height="80" id="0" loop="true" name="Animation 0" numframes="1" originx="40" originy="40" sync="false" version="2" width="80">
@@ -222,6 +235,11 @@
         <snippets/>
     </actor>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="64" id="10" name="moving platform" shared="false" width="64">
+        <anim across="1" down="1" durations="100" height="64" id="0" loop="true" name="Moving" numframes="1" originx="32" originy="32" sync="false" version="2" width="64">
+            <poly data="4,0,0,64,0,64,64,0,64" density="0.1" fric="0.2" gid="-1000" id="0" name="Moving" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="64" id="40" name="moving platform" shared="false" width="64">
         <anim across="1" down="1" durations="100" height="64" id="0" loop="true" name="Moving" numframes="1" originx="32" originy="32" sync="false" version="2" width="64">
             <poly data="4,0,0,64,0,64,64,0,64" density="0.1" fric="0.2" gid="-1000" id="0" name="Moving" rest="0.0" sensor="false"/>
         </anim>
@@ -285,4 +303,8 @@
         <tile collision="0" data="" durations="100" frames="25" id="25" order="-1"/>
         <tile collision="0" data="" durations="100" frames="26" id="26" order="-1"/>
     </tileset>
+    <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="562" id="38" name="Tree Level Background" numframes="1" oid="-1" repeats="false" resized="false" shared="false" width="1000" xpf="1.0" ypf="1.0"/>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="1" continuous="true" desc="" eventsnippetid="20" fixedrot="false" fric="0.2" gid="4" id="39" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="Vertical Moving Platform" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="40" static="false">
+        <snippets/>
+    </actor>
 </pack>

@@ -2,4 +2,5 @@
 <scenes>
     <scene desc="" format="3.4.0" id="0" name="CaveScene"/>
     <scene desc="" format="3.4.0" id="1" name="selection"/>
+    <scene desc="" format="3.4.0" id="2" name="Tree Level"/>
 </scenes>

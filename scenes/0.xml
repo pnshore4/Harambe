@@ -33,11 +33,16 @@
         </actor>
         <actor a="359.7157" aid="6" c="true" group="4" id="7" name="Movable Block 6" sx="1.0" sy="1.0" x="165" y="396" z="0">
             <snippets>
-                <s enabled="true" id="5"/>
+                <s enabled="true" id="5">
+                    <prop id="1" list="0" val="0.0"/>
+                    <prop id="2" list="0" val=""/>
+                    <prop id="3" list="0" val="false"/>
+                    <prop id="4" list="0" val=""/>
+                    <prop id="5" list="0" val=""/>
+                </s>
             </snippets>
         </actor>
         <actor a="0.0" aid="7" c="false" group="4" id="9" name="moving platform 7" sx="1.0" sy="0.2" x="195" y="247" z="0"/>
-        <actor a="0.0" aid="10" c="false" group="3" id="11" name="spit 10" sx="1.0" sy="1.0" x="-487" y="-166" z="0"/>
         <actor a="0.0" aid="11" c="true" group="4" id="5" name="bat 11" sx="1.0" sy="1.0" x="689" y="381" z="0">
             <snippets>
                 <s enabled="true" id="2"/>
@@ -57,7 +62,7 @@
             </snippets>
         </actor>
         <actor a="0.0" aid="12" c="false" group="3" id="13" name="Heart 12" sx="1.0" sy="1.0" x="64" y="113" z="0"/>
-        <actor a="0.0" aid="13" c="false" group="3" id="23" name="Door 13" sx="3.525" sy="3.525" x="979" y="323" z="0"/>
+        <actor a="0.0" aid="13" c="false" group="3" id="23" name="Door 13" sx="2.775" sy="2.725" x="980" y="363" z="0"/>
     </actors>
     <snippets>
         <s enabled="true" id="8">
@@ -65,6 +70,9 @@
             <prop id="2" list="0" val="13"/>
             <prop id="3" list="1" val=""/>
             <prop id="4" list="0" val="false"/>
+        </s>
+        <s enabled="true" id="15">
+            <prop id="1" list="0" val="3"/>
         </s>
     </snippets>
     <terrain>

@@ -57,182 +57,232 @@
                 </else>
                 <if comment="false" x="26" y="313">
                     <group eventID="1" id="-1">
-                        <print comment="false" x="37" y="371">
-                            <tostring comment="false" id="0" x="0" y="0">
-                                <int id="0" val="&amp;quot;before creating actor&amp;quot;"/>
-                            </tostring>
-                        </print>
-                        <create-actor3 comment="false" x="37" y="396">
-                            <get-val-4-6 comment="false" id="0" x="0" y="0"/>
-                            <get-xy comment="false" id="1" x="0" y="0">
-                                <ACTOR eid="this" id="0"/>
-                                <int id="1" val="2"/>
-                            </get-xy>
-                            <get-xy comment="false" id="2" x="0" y="0">
-                                <ACTOR eid="this" id="0"/>
-                                <int id="1" val="3"/>
-                            </get-xy>
-                            <int id="3" val="2"/>
-                        </create-actor3>
-                        <print comment="false" x="37" y="436">
-                            <getatype comment="false" id="0" x="0" y="0">
-                                <ACTOR eid="lastcreated" id="0"/>
-                            </getatype>
-                        </print>
-                        <set-xy comment="false" x="37" y="469">
-                            <ACTOR eid="lastcreated" id="0"/>
-                            <int id="1" val="0"/>
-                            <minus comment="false" id="2" x="0" y="0">
-                                <get-xy comment="false" id="0" x="0" y="0">
-                                    <ACTOR eid="this" id="0"/>
-                                    <int id="1" val="2"/>
-                                </get-xy>
-                                <get-wh comment="false" id="1" x="0" y="0">
-                                    <ACTOR eid="lastcreated" id="0"/>
-                                    <int id="1" val="2"/>
-                                </get-wh>
-                            </minus>
-                        </set-xy>
-                        <print comment="false" x="37" y="514">
-                            <tostring comment="false" id="0" x="0" y="0">
-                                <int id="0" val="After First use of LAST CREATED ACTOR"/>
-                            </tostring>
-                        </print>
-                        <set-xy comment="false" x="37" y="539">
-                            <ACTOR eid="lastcreated" id="0"/>
-                            <int id="1" val="1"/>
-                            <minus comment="false" id="2" x="0" y="0">
-                                <get-xy comment="false" id="0" x="0" y="0">
-                                    <ACTOR eid="this" id="0"/>
-                                    <int id="1" val="3"/>
-                                </get-xy>
-                                <plus comment="false" id="1" x="0" y="0">
-                                    <get-wh comment="false" id="0" x="0" y="0">
-                                        <ACTOR eid="lastcreated" id="0"/>
+                        <if comment="false" x="37" y="343">
+                            <group eventID="1" id="-1">
+                                <print comment="false" x="48" y="406">
+                                    <tostring comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="&amp;quot;before creating actor&amp;quot;"/>
+                                    </tostring>
+                                </print>
+                                <create-actor3 comment="false" x="48" y="431">
+                                    <get-val-4-6 comment="false" id="0" x="0" y="0"/>
+                                    <get-xy comment="false" id="1" x="0" y="0">
+                                        <ACTOR eid="this" id="0"/>
+                                        <int id="1" val="2"/>
+                                    </get-xy>
+                                    <get-xy comment="false" id="2" x="0" y="0">
+                                        <ACTOR eid="this" id="0"/>
                                         <int id="1" val="3"/>
-                                    </get-wh>
-                                    <get-val-4-7 comment="false" id="1" x="0" y="0"/>
-                                </plus>
-                            </minus>
-                        </set-xy>
-                        <scaleTo comment="false" x="37" y="589">
-                            <ACTOR eid="lastcreated" id="0"/>
-                            <get-val-4-8 comment="false" id="1" x="0" y="0"/>
-                            <int id="2" val="100"/>
-                            <int id="3" val="0"/>
-                            <int id="4" val="0"/>
-                        </scaleTo>
-                        <print comment="false" x="37" y="621">
-                            <tostring comment="false" id="0" x="0" y="0">
-                                <int id="0" val="&amp;quot;after growing actor, before push&amp;quot;"/>
-                            </tostring>
-                        </print>
-                        <if comment="false" x="37" y="646">
-                            <group eventID="1" id="-1">
-                                <push-shove comment="false" x="48" y="676">
+                                    </get-xy>
+                                    <int id="3" val="2"/>
+                                </create-actor3>
+                                <print comment="false" x="48" y="471">
+                                    <getatype comment="false" id="0" x="0" y="0">
+                                        <ACTOR eid="lastcreated" id="0"/>
+                                    </getatype>
+                                </print>
+                                <set-xy comment="false" x="48" y="504">
+                                    <ACTOR eid="lastcreated" id="0"/>
+                                    <int id="1" val="0"/>
+                                    <minus comment="false" id="2" x="0" y="0">
+                                        <get-xy comment="false" id="0" x="0" y="0">
+                                            <ACTOR eid="this" id="0"/>
+                                            <int id="1" val="2"/>
+                                        </get-xy>
+                                        <get-wh comment="false" id="1" x="0" y="0">
+                                            <ACTOR eid="lastcreated" id="0"/>
+                                            <int id="1" val="2"/>
+                                        </get-wh>
+                                    </minus>
+                                </set-xy>
+                                <print comment="false" x="48" y="549">
+                                    <tostring comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="After First use of LAST CREATED ACTOR"/>
+                                    </tostring>
+                                </print>
+                                <set-xy comment="false" x="48" y="574">
                                     <ACTOR eid="lastcreated" id="0"/>
                                     <int id="1" val="1"/>
-                                    <int id="2" val="1"/>
-                                    <int id="3" val="0"/>
-                                    <int id="4" val="10"/>
-                                </push-shove>
-                            </group>
-                            <eq comment="false" id="0" x="0" y="0">
-                                <get-val-4-8 comment="false" id="0" x="0" y="0"/>
-                                <int id="1" val="100"/>
-                            </eq>
-                        </if>
-                        <else comment="false" x="37" y="715">
-                            <group eventID="1" id="-1">
-                                <push-shove comment="false" x="48" y="735">
+                                    <minus comment="false" id="2" x="0" y="0">
+                                        <get-xy comment="false" id="0" x="0" y="0">
+                                            <ACTOR eid="this" id="0"/>
+                                            <int id="1" val="3"/>
+                                        </get-xy>
+                                        <plus comment="false" id="1" x="0" y="0">
+                                            <get-wh comment="false" id="0" x="0" y="0">
+                                                <ACTOR eid="lastcreated" id="0"/>
+                                                <int id="1" val="3"/>
+                                            </get-wh>
+                                            <get-val-4-7 comment="false" id="1" x="0" y="0"/>
+                                        </plus>
+                                    </minus>
+                                </set-xy>
+                                <scaleTo comment="false" x="48" y="624">
                                     <ACTOR eid="lastcreated" id="0"/>
-                                    <int id="1" val="1"/>
-                                    <int id="2" val="-1"/>
+                                    <get-val-4-8 comment="false" id="1" x="0" y="0"/>
+                                    <int id="2" val="100"/>
                                     <int id="3" val="0"/>
-                                    <int id="4" val="10"/>
-                                </push-shove>
-                            </group>
-                        </else>
-                        <print comment="false" x="37" y="774">
-                            <tostring comment="false" id="0" x="0" y="0">
-                                <int id="0" val="&amp;quot;after creating actor&amp;quot;"/>
-                            </tostring>
-                        </print>
-                        <set-val-4-2 comment="false" x="37" y="799">
-                            <true comment="false" id="0" x="0" y="0"/>
-                        </set-val-4-2>
-                        <dolater comment="false" x="37" y="824">
-                            <group eventID="1" id="-1">
-                                <set-val-4-2 comment="false" x="48" y="851">
-                                    <false comment="false" id="0" x="0" y="0"/>
+                                    <int id="4" val="0"/>
+                                </scaleTo>
+                                <print comment="false" x="48" y="656">
+                                    <tostring comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="&amp;quot;after growing actor, before push&amp;quot;"/>
+                                    </tostring>
+                                </print>
+                                <if comment="false" x="48" y="681">
+                                    <group eventID="1" id="-1">
+                                        <push-shove comment="false" x="59" y="711">
+                                            <ACTOR eid="lastcreated" id="0"/>
+                                            <int id="1" val="1"/>
+                                            <int id="2" val="1"/>
+                                            <int id="3" val="0"/>
+                                            <int id="4" val="10"/>
+                                        </push-shove>
+                                    </group>
+                                    <eq comment="false" id="0" x="0" y="0">
+                                        <get-val-4-8 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="100"/>
+                                    </eq>
+                                </if>
+                                <else comment="false" x="48" y="750">
+                                    <group eventID="1" id="-1">
+                                        <push-shove comment="false" x="59" y="770">
+                                            <ACTOR eid="lastcreated" id="0"/>
+                                            <int id="1" val="1"/>
+                                            <int id="2" val="-1"/>
+                                            <int id="3" val="0"/>
+                                            <int id="4" val="10"/>
+                                        </push-shove>
+                                    </group>
+                                </else>
+                                <print comment="false" x="48" y="809">
+                                    <tostring comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="&amp;quot;after creating actor&amp;quot;"/>
+                                    </tostring>
+                                </print>
+                                <set-val-4-2 comment="false" x="48" y="834">
+                                    <true comment="false" id="0" x="0" y="0"/>
                                 </set-val-4-2>
-                            </group>
-                            <int id="0" val="3"/>
-                            <ACTOR eid="this" id="2"/>
-                        </dolater>
-                        <setanim comment="false" x="37" y="888">
-                            <ACTOR eid="this" id="0"/>
-                            <get-val-4-3 comment="false" id="1" x="0" y="0"/>
-                        </setanim>
-                        <dolater comment="false" x="37" y="920">
-                            <group eventID="1" id="-1">
-                                <setanim comment="false" x="48" y="965">
+                                <dolater comment="false" x="48" y="859">
+                                    <group eventID="1" id="-1">
+                                        <set-val-4-2 comment="false" x="59" y="886">
+                                            <false comment="false" id="0" x="0" y="0"/>
+                                        </set-val-4-2>
+                                    </group>
+                                    <int id="0" val="3"/>
+                                    <ACTOR eid="this" id="2"/>
+                                </dolater>
+                                <setanim comment="false" x="48" y="923">
                                     <ACTOR eid="this" id="0"/>
-                                    <get-val-4-4 comment="false" id="1" x="0" y="0"/>
+                                    <get-val-4-3 comment="false" id="1" x="0" y="0"/>
                                 </setanim>
+                                <dolater comment="false" x="48" y="955">
+                                    <group eventID="1" id="-1">
+                                        <setanim comment="false" x="59" y="1000">
+                                            <ACTOR eid="this" id="0"/>
+                                            <get-val-4-4 comment="false" id="1" x="0" y="0"/>
+                                        </setanim>
+                                    </group>
+                                    <times comment="false" id="0" x="0" y="0">
+                                        <get-num-frames comment="false" id="0" x="0" y="0">
+                                            <ACTOR eid="this" id="0"/>
+                                        </get-num-frames>
+                                        <int id="1" val="0.1"/>
+                                    </times>
+                                    <ACTOR eid="this" id="2"/>
+                                </dolater>
                             </group>
-                            <times comment="false" id="0" x="0" y="0">
-                                <get-num-frames comment="false" id="0" x="0" y="0">
-                                    <ACTOR eid="this" id="0"/>
-                                </get-num-frames>
-                                <int id="1" val="0.1"/>
-                            </times>
-                            <ACTOR eid="this" id="2"/>
-                        </dolater>
+                            <and comment="false" id="0" x="0" y="0">
+                                <lesseq comment="false" id="0" x="0" y="0">
+                                    <abs comment="false" id="0" x="0" y="0">
+                                        <minus comment="false" id="0" x="0" y="0">
+                                            <get-xy comment="false" id="0" x="0" y="0">
+                                                <get-val-4-1 comment="false" id="0" x="0" y="0"/>
+                                                <int id="1" val="2"/>
+                                            </get-xy>
+                                            <get-xy comment="false" id="1" x="0" y="0">
+                                                <ACTOR eid="this" id="0"/>
+                                                <int id="1" val="2"/>
+                                            </get-xy>
+                                        </minus>
+                                    </abs>
+                                    <int id="1" val="300"/>
+                                </lesseq>
+                                <lesseq comment="false" id="1" x="0" y="0">
+                                    <abs comment="false" id="0" x="0" y="0">
+                                        <minus comment="false" id="0" x="0" y="0">
+                                            <plus comment="false" id="0" x="0" y="0">
+                                                <get-xy comment="false" id="0" x="0" y="0">
+                                                    <ACTOR eid="this" id="0"/>
+                                                    <int id="1" val="3"/>
+                                                </get-xy>
+                                                <get-wh comment="false" id="1" x="0" y="0">
+                                                    <ACTOR eid="this" id="0"/>
+                                                    <int id="1" val="1"/>
+                                                </get-wh>
+                                            </plus>
+                                            <plus comment="false" id="1" x="0" y="0">
+                                                <get-xy comment="false" id="0" x="0" y="0">
+                                                    <get-val-4-1 comment="false" id="0" x="0" y="0"/>
+                                                    <int id="1" val="3"/>
+                                                </get-xy>
+                                                <get-wh comment="false" id="1" x="0" y="0">
+                                                    <get-val-4-1 comment="false" id="0" x="0" y="0"/>
+                                                    <int id="1" val="1"/>
+                                                </get-wh>
+                                            </plus>
+                                        </minus>
+                                    </abs>
+                                    <int id="1" val="30"/>
+                                </lesseq>
+                            </and>
+                        </if>
+                        <set-xy comment="false" x="37" y="1056">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="0"/>
+                            <get-val-4-5 comment="false" id="2" x="0" y="0"/>
+                        </set-xy>
                     </group>
-                    <and comment="false" id="0" x="0" y="0">
-                        <not comment="false" id="0" x="0" y="0">
-                            <get-val-4-2 comment="false" id="0" x="0" y="0"/>
-                        </not>
-                        <and comment="false" id="1" x="0" y="0">
-                            <moreeq comment="false" id="0" x="0" y="0">
-                                <plus comment="false" id="0" x="0" y="0">
-                                    <get-xy comment="false" id="0" x="0" y="0">
-                                        <get-val-4-1 comment="false" id="0" x="0" y="0"/>
-                                        <int id="1" val="1"/>
-                                    </get-xy>
-                                    <int id="1" val="20"/>
-                                </plus>
-                                <get-xy comment="false" id="1" x="0" y="0">
-                                    <ACTOR eid="this" id="0"/>
-                                    <int id="1" val="1"/>
-                                </get-xy>
-                            </moreeq>
-                            <moreeq comment="false" id="1" x="0" y="0">
-                                <get-xy comment="false" id="0" x="0" y="0">
-                                    <ACTOR eid="this" id="0"/>
-                                    <int id="1" val="1"/>
-                                </get-xy>
-                                <plus comment="false" id="1" x="0" y="0">
-                                    <get-xy comment="false" id="0" x="0" y="0">
-                                        <get-val-4-1 comment="false" id="0" x="0" y="0"/>
-                                        <int id="1" val="1"/>
-                                    </get-xy>
-                                    <int id="1" val="-20"/>
-                                </plus>
-                            </moreeq>
-                        </and>
-                    </and>
+                    <not comment="false" id="0" x="0" y="0">
+                        <get-val-4-2 comment="false" id="0" x="0" y="0"/>
+                    </not>
                 </if>
-                <set-xy comment="false" x="26" y="1021">
-                    <ACTOR eid="this" id="0"/>
-                    <int id="1" val="0"/>
-                    <get-val-4-5 comment="false" id="2" x="0" y="0"/>
-                </set-xy>
             </group>
         </step>
     </group>
-    <group eventID="1" id="-1"/>
+    <group eventID="1" id="-1">
+        <and comment="false" x="302" y="292">
+            <int id="0" val=""/>
+            <and comment="false" id="1" x="0" y="0">
+                <moreeq comment="false" id="0" x="0" y="0">
+                    <plus comment="false" id="0" x="0" y="0">
+                        <get-xy comment="false" id="0" x="0" y="0">
+                            <get-val-4-1 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="1"/>
+                        </get-xy>
+                        <int id="1" val="20"/>
+                    </plus>
+                    <get-xy comment="false" id="1" x="0" y="0">
+                        <ACTOR eid="this" id="0"/>
+                        <int id="1" val="1"/>
+                    </get-xy>
+                </moreeq>
+                <moreeq comment="false" id="1" x="0" y="0">
+                    <get-xy comment="false" id="0" x="0" y="0">
+                        <ACTOR eid="this" id="0"/>
+                        <int id="1" val="1"/>
+                    </get-xy>
+                    <plus comment="false" id="1" x="0" y="0">
+                        <get-xy comment="false" id="0" x="0" y="0">
+                            <get-val-4-1 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="1"/>
+                        </get-xy>
+                        <int id="1" val="-20"/>
+                    </plus>
+                </moreeq>
+            </and>
+        </and>
+    </group>
     <group eventID="2" id="0">
         <init comment="false" x="20" y="31">
             <group eventID="2" id="-1">
@@ -242,6 +292,12 @@
                         <int id="1" val="0"/>
                     </get-xy>
                 </set-val-4-5>
+                <set-val-4-1 comment="false" x="31" y="89">
+                    <scene-get-attribute comment="false" id="0" x="0" y="0">
+                        <int id="0" val="SceneManager"/>
+                        <int id="1" val="_PlayerActor"/>
+                    </scene-get-attribute>
+                </set-val-4-1>
             </group>
         </init>
     </group>

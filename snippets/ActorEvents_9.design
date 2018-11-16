@@ -6,7 +6,7 @@
                 <set-val-6-1 comment="false" x="26" y="40">
                     <get-xy comment="false" id="0" x="0" y="0">
                         <ACTOR eid="this" id="0"/>
-                        <int id="1" val="0"/>
+                        <int id="1" val="1"/>
                     </get-xy>
                 </set-val-6-1>
             </group>
@@ -57,4 +57,12 @@
         </step>
     </group>
     <group eventID="2" id="-1"/>
+    <group eventID="3" id="0">
+        <event-collide-actortoactor comment="false" x="105" y="122">
+            <group eventID="3" id="-1"/>
+            <ACTOR eid="this" id="0"/>
+            <ACTOR eid="this" id="1"/>
+        </event-collide-actortoactor>
+    </group>
+    <group eventID="3" id="-1"/>
 </groups>

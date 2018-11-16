@@ -73,12 +73,15 @@
     <group eventID="2" id="0">
         <init comment="false" x="15" y="15">
             <group eventID="2" id="-1">
-                <set-val-8-3 comment="false" x="26" y="40">
+                <set-val-8-5 comment="false" x="26" y="40">
+                    <get-val-8-1 comment="false" id="0" x="0" y="0"/>
+                </set-val-8-5>
+                <set-val-8-3 comment="false" x="26" y="65">
                     <create-list comment="false" id="0" x="0" y="0"/>
                 </set-val-8-3>
-                <repeat comment="false" x="26" y="65">
+                <repeat comment="false" x="26" y="90">
                     <group eventID="2" id="-1">
-                        <create-actor3 comment="false" x="37" y="90">
+                        <create-actor3 comment="false" x="37" y="115">
                             <get-val-8-2 comment="false" id="0" x="0" y="0"/>
                             <times comment="false" id="1" x="0" y="0">
                                 <loopindex comment="false" id="0" x="0" y="0"/>
@@ -87,10 +90,15 @@
                             <int id="2" val="0"/>
                             <int id="3" val="0"/>
                         </create-actor3>
-                        <anchor-screen comment="false" x="37" y="127">
+                        <anchor-screen comment="false" x="37" y="152">
                             <ACTOR eid="lastcreated" id="0"/>
                         </anchor-screen>
-                        <add-list comment="false" x="37" y="154">
+                        <actor-enabledisable-snippet comment="false" x="37" y="179">
+                            <ACTOR eid="lastcreated" id="0"/>
+                            <int id="1" val="1"/>
+                            <int id="2" val="LifePickupItem"/>
+                        </actor-enabledisable-snippet>
+                        <add-list comment="false" x="37" y="206">
                             <get-val-8-3 comment="false" id="0" x="0" y="0"/>
                             <actor comment="false" id="1" x="0" y="0">
                                 <ACTOR eid="lastcreated" id="0"/>
@@ -102,5 +110,111 @@
             </group>
         </init>
     </group>
-    <group eventID="2" id="-1"/>
+    <group eventID="2" id="-1">
+        <minus comment="false" x="512" y="440">
+            <screen-xy comment="false" id="0" x="0" y="0">
+                <int id="0" val="3"/>
+            </screen-xy>
+            <div comment="false" id="1" x="0" y="0">
+                <screen-wh comment="false" id="0" x="0" y="0">
+                    <int id="0" val="1"/>
+                </screen-wh>
+                <int id="1" val="2"/>
+            </div>
+        </minus>
+        <plus comment="false" x="211" y="510">
+            <div comment="false" id="0" x="0" y="0">
+                <minus comment="false" id="0" x="0" y="0">
+                    <screen-xy comment="false" id="0" x="0" y="0">
+                        <int id="0" val="2"/>
+                    </screen-xy>
+                    <screen-wh comment="false" id="1" x="0" y="0">
+                        <int id="0" val="0"/>
+                    </screen-wh>
+                </minus>
+                <int id="1" val="2"/>
+            </div>
+            <times comment="false" id="1" x="0" y="0">
+                <loopindex comment="false" id="0" x="0" y="0"/>
+                <int id="1" val="32"/>
+            </times>
+        </plus>
+    </group>
+    <group eventID="3" id="0">
+        <event-custom comment="false" x="15" y="15">
+            <group eventID="3" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="3" id="-1">
+                        <incdec comment="false" x="37" y="70">
+                            <int id="0" val="1"/>
+                            <int id="1" val="0"/>
+                            <int id="2" val="1"/>
+                        </incdec>
+                        <create-actor3 comment="false" x="37" y="97">
+                            <get-val-8-2 comment="false" id="0" x="0" y="0"/>
+                            <times comment="false" id="1" x="0" y="0">
+                                <length-list comment="false" id="0" x="0" y="0">
+                                    <get-val-8-3 comment="false" id="0" x="0" y="0"/>
+                                </length-list>
+                                <int id="1" val="32"/>
+                            </times>
+                            <int id="2" val="0"/>
+                            <int id="3" val="0"/>
+                        </create-actor3>
+                        <anchor-screen comment="false" x="37" y="139">
+                            <ACTOR eid="lastcreated" id="0"/>
+                        </anchor-screen>
+                        <actor-enabledisable-snippet comment="false" x="37" y="166">
+                            <ACTOR eid="lastcreated" id="0"/>
+                            <int id="1" val="1"/>
+                            <int id="2" val="LifePickupItem"/>
+                        </actor-enabledisable-snippet>
+                        <add-list comment="false" x="37" y="193">
+                            <get-val-8-3 comment="false" id="0" x="0" y="0"/>
+                            <actor comment="false" id="1" x="0" y="0">
+                                <ACTOR eid="lastcreated" id="0"/>
+                            </actor>
+                        </add-list>
+                    </group>
+                    <less comment="false" id="0" x="0" y="0">
+                        <get-val-8-1 comment="false" id="0" x="0" y="0"/>
+                        <get-val-8-5 comment="false" id="1" x="0" y="0"/>
+                    </less>
+                </if>
+            </group>
+            <int id="0" val="IncreaseLifepoints"/>
+        </event-custom>
+    </group>
+    <group eventID="3" id="-1">
+        <plus comment="false" x="571" y="367">
+            <div comment="false" id="0" x="0" y="0">
+                <minus comment="false" id="0" x="0" y="0">
+                    <screen-xy comment="false" id="0" x="0" y="0">
+                        <int id="0" val="2"/>
+                    </screen-xy>
+                    <screen-wh comment="false" id="1" x="0" y="0">
+                        <int id="0" val="0"/>
+                    </screen-wh>
+                </minus>
+                <int id="1" val="2"/>
+            </div>
+            <times comment="false" id="1" x="0" y="0">
+                <length-list comment="false" id="0" x="0" y="0">
+                    <get-val-8-3 comment="false" id="0" x="0" y="0"/>
+                </length-list>
+                <int id="1" val="32"/>
+            </times>
+        </plus>
+        <minus comment="false" x="909" y="219">
+            <screen-xy comment="false" id="0" x="0" y="0">
+                <int id="0" val="3"/>
+            </screen-xy>
+            <div comment="false" id="1" x="0" y="0">
+                <screen-wh comment="false" id="0" x="0" y="0">
+                    <int id="0" val="1"/>
+                </screen-wh>
+                <int id="1" val="2"/>
+            </div>
+        </minus>
+    </group>
 </groups>
