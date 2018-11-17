@@ -45,7 +45,9 @@
         <actor a="0.0" aid="7" c="false" group="4" id="9" name="moving platform 7" sx="1.0" sy="0.2" x="195" y="247" z="0"/>
         <actor a="0.0" aid="11" c="true" group="4" id="5" name="bat 11" sx="1.0" sy="1.0" x="689" y="381" z="0">
             <snippets>
-                <s enabled="true" id="2"/>
+                <s enabled="true" id="2">
+                    <prop id="1" list="0" val=""/>
+                </s>
                 <s enabled="true" id="4">
                     <prop id="2147483647" list="0" val="thisactor"/>
                     <prop id="1" list="0" val="3"/>
@@ -62,14 +64,32 @@
             </snippets>
         </actor>
         <actor a="0.0" aid="12" c="false" group="3" id="13" name="Heart 12" sx="1.0" sy="1.0" x="64" y="113" z="0"/>
-        <actor a="0.0" aid="13" c="false" group="3" id="23" name="Door 13" sx="2.775" sy="2.725" x="980" y="363" z="0"/>
+        <actor a="0.0" aid="13" c="false" group="3" id="23" name="Door 13" sx="2.775" sy="2.725" x="980" y="372" z="0"/>
     </actors>
     <snippets>
+        <s enabled="true" id="21">
+            <prop id="5" list="0" val="false"/>
+            <prop id="6" list="0" val="-1"/>
+            <prop id="7" list="0" val="3"/>
+            <prop id="8" list="0" val="100"/>
+            <prop id="10" list="0" val="You are a Gorilla, you are the most alpha animal to ever live.... This is your home."/>
+            <prop id="11" list="0" val="-5.0"/>
+            <prop id="12" list="0" val="false"/>
+            <prop id="13" list="0" val="100"/>
+            <prop id="14" list="0" val="204,255,255,255"/>
+            <prop id="15" list="0" val="153,204,255,255"/>
+            <prop id="16" list="0" val="2"/>
+            <prop id="17" list="0" val="4.0"/>
+            <prop id="18" list="0" val="2.0"/>
+            <prop id="19" list="0" val="-1"/>
+            <prop id="20" list="0" val="0.5"/>
+        </s>
         <s enabled="true" id="8">
             <prop id="1" list="0" val="3"/>
             <prop id="2" list="0" val="13"/>
             <prop id="3" list="1" val=""/>
             <prop id="4" list="0" val="false"/>
+            <prop id="5" list="0" val="0.0"/>
         </s>
         <s enabled="true" id="15">
             <prop id="1" list="0" val="3"/>

@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <pack>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="30" fixedrot="false" fric="0.2" gid="3" id="54" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Apple" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="55" static="false">
+        <snippets/>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="160" id="55" name="Apple" shared="false" width="225">
+        <anim across="1" down="1" durations="100" height="160" id="0" loop="true" name="0" numframes="1" originx="112" originy="80" sync="false" version="2" width="225">
+            <poly data="4,0,0,225,0,225,160,0,160" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="2" fixedrot="true" fric="0.2" gid="4" id="5" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Beatle" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="6" static="false">
         <snippets>
             <s enabled="true" id="4">
@@ -17,6 +25,17 @@
             </s>
         </snippets>
     </actor>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="23" fixedrot="false" fric="0.2" gid="3" id="42" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Begin Game Button" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="43" static="false">
+        <snippets/>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="45" id="43" name="Begin Game Button" shared="false" width="125">
+        <anim across="1" down="1" durations="100" height="45" id="0" loop="true" name="0" numframes="1" originx="62" originy="22" sync="false" version="2" width="125">
+            <poly data="4,0,0,125,0,125,45,0,45" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" down="1" durations="100" height="45" id="1" loop="true" name="1" numframes="1" originx="62" originy="22" sync="false" version="2" width="125">
+            <poly data="4,0,0,125,0,125,45,0,45" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 1" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
     <tileset across="8" atlasID="0" desc="" down="8" id="33" name="BroCloud" oid="-1" shared="false" th="64" tw="64">
         <tile collision="0" data="" durations="100" frames="0" id="0" order="-1"/>
         <tile collision="0" data="" durations="100" frames="1" id="1" order="-1"/>
@@ -145,6 +164,22 @@
             <poly data="4,20,40,60,40,60,80,20,80" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="80" id="49" name="Door" shared="false" width="80">
+        <anim across="1" down="1" durations="100" height="80" id="0" loop="true" name="Animation 0" numframes="1" originx="40" originy="40" sync="false" version="2" width="80">
+            <poly data="4,20,40,60,40,60,80,20,80" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="80" id="51" name="Door" shared="false" width="80">
+        <anim across="1" down="1" durations="100" height="80" id="0" loop="true" name="Animation 0" numframes="1" originx="40" originy="40" sync="false" version="2" width="80">
+            <poly data="4,0,0,80,0,80,80,0,80" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="28" fixedrot="false" fric="0.2" gid="3" id="50" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Door To Food Level" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="51" static="true">
+        <snippets/>
+    </actor>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="26" fixedrot="false" fric="0.2" gid="3" id="48" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Door To Home Menu" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="49" static="true">
+        <snippets/>
+    </actor>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="18" fixedrot="false" fric="0.2" gid="3" id="36" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Door To Tree Level" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="37" static="true">
         <snippets/>
     </actor>
@@ -165,6 +200,14 @@
     <custom-block blocktag="custom-17" blocktype="ACTION" code=".say(&quot;Health Manager&quot;, &quot;_customBlock_FullRestore&quot;);" desc="" global="false" gui="Restore %0 To Full Health" id="17" message="FullRestore" name="FullRestore" oid="-1" return="void" shared="false" snippetID="12">
         <blank name="Self" order="0" type="actor"/>
     </custom-block>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="29" fixedrot="false" fric="0.2" gid="3" id="52" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Gate" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="53" static="false">
+        <snippets/>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="270" id="53" name="Gate" shared="false" width="250">
+        <anim across="1" down="1" durations="100" height="270" id="0" loop="true" name="Animation 0" numframes="1" originx="125" originy="135" sync="false" version="2" width="250">
+            <poly data="4,0,0,250,0,250,270,0,270" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
     <custom-block blocktag="custom-22" blocktype="NORMAL" code="cast(.say(&quot;Health Manager&quot;, &quot;_customBlock_GetCurrentHealth&quot;), Float)" desc="" global="false" gui="Current Health for %0" id="22" message="GetCurrentHealth" name="GetCurrentHealth" oid="-1" return="number" shared="false" snippetID="12">
         <blank name="Self" order="0" type="actor"/>
     </custom-block>
@@ -223,6 +266,36 @@
             <circle data="3,35,35" density="0.1" fric="0.2" gid="-1000" id="0" name="Circle" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="87" id="59" name="Heart" shared="false" width="87">
+        <anim across="1" down="1" durations="100" height="87" id="0" loop="true" name="0" numframes="1" originx="43" originy="43" sync="false" version="2" width="87">
+            <circle data="3,35,35" density="0.1" fric="0.2" gid="-1000" id="0" name="Circle" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="24" fixedrot="false" fric="0.2" gid="3" id="44" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Help Button" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="45" static="false">
+        <snippets/>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="45" id="45" name="Help Button" shared="false" width="125">
+        <anim across="1" down="1" durations="100" height="45" id="0" loop="true" name="0" numframes="1" originx="62" originy="22" sync="false" version="2" width="125">
+            <poly data="4,0,0,125,0,125,45,0,45" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" down="1" durations="100" height="45" id="1" loop="true" name="1" numframes="1" originx="62" originy="22" sync="false" version="2" width="125">
+            <poly data="4,0,0,125,0,125,45,0,45" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 1" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="488" id="47" name="Help Screen Background" numframes="1" oid="-1" repeats="false" resized="false" shared="false" width="650" xpf="1.0" ypf="1.0"/>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="32" fixedrot="true" fric="0.2" gid="3" id="58" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="Key" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="59" static="true">
+        <snippets>
+            <s enabled="false" id="16">
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="1" list="0" val=""/>
+            </s>
+            <s enabled="true" id="33">
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="1" list="0" val="0"/>
+            </s>
+        </snippets>
+    </actor>
+    <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="488" id="41" name="Main Menu Background" numframes="1" oid="-1" repeats="false" resized="false" shared="false" width="650" xpf="1.0" ypf="1.0"/>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="5" fixedrot="true" fric="0.2" gid="4" id="7" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Movable Block" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="8" static="false">
         <snippets/>
     </actor>

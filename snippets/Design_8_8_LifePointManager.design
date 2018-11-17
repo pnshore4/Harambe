@@ -111,17 +111,6 @@
         </init>
     </group>
     <group eventID="2" id="-1">
-        <minus comment="false" x="512" y="440">
-            <screen-xy comment="false" id="0" x="0" y="0">
-                <int id="0" val="3"/>
-            </screen-xy>
-            <div comment="false" id="1" x="0" y="0">
-                <screen-wh comment="false" id="0" x="0" y="0">
-                    <int id="0" val="1"/>
-                </screen-wh>
-                <int id="1" val="2"/>
-            </div>
-        </minus>
         <plus comment="false" x="211" y="510">
             <div comment="false" id="0" x="0" y="0">
                 <minus comment="false" id="0" x="0" y="0">
@@ -139,6 +128,17 @@
                 <int id="1" val="32"/>
             </times>
         </plus>
+        <minus comment="false" x="512" y="440">
+            <screen-xy comment="false" id="0" x="0" y="0">
+                <int id="0" val="3"/>
+            </screen-xy>
+            <div comment="false" id="1" x="0" y="0">
+                <screen-wh comment="false" id="0" x="0" y="0">
+                    <int id="0" val="1"/>
+                </screen-wh>
+                <int id="1" val="2"/>
+            </div>
+        </minus>
     </group>
     <group eventID="3" id="0">
         <event-custom comment="false" x="15" y="15">
@@ -186,6 +186,17 @@
         </event-custom>
     </group>
     <group eventID="3" id="-1">
+        <minus comment="false" x="909" y="219">
+            <screen-xy comment="false" id="0" x="0" y="0">
+                <int id="0" val="3"/>
+            </screen-xy>
+            <div comment="false" id="1" x="0" y="0">
+                <screen-wh comment="false" id="0" x="0" y="0">
+                    <int id="0" val="1"/>
+                </screen-wh>
+                <int id="1" val="2"/>
+            </div>
+        </minus>
         <plus comment="false" x="571" y="367">
             <div comment="false" id="0" x="0" y="0">
                 <minus comment="false" id="0" x="0" y="0">
@@ -205,16 +216,5 @@
                 <int id="1" val="32"/>
             </times>
         </plus>
-        <minus comment="false" x="909" y="219">
-            <screen-xy comment="false" id="0" x="0" y="0">
-                <int id="0" val="3"/>
-            </screen-xy>
-            <div comment="false" id="1" x="0" y="0">
-                <screen-wh comment="false" id="0" x="0" y="0">
-                    <int id="0" val="1"/>
-                </screen-wh>
-                <int id="1" val="2"/>
-            </div>
-        </minus>
     </group>
 </groups>

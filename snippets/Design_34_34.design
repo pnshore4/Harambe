@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <event-collide-typetotype comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <die comment="false" x="26" y="47">
+                    <get-val-34-6 comment="false" id="0" x="0" y="0"/>
+                </die>
+            </group>
+            <actortype eid="3" id="0"/>
+            <actortype eid="58" id="1"/>
+        </event-collide-typetotype>
+    </group>
+    <group eventID="1" id="1">
+        <if comment="false" x="153" y="352">
+            <group eventID="1" id="-1">
+                <set-val-34-4 comment="false" x="164" y="382">
+                    <true comment="false" id="0" x="0" y="0"/>
+                </set-val-34-4>
+                <dolater comment="false" x="164" y="407">
+                    <group eventID="1" id="-1">
+                        <set-val-34-4 comment="false" x="175" y="434">
+                            <false comment="false" id="0" x="0" y="0"/>
+                        </set-val-34-4>
+                    </group>
+                    <int id="0" val="2"/>
+                    <ACTOR eid="lastcreated" id="2"/>
+                </dolater>
+                <set-val-34-1 comment="false" x="164" y="471">
+                    <minus comment="false" id="0" x="0" y="0">
+                        <get-val-34-1 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="1"/>
+                    </minus>
+                </set-val-34-1>
+            </group>
+            <not comment="false" id="0" x="0" y="0">
+                <get-val-34-4 comment="false" id="0" x="0" y="0"/>
+            </not>
+        </if>
+    </group>
+    <group eventID="1" id="2">
+        <die comment="false" x="498" y="447">
+            <get-item comment="false" id="0" x="0" y="0">
+                <get-val-34-3 comment="false" id="0" x="0" y="0"/>
+                <minus comment="false" id="1" x="0" y="0">
+                    <length-list comment="false" id="0" x="0" y="0">
+                        <get-val-34-3 comment="false" id="0" x="0" y="0"/>
+                    </length-list>
+                    <int id="1" val="1"/>
+                </minus>
+            </get-item>
+        </die>
+    </group>
+    <group eventID="1" id="3">
+        <remove-index comment="false" x="471" y="536">
+            <get-val-34-3 comment="false" id="0" x="0" y="0"/>
+            <minus comment="false" id="1" x="0" y="0">
+                <length-list comment="false" id="0" x="0" y="0">
+                    <get-val-34-3 comment="false" id="0" x="0" y="0"/>
+                </length-list>
+                <int id="1" val="1"/>
+            </minus>
+        </remove-index>
+        <if comment="false" x="471" y="571">
+            <group eventID="1" id="-1">
+                <scene-reload-color comment="false" x="482" y="601">
+                    <int id="0" val="0"/>
+                    <int id="1" val="2"/>
+                    <color b="0" g="0" id="2" r="0"/>
+                    <int id="3" val="0"/>
+                    <int id="4" val="2"/>
+                    <color b="0" g="0" id="5" r="0"/>
+                </scene-reload-color>
+            </group>
+            <eq comment="false" id="0" x="0" y="0">
+                <get-val-34-1 comment="false" id="0" x="0" y="0"/>
+                <int id="1" val="0"/>
+            </eq>
+        </if>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="2" id="-1"/>
+        </init>
+    </group>
+    <group eventID="2" id="1">
+        <set-val-34-5 comment="false" x="282" y="215">
+            <get-val-34-1 comment="false" id="0" x="0" y="0"/>
+        </set-val-34-5>
+        <set-val-34-3 comment="false" x="282" y="240">
+            <create-list comment="false" id="0" x="0" y="0"/>
+        </set-val-34-3>
+        <repeat comment="false" x="282" y="265">
+            <group eventID="2" id="-1">
+                <create-actor3 comment="false" x="293" y="290">
+                    <get-val-34-2 comment="false" id="0" x="0" y="0"/>
+                    <times comment="false" id="1" x="0" y="0">
+                        <loopindex comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="32"/>
+                    </times>
+                    <int id="2" val="0"/>
+                    <int id="3" val="0"/>
+                </create-actor3>
+                <anchor-screen comment="false" x="293" y="327">
+                    <ACTOR eid="lastcreated" id="0"/>
+                </anchor-screen>
+                <actor-enabledisable-snippet comment="false" x="293" y="354">
+                    <ACTOR eid="lastcreated" id="0"/>
+                    <int id="1" val="1"/>
+                    <int id="2" val="LifePickupItem"/>
+                </actor-enabledisable-snippet>
+                <add-list comment="false" x="293" y="381">
+                    <get-val-34-3 comment="false" id="0" x="0" y="0"/>
+                    <actor comment="false" id="1" x="0" y="0">
+                        <ACTOR eid="lastcreated" id="0"/>
+                    </actor>
+                </add-list>
+            </group>
+            <get-val-34-1 comment="false" id="0" x="0" y="0"/>
+        </repeat>
+    </group>
+    <group eventID="2" id="-1"/>
+    <group eventID="3" id="0">
+        <event-custom comment="false" x="15" y="15">
+            <group eventID="3" id="-1">
+                <create-actor3 comment="false" x="26" y="40">
+                    <get-val-34-7 comment="false" id="0" x="0" y="0"/>
+                    <int id="1" val="200"/>
+                    <int id="2" val="0"/>
+                    <int id="3" val="0"/>
+                </create-actor3>
+                <anchor-screen comment="false" x="26" y="72">
+                    <ACTOR eid="lastcreated" id="0"/>
+                </anchor-screen>
+                <set-val-34-6 comment="false" x="26" y="99">
+                    <ACTOR eid="lastcreated" id="0"/>
+                </set-val-34-6>
+            </group>
+            <int id="0" val="PickupKey"/>
+        </event-custom>
+    </group>
+    <group eventID="3" id="-1"/>
+</groups>

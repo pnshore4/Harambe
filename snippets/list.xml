@@ -92,7 +92,7 @@
         <actortype default="" defaultValue="" desc="" dropdown="" fullname="Heart Actor" hidden="false" id="2" name="_HeartActor" order="1"/>
         <list default="list" defaultValue="list" desc="" dropdown="" fullname="List of Hearts" hidden="true" id="3" name="_ListofHearts" order="2"/>
         <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="Damage Delay" hidden="true" id="4" name="_DamageDelay" order="3"/>
-        <number default="0" defaultValue="0" desc="" dropdown="" fullname="Max Lifepoints" hidden="true" id="5" name="_MaxLifepoints" order="4"/>
+        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="Max Lifepoints" hidden="true" id="5" name="_MaxLifepoints" order="4"/>
         <blocks/>
         <events>
             <event displayName="Type - Type" enabled="true" id="1" name="event-collide-typetotype" order="1" repeats="true"/>
@@ -242,7 +242,7 @@
             <event displayName="Actor - Actor" enabled="true" id="2" name="event-collide-actortoactor" order="2" repeats="true"/>
         </events>
     </snippet>
-    <snippet actorid="23" attachedevent="true" class="scripts.ActorEvents_36" classname="scripts.ActorEvents_36" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="18" name="ActorEvents_36" oid="-1" package="scripts." shared="false" type="actor">
+    <snippet actorid="36" attachedevent="true" class="scripts.ActorEvents_36" classname="scripts.ActorEvents_36" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="18" name="ActorEvents_36" oid="-1" package="scripts." shared="false" type="actor">
         <scene default="" defaultValue="" desc="" dropdown="" fullname="which scene" hidden="false" id="1" name="_whichscene" order="0"/>
         <blocks/>
         <events>
@@ -253,7 +253,7 @@
         <blocks/>
         <events/>
     </snippet>
-    <snippet actorid="9" attachedevent="true" class="scripts.ActorEvents_39" classname="scripts.ActorEvents_39" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="20" name="ActorEvents_39" oid="-1" package="scripts." shared="false" type="actor">
+    <snippet actorid="39" attachedevent="true" class="scripts.ActorEvents_39" classname="scripts.ActorEvents_39" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="20" name="ActorEvents_39" oid="-1" package="scripts." shared="false" type="actor">
         <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="Origin X Position" hidden="true" id="1" name="_OriginXPosition" order="0"/>
         <animation default="" defaultValue="" desc="" dropdown="" fullname="Walk Animation" hidden="false" id="2" name="_WalkAnimation" order="1"/>
         <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="In Air?" hidden="true" id="3" name="_InAir" order="2"/>
@@ -266,6 +266,115 @@
         <events>
             <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
             <event displayName="Updating" enabled="true" id="2" name="step" order="2" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_21_21_IntroTitle" classname="scripts.Design_21_21_IntroTitle" desc="Shows an intro title, which slides away after the specified time." description="Shows an intro title, which slides away after the specified time." design="true" drawOrder="0" id="21" name="Intro Title" oid="-1" package="scripts" shared="false" type="scene">
+        <boolean default="false" defaultValue="false" desc="INTERNAL ATTRIBUTE. Whether or not the slide-off has started." dropdown="" fullname="Started" hidden="true" id="5" name="_Started" order="0"/>
+        <font default="" defaultValue="" desc="The font to use when drawing the intro title. Specify from the list of fonts you have created in Stencyl." dropdown="" fullname="Font To Use" hidden="false" id="6" name="_FontToUse" order="7"/>
+        <number default="1.0" defaultValue="1.0" desc="The amount of time, in seconds, before that the intro title should wait before beginning its exit of the screen." dropdown="" fullname="Time Before Retreat" hidden="false" id="7" name="_TimeBeforeRetreat" order="5"/>
+        <number default="0.0" defaultValue="0.0" desc="The y-position, in screen coordinates, of the centre of the Intro Title." dropdown="" fullname="Y Centre Position" hidden="false" id="8" name="_YCentrePosition" order="4"/>
+        <text default="" defaultValue="" desc="Show this text in the Intro Title. Leave blank to use the scene's name." dropdown="" fullname="Alternative Text" hidden="false" id="10" name="_AlternativeText" order="6"/>
+        <number default="-5.0" defaultValue="-5.0" desc="The initial speed to slide off the screen at." dropdown="" fullname="Slide Speed" hidden="false" id="11" name="_SlideSpeed" order="1"/>
+        <boolean default="false" defaultValue="false" desc="Should a rounded rectangle be drawn behind the text?" dropdown="" fullname="Draw Rounded Rectangle?" hidden="false" id="12" name="_DrawRectangle" order="9"/>
+        <number default="0.0" defaultValue="0.0" desc="The x-position, in screen coordinates, of the centre of the Intro Title." dropdown="" fullname="X Centre Position" hidden="false" id="13" name="_XCentrePosition" order="3"/>
+        <color default="204,255,255,255" defaultValue="204,255,255,255" desc="The fill colour for the rounded rectangle behind the text, if one is drawn." dropdown="" fullname="Fill Colour" hidden="false" id="14" name="_FillColour" order="10"/>
+        <color default="153,204,255,255" defaultValue="153,204,255,255" desc="The stroke colour for the rounded rectangle behind the text, if one is drawn. (Stroke is the outline)." dropdown="" fullname="Stroke Colour" hidden="false" id="15" name="_StrokeColour" order="11"/>
+        <number default="1.0" defaultValue="1.0" desc="The thickness, in pixels, of the stroke around the outside of the rounded rectangle behind the text, if one is drawn." dropdown="" fullname="Stroke Thickness" hidden="false" id="16" name="_StrokeThickness" order="12"/>
+        <number default="4.0" defaultValue="4.0" desc="Padding around the text, in pixels, for the rounded rectangle behind the text, if one is drawn." dropdown="" fullname="Padding" hidden="false" id="17" name="_Padding" order="13"/>
+        <number default="2.0" defaultValue="2.0" desc="The amount the rounded rectangle is rounded, if one is drawn. (Use 0 for right-angled corners)." dropdown="" fullname="Rounding" hidden="false" id="18" name="_Rounding" order="14"/>
+        <text default="" defaultValue="" desc="The direction the Intro Title slides away to." dropdown="Up=Up&#10;Down=Down&#10;Left=Left&#10;Right=Right" fullname="Slide Direction" hidden="false" id="19" name="_SlideDirection" order="8"/>
+        <number default="0.5" defaultValue="0.5" desc="The slide speed is incremented by this value every update." dropdown="" fullname="Slide Speed Change" hidden="false" id="20" name="_SlideSpeedChange" order="2"/>
+        <blocks>
+            <receiver blockID="113" id="1"/>
+            <receiver blockID="15" id="2"/>
+            <receiver blockID="16" id="3"/>
+            <receiver blockID="18" id="4"/>
+            <receiver blockID="111" id="5"/>
+            <receiver blockID="112" id="6"/>
+        </blocks>
+        <events>
+            <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
+            <event displayName="Updated" enabled="true" id="2" name="step" order="2" repeats="true"/>
+            <event displayName="Drawing" enabled="true" id="3" name="draw" order="3" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.SceneEvents_3" classname="scripts.SceneEvents_3" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="22" name="SceneEvents_3" oid="-1" package="scripts." sceneid="3" shared="false" type="scene">
+        <actor default="" defaultValue="" desc="" dropdown="" fullname="whichAnimation" hidden="false" id="1" name="_whichAnimation" order="0"/>
+        <number default="0" defaultValue="0" desc="" dropdown="" fullname="isHovering" hidden="false" id="2" name="_isHovering" order="1"/>
+        <actor default="" defaultValue="" desc="" dropdown="" fullname="Is Hovering Help Button" hidden="false" id="3" name="_IsHoveringHelpButton" order="2"/>
+        <number default="0" defaultValue="0" desc="" dropdown="" fullname="Help Hover" hidden="false" id="4" name="_HelpHover" order="3"/>
+        <blocks/>
+        <events>
+            <event displayName="Updating" enabled="true" id="1" name="step" order="1" repeats="true"/>
+            <event displayName="Drawing" enabled="true" id="2" name="draw" order="2" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet actorid="42" attachedevent="true" class="scripts.ActorEvents_42" classname="scripts.ActorEvents_42" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="23" name="ActorEvents_42" oid="-1" package="scripts." shared="false" type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet actorid="44" attachedevent="true" class="scripts.ActorEvents_44" classname="scripts.ActorEvents_44" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="24" name="ActorEvents_44" oid="-1" package="scripts." shared="false" type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.SceneEvents_4" classname="scripts.SceneEvents_4" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="25" name="SceneEvents_4" oid="-1" package="scripts." sceneid="4" shared="false" type="scene">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet actorid="36" attachedevent="true" class="scripts.ActorEvents_48" classname="scripts.ActorEvents_48" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="26" name="ActorEvents_48" oid="-1" package="scripts." shared="false" type="actor">
+        <scene default="" defaultValue="" desc="" dropdown="" fullname="which scene" hidden="false" id="1" name="_whichscene" order="0"/>
+        <blocks/>
+        <events>
+            <event displayName="Type - Type" enabled="true" id="1" name="event-collide-typetotype" order="1" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.SceneEvents_5" classname="scripts.SceneEvents_5" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="27" name="SceneEvents_5" oid="-1" package="scripts." sceneid="5" shared="false" type="scene">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet actorid="23" attachedevent="true" class="scripts.ActorEvents_50" classname="scripts.ActorEvents_50" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="28" name="ActorEvents_50" oid="-1" package="scripts." shared="false" type="actor">
+        <scene default="" defaultValue="" desc="" dropdown="" fullname="which scene" hidden="false" id="1" name="_whichscene" order="0"/>
+        <blocks/>
+        <events>
+            <event displayName="Type - Type" enabled="true" id="1" name="event-collide-typetotype" order="1" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet actorid="52" attachedevent="true" class="scripts.ActorEvents_52" classname="scripts.ActorEvents_52" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="29" name="ActorEvents_52" oid="-1" package="scripts." shared="false" type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet actorid="54" attachedevent="true" class="scripts.ActorEvents_54" classname="scripts.ActorEvents_54" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="30" name="ActorEvents_54" oid="-1" package="scripts." shared="false" type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet actorid="13" attachedevent="true" class="scripts.ActorEvents_58" classname="scripts.ActorEvents_58" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="32" name="ActorEvents_58" oid="-1" package="scripts." shared="false" type="actor">
+        <blocks/>
+        <events>
+            <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_33_33" classname="scripts.Design_33_33" desc="" description="" design="true" drawOrder="0" id="33" name="Pickup Key" oid="-1" package="scripts" shared="false" type="actor">
+        <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <actor default="0" defaultValue="0" desc="" dropdown="" fullname="Player Actor" hidden="true" id="1" name="_PlayerActor" order="1"/>
+        <blocks/>
+        <events>
+            <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
+            <event displayName="Actor - Actor" enabled="true" id="2" name="event-collide-actortoactor" order="2" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_34_34" classname="scripts.Design_34_34" desc="" description="" design="true" drawOrder="0" id="34" name="Key Manager" oid="-1" package="scripts" shared="false" type="scene">
+        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="LifePoints" hidden="false" id="1" name="_LifePoints" order="0"/>
+        <actortype default="" defaultValue="" desc="" dropdown="" fullname="Heart Actor" hidden="false" id="2" name="_HeartActor" order="1"/>
+        <list default="list" defaultValue="list" desc="" dropdown="" fullname="List of Hearts" hidden="true" id="3" name="_ListofHearts" order="2"/>
+        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="Damage Delay" hidden="true" id="4" name="_DamageDelay" order="3"/>
+        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="Max Lifepoints" hidden="true" id="5" name="_MaxLifepoints" order="4"/>
+        <actor default="" defaultValue="" desc="" dropdown="" fullname="Key Actor" hidden="false" id="6" name="_KeyActor" order="5"/>
+        <actortype default="" defaultValue="" desc="" dropdown="" fullname="Key Actor Type" hidden="false" id="7" name="_KeyActorType" order="6"/>
+        <blocks/>
+        <events>
+            <event displayName="Type - Type" enabled="true" id="1" name="event-collide-typetotype" order="1" repeats="true"/>
+            <event displayName="Created" enabled="true" id="2" name="init" order="3" repeats="true"/>
+            <event displayName="Custom Event" enabled="true" id="3" name="event-custom" order="2" repeats="true"/>
         </events>
     </snippet>
 </pack>
