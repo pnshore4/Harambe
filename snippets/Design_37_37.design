@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="2" id="0">
+        <init comment="false" x="41" y="35">
+            <group eventID="2" id="-1">
+                <create-actor3 comment="false" x="52" y="60">
+                    <actortype eid="60" id="0"/>
+                    <int id="1" val="128"/>
+                    <int id="2" val="20"/>
+                    <int id="3" val="0"/>
+                </create-actor3>
+                <anchor-screen comment="false" x="52" y="87">
+                    <ACTOR eid="lastcreated" id="0"/>
+                </anchor-screen>
+                <periodic comment="false" x="52" y="114">
+                    <group eventID="2" id="-1">
+                        <if comment="false" x="63" y="141">
+                            <group eventID="2" id="-1">
+                                <create-actor3 comment="false" x="74" y="171">
+                                    <actortype eid="54" id="0"/>
+                                    <randint comment="false" id="1" x="0" y="0">
+                                        <int id="0" val="0"/>
+                                        <scene-wh comment="false" id="1" x="0" y="0">
+                                            <int id="0" val="0"/>
+                                        </scene-wh>
+                                    </randint>
+                                    <int id="2" val="470"/>
+                                    <int id="3" val="0"/>
+                                </create-actor3>
+                            </group>
+                            <less comment="false" id="0" x="0" y="0">
+                                <get-val-37-1 comment="false" id="0" x="0" y="0"/>
+                                <get-val-37-5 comment="false" id="1" x="0" y="0"/>
+                            </less>
+                        </if>
+                        <else comment="false" x="63" y="228">
+                            <group eventID="2" id="-1">
+                                <create-actor3 comment="false" x="74" y="248">
+                                    <actortype eid="58" id="0"/>
+                                    <int id="1" val="850"/>
+                                    <int id="2" val="800"/>
+                                    <int id="3" val="0"/>
+                                </create-actor3>
+                                <print comment="false" x="74" y="275">
+                                    <int id="0" val="Collected all appels"/>
+                                </print>
+                                <cancel comment="false" x="74" y="295"/>
+                            </group>
+                        </else>
+                    </group>
+                    <int id="0" val="2"/>
+                    <ACTOR eid="lastcreated" id="2"/>
+                </periodic>
+            </group>
+        </init>
+    </group>
+    <group eventID="2" id="-1"/>
+    <group eventID="5" id="0">
+        <draw comment="false" x="15" y="15">
+            <group eventID="5" id="-1">
+                <set-font-new comment="false" x="26" y="40">
+                    <font eid="62" id="0"/>
+                </set-font-new>
+                <draw-text comment="false" x="26" y="67">
+                    <tostring comment="false" id="0" x="0" y="0">
+                        <str-combine comment="false" id="0" x="0" y="0">
+                            <int id="0" val="x"/>
+                            <get-val-37-1 comment="false" id="1" x="0" y="0"/>
+                        </str-combine>
+                    </tostring>
+                    <int id="1" val="155"/>
+                    <int id="2" val="20"/>
+                </draw-text>
+            </group>
+        </draw>
+    </group>
+    <group eventID="5" id="-1"/>
+    <group eventID="6" id="0">
+        <event-custom comment="false" x="15" y="15">
+            <group eventID="6" id="-1">
+                <set-val-37-1 comment="false" x="26" y="40">
+                    <plus comment="false" id="0" x="0" y="0">
+                        <get-val-37-1 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="1"/>
+                    </plus>
+                </set-val-37-1>
+            </group>
+            <int id="0" val="PickupFood"/>
+        </event-custom>
+    </group>
+    <group eventID="6" id="-1"/>
+</groups>

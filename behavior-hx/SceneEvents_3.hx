@@ -83,10 +83,10 @@ class SceneEvents_3 extends SceneScript
 		super();
 		nameMap.set("whichAnimation", "_whichAnimation");
 		nameMap.set("isHovering", "_isHovering");
-		_isHovering = 0;
+		_isHovering = 0.0;
 		nameMap.set("Is Hovering Help Button", "_IsHoveringHelpButton");
 		nameMap.set("Help Hover", "_HelpHover");
-		_HelpHover = 0;
+		_HelpHover = 0.0;
 		
 	}
 	

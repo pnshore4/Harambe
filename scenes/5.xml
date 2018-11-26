@@ -10,18 +10,35 @@
     <terrainRegions/>
     <actors>
         <actor a="0.0" aid="1" c="false" group="3" id="23" name="Door 1" sx="1.825" sy="1.95" x="1151" y="330" z="0"/>
-        <actor a="0.0" aid="2" c="false" group="3" id="58" name="Key 2" sx="0.55813956" sy="0.5813953" x="747" y="817" z="0"/>
         <actor a="0.0" aid="3" c="false" group="0" id="3" name="harambe 3" sx="1.0" sy="1.0" x="114" y="52" z="0"/>
+        <actor a="0.0" aid="4" c="true" group="3" id="54" name="Apple 4" sx="1.0" sy="1.0" x="624" y="433" z="0">
+            <snippets>
+                <s enabled="false" id="39">
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                    <prop id="1" list="0" val=""/>
+                </s>
+                <s enabled="true" id="30"/>
+            </snippets>
+        </actor>
     </actors>
     <snippets>
         <s enabled="true" id="34">
             <prop id="1" list="0" val="3"/>
             <prop id="2" list="0" val="13"/>
-            <prop id="3" list="1" val=""/>
+            <prop id="3" list="0" val=""/>
             <prop id="4" list="0" val="false"/>
             <prop id="5" list="0" val="0.0"/>
             <prop id="6" list="0" val="2"/>
             <prop id="7" list="0" val="58"/>
+            <prop id="8" list="0" val="0.0"/>
+            <prop id="9" list="0" val="1"/>
+        </s>
+        <s enabled="true" id="37">
+            <prop id="1" list="0" val="0.0"/>
+            <prop id="5" list="0" val="5"/>
+        </s>
+        <s enabled="true" id="38">
+            <prop id="1" list="0" val="3"/>
         </s>
         <s enabled="true" id="8">
             <prop id="1" list="0" val="3"/>
@@ -30,14 +47,11 @@
             <prop id="4" list="0" val="false"/>
             <prop id="5" list="0" val="0.0"/>
         </s>
-        <s enabled="true" id="15">
-            <prop id="1" list="0" val="3"/>
-        </s>
     </snippets>
     <terrain>
+        <p pts="6,256.0,64.0,256.0,0.0,320.0,0.0,320.0,128.0,0.0,128.0,0.0,64.0" x="704.0" y="576.0"/>
         <p pts="4,0.0,64.0,0.0,0.0,192.0,0.0,192.0,64.0" x="384.0" y="768.0"/>
         <p pts="12,64.0,0.0,64.0,896.0,1216.0,896.0,1216.0,512.0,1024.0,512.0,1024.0,448.0,1216.0,448.0,1216.0,0.0,1280.0,0.0,1280.0,960.0,0.0,960.0,0.0,0.0" x="0.0" y="0.0"/>
-        <p pts="6,256.0,64.0,256.0,0.0,320.0,0.0,320.0,128.0,0.0,128.0,0.0,64.0" x="704.0" y="576.0"/>
     </terrain>
     <atlases members="" retainAtlases="true"/>
 </scene>

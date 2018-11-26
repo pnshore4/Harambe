@@ -89,7 +89,10 @@ class ActorEvents_48 extends ActorScript
 		{
 			if(wrapper.enabled)
 			{
-				switchScene(GameModel.get().scenes.get(3).getID(), createFadeOut(2, Utils.getColorRGB(0,0,0)), createFadeIn(2, Utils.getColorRGB(0,0,0)));
+				if((getValueForScene("Key Manager", "_NumKeysinScene") == getValueForScene("Key Manager", "_KeyCollected")))
+				{
+					switchScene(GameModel.get().scenes.get(3).getID(), createFadeOut(2, Utils.getColorRGB(0,0,0)), createFadeIn(2, Utils.getColorRGB(0,0,0)));
+				}
 			}
 		});
 		

@@ -14,13 +14,13 @@
     </group>
     <group eventID="1" id="-1"/>
     <group eventID="2" id="0">
-        <event-collide-actortoactor comment="false" x="15" y="15">
+        <event-collide-actortoactor comment="false" x="16" y="24">
             <group eventID="2" id="-1">
-                <scene-say comment="false" x="26" y="47">
+                <scene-say comment="false" x="27" y="56">
                     <int id="0" val="Key Manager"/>
                     <int id="1" val="PickupKey"/>
                 </scene-say>
-                <die comment="false" x="26" y="67">
+                <die comment="false" x="27" y="76">
                     <ACTOR eid="this" id="0"/>
                 </die>
             </group>

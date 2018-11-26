@@ -12,21 +12,21 @@
         </event-collide-typetotype>
     </group>
     <group eventID="1" id="1">
-        <if comment="false" x="153" y="352">
+        <if comment="false" x="48" y="224">
             <group eventID="1" id="-1">
-                <set-val-34-4 comment="false" x="164" y="382">
+                <set-val-34-4 comment="false" x="59" y="254">
                     <true comment="false" id="0" x="0" y="0"/>
                 </set-val-34-4>
-                <dolater comment="false" x="164" y="407">
+                <dolater comment="false" x="59" y="279">
                     <group eventID="1" id="-1">
-                        <set-val-34-4 comment="false" x="175" y="434">
+                        <set-val-34-4 comment="false" x="70" y="306">
                             <false comment="false" id="0" x="0" y="0"/>
                         </set-val-34-4>
                     </group>
                     <int id="0" val="2"/>
                     <ACTOR eid="lastcreated" id="2"/>
                 </dolater>
-                <set-val-34-1 comment="false" x="164" y="471">
+                <set-val-34-1 comment="false" x="59" y="343">
                     <minus comment="false" id="0" x="0" y="0">
                         <get-val-34-1 comment="false" id="0" x="0" y="0"/>
                         <int id="1" val="1"/>
@@ -39,19 +39,6 @@
         </if>
     </group>
     <group eventID="1" id="2">
-        <die comment="false" x="498" y="447">
-            <get-item comment="false" id="0" x="0" y="0">
-                <get-val-34-3 comment="false" id="0" x="0" y="0"/>
-                <minus comment="false" id="1" x="0" y="0">
-                    <length-list comment="false" id="0" x="0" y="0">
-                        <get-val-34-3 comment="false" id="0" x="0" y="0"/>
-                    </length-list>
-                    <int id="1" val="1"/>
-                </minus>
-            </get-item>
-        </die>
-    </group>
-    <group eventID="1" id="3">
         <remove-index comment="false" x="471" y="536">
             <get-val-34-3 comment="false" id="0" x="0" y="0"/>
             <minus comment="false" id="1" x="0" y="0">
@@ -77,6 +64,19 @@
                 <int id="1" val="0"/>
             </eq>
         </if>
+    </group>
+    <group eventID="1" id="3">
+        <die comment="false" x="442" y="370">
+            <get-item comment="false" id="0" x="0" y="0">
+                <get-val-34-3 comment="false" id="0" x="0" y="0"/>
+                <minus comment="false" id="1" x="0" y="0">
+                    <length-list comment="false" id="0" x="0" y="0">
+                        <get-val-34-3 comment="false" id="0" x="0" y="0"/>
+                    </length-list>
+                    <int id="1" val="1"/>
+                </minus>
+            </get-item>
+        </die>
     </group>
     <group eventID="1" id="-1"/>
     <group eventID="2" id="0">

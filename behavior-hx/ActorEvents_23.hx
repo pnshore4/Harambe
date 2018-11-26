@@ -72,24 +72,43 @@ import com.stencyl.graphics.shaders.BloomShader;
 class ActorEvents_23 extends ActorScript
 {
 	public var _whichscene:Scene;
+	public var _LifePoints:Float;
+	public var _ListofHearts:Array<Dynamic>;
+	public var _keycollected:Float;
+	public var _expectedkey:Float;
 	
 	
 	public function new(dummy:Int, actor:Actor, dummy2:Engine)
 	{
 		super(actor);
 		nameMap.set("which scene", "_whichscene");
+		nameMap.set("LifePoints", "_LifePoints");
+		_LifePoints = 0.0;
+		nameMap.set("List of Hearts", "_ListofHearts");
+		nameMap.set("key collected", "_keycollected");
+		_keycollected = 0.0;
+		nameMap.set("expected key", "_expectedkey");
+		_expectedkey = 0.0;
 		
 	}
 	
 	override public function init()
 	{
 		
+		/* ======================== When Creating ========================= */
+		trace("" + "Door Created");
+		trace("" + actor.getValue("Key Manager", "_KeyCollected"));
+		trace("" + actor.getValue("Key Manager", "_NumKeysinScene"));
+		
 		/* ========================= Type & Type ========================== */
 		addSceneCollisionListener(getActorType(3).ID, getActorType(23).ID, function(event:Collision, list:Array<Dynamic>):Void
 		{
 			if(wrapper.enabled)
 			{
-				switchScene(GameModel.get().scenes.get(1).getID(), createFadeOut(2, Utils.getColorRGB(0,0,0)), createFadeIn(2, Utils.getColorRGB(0,0,0)));
+				if((getValueForScene("Key Manager", "_NumKeysinScene") == getValueForScene("Key Manager", "_KeyCollected")))
+				{
+					switchScene(GameModel.get().scenes.get(1).getID(), createFadeOut(2, Utils.getColorRGB(0,0,0)), createFadeIn(2, Utils.getColorRGB(0,0,0)));
+				}
 			}
 		});
 		
