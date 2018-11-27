@@ -51,6 +51,36 @@
                     <int id="0" val="2"/>
                     <ACTOR eid="lastcreated" id="2"/>
                 </periodic>
+                <periodic comment="false" x="52" y="339">
+                    <group eventID="2" id="-1">
+                        <if comment="false" x="63" y="366">
+                            <group eventID="2" id="-1">
+                                <create-actor3 comment="false" x="74" y="401">
+                                    <actortype eid="64" id="0"/>
+                                    <randint comment="false" id="1" x="0" y="0">
+                                        <int id="0" val="0"/>
+                                        <scene-wh comment="false" id="1" x="0" y="0">
+                                            <int id="0" val="0"/>
+                                        </scene-wh>
+                                    </randint>
+                                    <int id="2" val="470"/>
+                                    <int id="3" val="0"/>
+                                </create-actor3>
+                            </group>
+                            <less comment="false" id="0" x="0" y="0">
+                                <get-val-37-1 comment="false" id="0" x="0" y="0"/>
+                                <get-val-37-5 comment="false" id="1" x="0" y="0"/>
+                            </less>
+                        </if>
+                        <else comment="false" x="63" y="458">
+                            <group eventID="2" id="-1">
+                                <cancel comment="false" x="74" y="478"/>
+                            </group>
+                        </else>
+                    </group>
+                    <int id="0" val="2"/>
+                    <ACTOR eid="lastcreated" id="2"/>
+                </periodic>
             </group>
         </init>
     </group>

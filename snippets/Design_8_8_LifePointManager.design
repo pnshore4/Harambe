@@ -111,6 +111,17 @@
         </init>
     </group>
     <group eventID="2" id="-1">
+        <minus comment="false" x="512" y="440">
+            <screen-xy comment="false" id="0" x="0" y="0">
+                <int id="0" val="3"/>
+            </screen-xy>
+            <div comment="false" id="1" x="0" y="0">
+                <screen-wh comment="false" id="0" x="0" y="0">
+                    <int id="0" val="1"/>
+                </screen-wh>
+                <int id="1" val="2"/>
+            </div>
+        </minus>
         <plus comment="false" x="211" y="510">
             <div comment="false" id="0" x="0" y="0">
                 <minus comment="false" id="0" x="0" y="0">
@@ -128,17 +139,6 @@
                 <int id="1" val="32"/>
             </times>
         </plus>
-        <minus comment="false" x="512" y="440">
-            <screen-xy comment="false" id="0" x="0" y="0">
-                <int id="0" val="3"/>
-            </screen-xy>
-            <div comment="false" id="1" x="0" y="0">
-                <screen-wh comment="false" id="0" x="0" y="0">
-                    <int id="0" val="1"/>
-                </screen-wh>
-                <int id="1" val="2"/>
-            </div>
-        </minus>
     </group>
     <group eventID="3" id="0">
         <event-custom comment="false" x="77" y="41">
@@ -186,6 +186,17 @@
         </event-custom>
     </group>
     <group eventID="3" id="-1">
+        <minus comment="false" x="798" y="208">
+            <screen-xy comment="false" id="0" x="0" y="0">
+                <int id="0" val="3"/>
+            </screen-xy>
+            <div comment="false" id="1" x="0" y="0">
+                <screen-wh comment="false" id="0" x="0" y="0">
+                    <int id="0" val="1"/>
+                </screen-wh>
+                <int id="1" val="2"/>
+            </div>
+        </minus>
         <plus comment="false" x="564" y="380">
             <div comment="false" id="0" x="0" y="0">
                 <minus comment="false" id="0" x="0" y="0">
@@ -205,16 +216,55 @@
                 <int id="1" val="32"/>
             </times>
         </plus>
-        <minus comment="false" x="798" y="208">
-            <screen-xy comment="false" id="0" x="0" y="0">
-                <int id="0" val="3"/>
-            </screen-xy>
-            <div comment="false" id="1" x="0" y="0">
-                <screen-wh comment="false" id="0" x="0" y="0">
-                    <int id="0" val="1"/>
-                </screen-wh>
-                <int id="1" val="2"/>
-            </div>
-        </minus>
     </group>
+    <group eventID="4" id="0">
+        <event-custom comment="false" x="15" y="15">
+            <group eventID="4" id="-1">
+                <set-val-8-1 comment="false" x="26" y="40">
+                    <minus comment="false" id="0" x="0" y="0">
+                        <get-val-8-1 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="1"/>
+                    </minus>
+                </set-val-8-1>
+                <die comment="false" x="26" y="70">
+                    <get-item comment="false" id="0" x="0" y="0">
+                        <get-val-8-3 comment="false" id="0" x="0" y="0"/>
+                        <minus comment="false" id="1" x="0" y="0">
+                            <length-list comment="false" id="0" x="0" y="0">
+                                <get-val-8-3 comment="false" id="0" x="0" y="0"/>
+                            </length-list>
+                            <int id="1" val="1"/>
+                        </minus>
+                    </get-item>
+                </die>
+                <remove-index comment="false" x="26" y="117">
+                    <get-val-8-3 comment="false" id="0" x="0" y="0"/>
+                    <minus comment="false" id="1" x="0" y="0">
+                        <length-list comment="false" id="0" x="0" y="0">
+                            <get-val-8-3 comment="false" id="0" x="0" y="0"/>
+                        </length-list>
+                        <int id="1" val="1"/>
+                    </minus>
+                </remove-index>
+                <if comment="false" x="26" y="152">
+                    <group eventID="4" id="-1">
+                        <scene-reload-color comment="false" x="37" y="182">
+                            <int id="0" val="0"/>
+                            <int id="1" val="2"/>
+                            <color b="0" g="0" id="2" r="0"/>
+                            <int id="3" val="0"/>
+                            <int id="4" val="2"/>
+                            <color b="0" g="0" id="5" r="0"/>
+                        </scene-reload-color>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-8-1 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="0"/>
+                    </eq>
+                </if>
+            </group>
+            <int id="0" val="SpiderHit"/>
+        </event-custom>
+    </group>
+    <group eventID="4" id="-1"/>
 </groups>
