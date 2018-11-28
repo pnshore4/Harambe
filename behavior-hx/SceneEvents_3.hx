@@ -100,7 +100,7 @@ class SceneEvents_3 extends SceneScript
 			{
 				if(getActor(1).isMouseDown())
 				{
-					switchScene(GameModel.get().scenes.get(0).getID(), createBubblesOut(.5, Utils.getColorRGB(255,102,0)), createBubblesIn(.5, Utils.getColorRGB(255,102,0)));
+					switchScene(GameModel.get().scenes.get(1).getID(), createBubblesOut(.5, Utils.getColorRGB(255,102,0)), createBubblesIn(.5, Utils.getColorRGB(255,102,0)));
 				}
 				else if(getActor(2).isMouseDown())
 				{

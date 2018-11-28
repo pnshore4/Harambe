@@ -84,14 +84,29 @@ class ActorEvents_36 extends ActorScript
 	override public function init()
 	{
 		
+		/* ======================== When Creating ========================= */
+		if(Engine.engine.getGameAttribute("Visited Tree"))
+		{
+			createRecycledActor(getActorType(68), 1325, 890, Script.FRONT);
+		}
+		else if(!(Engine.engine.getGameAttribute("Enter Tree")))
+		{
+			createRecycledActor(getActorType(70), 1325, 890, Script.FRONT);
+		}
+		
 		/* ========================= Type & Type ========================== */
 		addSceneCollisionListener(getActorType(3).ID, getActorType(36).ID, function(event:Collision, list:Array<Dynamic>):Void
 		{
 			if(wrapper.enabled)
 			{
-				if((getValueForScene("Key Manager", "_NumKeysinScene") == getValueForScene("Key Manager", "_KeyCollected")))
+				if(Engine.engine.getGameAttribute("Enter Tree"))
 				{
-					switchScene(GameModel.get().scenes.get(2).getID(), createFadeOut(2, Utils.getColorRGB(0,0,0)), createFadeIn(2, Utils.getColorRGB(0,0,0)));
+					Engine.engine.setGameAttribute("Enter Tree", false);
+					Engine.engine.setGameAttribute("Enter Socialize", true);
+					if((getValueForScene("Key Manager", "_NumKeysinScene") == getValueForScene("Key Manager", "_KeyCollected")))
+					{
+						switchScene(GameModel.get().scenes.get(2).getID(), createFadeOut(2, Utils.getColorRGB(0,0,0)), createFadeIn(2, Utils.getColorRGB(0,0,0)));
+					}
 				}
 			}
 		});

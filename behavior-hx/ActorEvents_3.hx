@@ -82,6 +82,16 @@ class ActorEvents_3 extends ActorScript
 	override public function init()
 	{
 		
+		/* ======================== When Updating ========================= */
+		addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled)
+			{
+				Engine.engine.setGameAttribute("XPlayer", actor.getX());
+				Engine.engine.setGameAttribute("YPlayer", actor.getY());
+			}
+		});
+		
 	}
 	
 	override public function forwardMessage(msg:String)

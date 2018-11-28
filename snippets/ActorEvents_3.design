@@ -1,11 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <groups>
     <group eventID="1" id="0">
-        <event-collide-typetotype comment="false" x="577" y="316">
-            <group eventID="1" id="-1"/>
-            <actortype eid="3" id="0"/>
-            <actortype eid="13" id="1"/>
-        </event-collide-typetotype>
+        <step comment="false" x="34" y="15">
+            <group eventID="1" id="-1">
+                <set-game-val-11 comment="false" x="45" y="40">
+                    <get-xy comment="false" id="0" x="0" y="0">
+                        <ACTOR eid="this" id="0"/>
+                        <int id="1" val="0"/>
+                    </get-xy>
+                </set-game-val-11>
+                <set-game-val-12 comment="false" x="45" y="73">
+                    <get-xy comment="false" id="0" x="0" y="0">
+                        <ACTOR eid="this" id="0"/>
+                        <int id="1" val="1"/>
+                    </get-xy>
+                </set-game-val-12>
+            </group>
+        </step>
     </group>
     <group eventID="1" id="-1"/>
 </groups>

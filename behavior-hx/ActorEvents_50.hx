@@ -84,14 +84,30 @@ class ActorEvents_50 extends ActorScript
 	override public function init()
 	{
 		
+		/* ======================== When Creating ========================= */
+		if(Engine.engine.getGameAttribute("Visited Food"))
+		{
+			createRecycledActor(getActorType(68), 1074, 1007, Script.FRONT);
+		}
+		else if(!(Engine.engine.getGameAttribute("Enter Food")))
+		{
+			createRecycledActor(getActorType(70), 1074, 1007, Script.FRONT);
+		}
+		
 		/* ========================= Type & Type ========================== */
 		addSceneCollisionListener(getActorType(3).ID, getActorType(50).ID, function(event:Collision, list:Array<Dynamic>):Void
 		{
 			if(wrapper.enabled)
 			{
-				if((getValueForScene("Key Manager", "_NumKeysinScene") == getValueForScene("Key Manager", "_KeyCollected")))
+				if(Engine.engine.getGameAttribute("Enter Food"))
 				{
-					switchScene(GameModel.get().scenes.get(5).getID(), createFadeOut(2, Utils.getColorRGB(0,0,0)), createFadeIn(2, Utils.getColorRGB(0,0,0)));
+					if((getValueForScene("Key Manager", "_NumKeysinScene") == getValueForScene("Key Manager", "_KeyCollected")))
+					{
+						Engine.engine.setGameAttribute("Enter Food", false);
+						Engine.engine.setGameAttribute("Enter Tree", true);
+						Engine.engine.setGameAttribute("Visited Food", true);
+						switchScene(GameModel.get().scenes.get(5).getID(), createFadeOut(2, Utils.getColorRGB(0,0,0)), createFadeIn(2, Utils.getColorRGB(0,0,0)));
+					}
 				}
 			}
 		});

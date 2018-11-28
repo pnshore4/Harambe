@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="1" id="-1">
+                        <if comment="false" x="37" y="65">
+                            <group eventID="1" id="-1">
+                                <moveToBy comment="false" x="48" y="108">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="1"/>
+                                    <get-game-val-11 comment="false" id="2" x="0" y="0"/>
+                                    <get-xy comment="false" id="3" x="0" y="0">
+                                        <ACTOR eid="this" id="0"/>
+                                        <int id="1" val="1"/>
+                                    </get-xy>
+                                    <int id="4" val="2"/>
+                                    <int id="5" val="0"/>
+                                </moveToBy>
+                            </group>
+                            <or comment="false" id="0" x="0" y="0">
+                                <noteq comment="false" id="0" x="0" y="0">
+                                    <get-xy comment="false" id="0" x="0" y="0">
+                                        <ACTOR eid="this" id="0"/>
+                                        <int id="1" val="0"/>
+                                    </get-xy>
+                                    <get-game-val-11 comment="false" id="1" x="0" y="0"/>
+                                </noteq>
+                                <noteq comment="false" id="1" x="0" y="0">
+                                    <get-xy comment="false" id="0" x="0" y="0">
+                                        <ACTOR eid="this" id="0"/>
+                                        <int id="1" val="1"/>
+                                    </get-xy>
+                                    <get-game-val-12 comment="false" id="1" x="0" y="0"/>
+                                </noteq>
+                            </or>
+                        </if>
+                    </group>
+                    <less comment="false" id="0" x="0" y="0">
+                        <int id="0" val="2"/>
+                        <int id="1" val="1"/>
+                    </less>
+                </if>
+            </group>
+        </step>
+    </group>
+    <group eventID="1" id="-1"/>
+</groups>

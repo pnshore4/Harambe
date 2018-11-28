@@ -124,7 +124,6 @@ class Design_4_4_batbehavior extends ActorScript
 				propertyChanged("_XDirection", _XDirection);
 				_SpitActor = getActorType(11);
 				propertyChanged("_SpitActor", _SpitActor);
-				trace("" + ("" + "after setters"));
 				if((_position.getXCenter() < actor.getXCenter()))
 				{
 					actor.growTo(-100/100, 100/100, 0, Linear.easeNone);

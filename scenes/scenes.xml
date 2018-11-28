@@ -6,4 +6,5 @@
     <scene desc="" format="3.4.0" id="3" name="MainMenu"/>
     <scene desc="" format="3.4.0" id="4" name="Help Screen"/>
     <scene desc="" format="3.4.0" id="5" name="Collect Food Level"/>
+    <scene desc="" format="3.4.0" id="6" name="Final Level"/>
 </scenes>
