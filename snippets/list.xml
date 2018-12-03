@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <pack>
     <snippet attachedevent="true" class="scripts.SceneEvents_0" classname="scripts.SceneEvents_0" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="0" name="SceneEvents_0" oid="-1" package="scripts." sceneid="0" shared="false" type="scene">
+        <list default="list" defaultValue="list" desc="" dropdown="" fullname="Dialog" hidden="false" id="1" name="_Dialog" order="0"/>
         <blocks/>
-        <events/>
+        <events>
+            <event displayName="After N secs" enabled="true" id="1" name="event-delay" order="1" repeats="true"/>
+            <event displayName="Created" enabled="true" id="2" name="init" order="2" repeats="true"/>
+        </events>
     </snippet>
     <snippet actorid="3" attachedevent="true" class="scripts.ActorEvents_3" classname="scripts.ActorEvents_3" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="1" name="ActorEvents_3" oid="-1" package="scripts." shared="false" type="actor">
         <blocks/>
         <events>
             <event displayName="Updating" enabled="true" id="1" name="step" order="1" repeats="true"/>
+            <event displayName="Actor - Type" enabled="true" id="3" name="event-collide-actortotype" order="3" repeats="true"/>
         </events>
     </snippet>
     <snippet actorid="5" attachedevent="true" class="scripts.ActorEvents_5" classname="scripts.ActorEvents_5" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="2" name="ActorEvents_5" oid="-1" package="scripts." shared="false" type="actor">
@@ -331,9 +336,7 @@
     <snippet attachedevent="true" class="scripts.SceneEvents_5" classname="scripts.SceneEvents_5" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="27" name="SceneEvents_5" oid="-1" package="scripts." sceneid="5" shared="false" type="scene">
         <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="Apple Collected" hidden="false" id="1" name="_AppleCollected" order="0"/>
         <blocks/>
-        <events>
-            <event displayName="Created" enabled="true" id="2" name="init" order="2" repeats="true"/>
-        </events>
+        <events/>
     </snippet>
     <snippet actorid="50" attachedevent="true" class="scripts.ActorEvents_50" classname="scripts.ActorEvents_50" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="28" name="ActorEvents_50" oid="-1" package="scripts." shared="false" type="actor">
         <scene default="" defaultValue="" desc="" dropdown="" fullname="which scene" hidden="false" id="1" name="_whichscene" order="0"/>
@@ -371,10 +374,9 @@
     <snippet attachedevent="false" class="scripts.Design_34_34_KeyManager" classname="scripts.Design_34_34_KeyManager" desc="" description="" design="true" drawOrder="0" id="34" name="Key Manager" oid="-1" package="scripts" shared="false" type="scene">
         <actor default="" defaultValue="" desc="" dropdown="" fullname="Key Actor" hidden="false" id="6" name="_KeyActor" order="7"/>
         <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="KeyCollected" hidden="false" id="8" name="_KeyCollected" order="1"/>
-        <number default="0" defaultValue="0" desc="" dropdown="" fullname="Num Keys in Scene" hidden="false" id="9" name="_NumKeysinScene" order="2"/>
+        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="Num Keys in Scene" hidden="false" id="9" name="_NumKeysinScene" order="2"/>
         <blocks/>
         <events>
-            <event displayName="Created" enabled="true" id="2" name="init" order="3" repeats="true"/>
             <event displayName="Custom Event" enabled="true" id="3" name="event-custom" order="2" repeats="true"/>
         </events>
     </snippet>
@@ -447,12 +449,8 @@
         <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="Apple Collected" hidden="false" id="1" name="_AppleCollected" order="0"/>
         <blocks/>
         <events>
-            <event displayName="Created" enabled="true" id="2" name="init" order="2" repeats="true"/>
+            <event displayName="Enters Region" enabled="true" id="2" name="event-actor-region" order="2" repeats="true"/>
         </events>
-    </snippet>
-    <snippet actorid="74" attachedevent="true" class="scripts.ActorEvents_74" classname="scripts.ActorEvents_74" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="51" name="ActorEvents_74" oid="-1" package="scripts." shared="false" type="actor">
-        <blocks/>
-        <events/>
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_55_55_EnemyWalkingAI" classname="scripts.Design_55_55_EnemyWalkingAI" desc="For platformers - an actor will have movement similar to the Goomba from Super Mario Bros - actor will walk back anf forth horizontally, and change direction when colliding with an object.  &#10;&#10;Just configure the walking animations &amp; speed." description="For platformers - an actor will have movement similar to the Goomba from Super Mario Bros - actor will walk back anf forth horizontally, and change direction when colliding with an object.  &#10;&#10;Just configure the walking animations &amp; speed." design="true" drawOrder="0" id="55" name="Enemy Walking AI" oid="-1" package="scripts" shared="false" type="actor">
         <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
@@ -463,7 +461,7 @@
         <events>
             <event displayName="Updated" enabled="true" id="1" name="step" order="1" repeats="true"/>
             <event displayName="Created" enabled="true" id="2" name="init" order="2" repeats="true"/>
-            <event displayName="Actor - Any" enabled="true" id="3" name="collide" order="3" repeats="true"/>
+            <event displayName="Actor - Any" enabled="true" id="3" name="collide" order="3" repeats="false"/>
         </events>
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_58_58_MovementandAttack" classname="scripts.Design_58_58_MovementandAttack" desc="" description="" design="true" drawOrder="0" id="58" name="Movement and Attack" oid="-1" package="scripts" shared="false" type="actor">
@@ -483,6 +481,200 @@
             <event displayName="Updated" enabled="true" id="2" name="step" order="2" repeats="true"/>
             <event displayName="Enemy Collison" enabled="true" id="3" name="event-collide-actortotype" order="3" repeats="true"/>
             <event displayName="Tile Collison" enabled="false" id="4" name="event-collide-actortogroup" order="4" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet actorid="84" attachedevent="true" class="scripts.ActorEvents_84" classname="scripts.ActorEvents_84" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="59" name="ActorEvents_84" oid="-1" package="scripts." shared="false" type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet actorid="86" attachedevent="true" class="scripts.ActorEvents_86" classname="scripts.ActorEvents_86" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="60" name="ActorEvents_86" oid="-1" package="scripts." shared="false" type="actor">
+        <blocks/>
+        <events>
+            <event displayName="Updating" enabled="true" id="1" name="step" order="1" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_61_61_FaceTarget" classname="scripts.Design_61_61_FaceTarget" desc="Makes the actor always face a given target actor." description="Makes the actor always face a given target actor." design="true" drawOrder="0" id="61" name="Face Target" oid="-1" package="scripts" shared="false" type="actor">
+        <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="Distance X" hidden="true" id="2" name="_DistanceX" order="1"/>
+        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="Distance Y" hidden="true" id="3" name="_DistanceY" order="2"/>
+        <number default="-90.0" defaultValue="-90.0" desc="The facing of the actor's sprite." dropdown="Up=-90&#10;Down=90&#10;Left=180&#10;Right=0&#10;" fullname="Facing" hidden="false" id="4" name="_Facing" order="4"/>
+        <actor default="" defaultValue="" desc="The target actor this actor will be facing. &lt;br /&gt;&#10;If the target actor is unset or dead this behavior will do nothing." dropdown="" fullname="Target Actor" hidden="false" id="5" name="_TargetActor" order="3"/>
+        <blocks/>
+        <events>
+            <event displayName="Updated" enabled="true" id="1" name="step" order="1" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet actorid="88" attachedevent="true" class="scripts.ActorEvents_88" classname="scripts.ActorEvents_88" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="62" name="ActorEvents_88" oid="-1" package="scripts." shared="false" type="actor">
+        <animation default="" defaultValue="" desc="" dropdown="" fullname="sqash" hidden="false" id="1" name="_sqash" order="0"/>
+        <blocks/>
+        <events>
+            <event displayName="Actor - Type" enabled="true" id="1" name="event-collide-actortotype" order="1" repeats="true"/>
+            <event displayName="Created" enabled="true" id="2" name="init" order="2" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_63_63_BackandForthHorizontally" classname="scripts.Design_63_63_BackandForthHorizontally" desc="Makes the actor move back and forth horizontally." description="Makes the actor move back and forth horizontally." design="true" drawOrder="0" id="63" name="Back and Forth Horizontally" oid="-1" package="scripts" shared="false" type="actor">
+        <number default="10.0" defaultValue="10.0" desc="The movement speed." dropdown="" fullname="Speed" hidden="false" id="16" name="_Speed" order="3"/>
+        <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <number default="100.0" defaultValue="100.0" desc="The distance the actor will be moving to the left." dropdown="" fullname="Distance Left" hidden="false" id="17" name="_DistanceLeft" order="5"/>
+        <number default="100.0" defaultValue="100.0" desc="The distance the actor will be moving to the right." dropdown="" fullname="Distance Right" hidden="false" id="18" name="_DistanceRight" order="6"/>
+        <number default="0.0" defaultValue="0.0" desc="The direction in which the actor will be moving when created." dropdown="Left=-1&#10;Right=1" fullname="Initial Direction" hidden="false" id="19" name="_InitialDirection" order="4"/>
+        <boolean default="true" defaultValue="true" desc="If selected, the actor will change the movement direction when colliding.&lt;br /&gt;&#10;If unselected, the actor will try to keep on moving in the current direction." dropdown="" fullname="Change Direction on Collision" hidden="false" id="20" name="_ChangeDirectiononCollision" order="7"/>
+        <number default="0" defaultValue="0" desc="" dropdown="" fullname="Start" hidden="true" id="13" name="_Start" order="1"/>
+        <number default="0" defaultValue="0" desc="" dropdown="" fullname="End" hidden="true" id="15" name="_End" order="2"/>
+        <blocks/>
+        <events>
+            <event displayName="Updated" enabled="true" id="1" name="step" order="2" repeats="true"/>
+            <event displayName="Drawing" enabled="true" id="2" name="draw" order="4" repeats="true"/>
+            <event displayName="Created" enabled="true" id="3" name="init" order="1" repeats="true"/>
+            <event displayName="Actor - Any" enabled="true" id="4" name="collide" order="3" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet actorid="90" attachedevent="true" class="scripts.ActorEvents_90" classname="scripts.ActorEvents_90" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="64" name="ActorEvents_90" oid="-1" package="scripts." shared="false" type="actor">
+        <scene default="" defaultValue="" desc="" dropdown="" fullname="which scene" hidden="false" id="1" name="_whichscene" order="0"/>
+        <blocks/>
+        <events>
+            <event displayName="Type - Type" enabled="true" id="1" name="event-collide-typetotype" order="1" repeats="true"/>
+            <event displayName="Created" enabled="true" id="2" name="init" order="2" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet actorid="92" attachedevent="true" class="scripts.ActorEvents_92" classname="scripts.ActorEvents_92" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="66" name="ActorEvents_92" oid="-1" package="scripts." shared="false" type="actor">
+        <scene default="" defaultValue="" desc="" dropdown="" fullname="which scene" hidden="false" id="1" name="_whichscene" order="0"/>
+        <blocks/>
+        <events>
+            <event displayName="Type - Type" enabled="true" id="1" name="event-collide-typetotype" order="1" repeats="true"/>
+            <event displayName="Created" enabled="true" id="2" name="init" order="2" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_67_67_SpeechBehaviorForge" classname="scripts.Design_67_67_SpeechBehaviorForge" desc="" description="" design="true" drawOrder="0" id="67" name="SpeechBehavior_Forge" oid="-1" package="scripts" shared="false" type="actor">
+        <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <boolean default="false" defaultValue="false" desc="Used to prevent the dialogue from being executed more than once." dropdown="" fullname="DisplayDialog?" hidden="true" id="1" name="_DisplayDialog" order="1"/>
+        <number default="1.0" defaultValue="1.0" desc="" dropdown="" fullname="progressiveCount" hidden="true" id="3" name="_progressiveCount" order="2"/>
+        <list default="list" defaultValue="list" desc="" dropdown="" fullname="copyMessage" hidden="true" id="4" name="_copyMessage" order="3"/>
+        <list default="list" defaultValue="list" desc="Input the message you wish to display.  Insert _ for an empty (blank) line of dialogue.&#10;&#10;Dialogue must be input like so:&#10; Portrait|Message to Display.&#10;&#10;Example: &#10;Player|So this cave leads to the forbidden city?&#10;" dropdown="" fullname="dialog01" hidden="false" id="5" name="_dialog01" order="4"/>
+        <list default="list" defaultValue="list" desc="" dropdown="" fullname="dialog02" hidden="false" id="6" name="_dialog02" order="5"/>
+        <list default="list" defaultValue="list" desc="" dropdown="" fullname="dialog03" hidden="false" id="7" name="_dialog03" order="6"/>
+        <number default="0.0" defaultValue="0.0" desc="# of times to display the message." dropdown="" fullname="messageLength" hidden="true" id="8" name="_messageLength" order="7"/>
+        <number default="4.0" defaultValue="4.0" desc="How many lines of dialogue should be displayed per message box?&#10;&#10;Default: 4" dropdown="" fullname="# of Lines" hidden="false" id="9" name="_ofLines" order="8"/>
+        <actortype default="672" defaultValue="672" desc="Dialogue box to display." dropdown="" fullname="dialogBox" hidden="false" id="10" name="_dialogBox" order="9"/>
+        <actor default="" defaultValue="" desc="The dialogue box itself." dropdown="" fullname="dialogBoxActor" hidden="true" id="11" name="_dialogBoxActor" order="10"/>
+        <number default="0.0" defaultValue="0.0" desc="If Randomize Dialogue is checked, set this to the number of dialogue lists to use.  If Progressive Dialogue is checked, uses this to set the number of dialogue lists used.  &#10;&#10;MAX = 3" dropdown="" fullname="# of Dialogues" hidden="false" id="12" name="_ofDialogues" order="11"/>
+        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="rizandomNumber" hidden="true" id="13" name="_rizandomNumber" order="12"/>
+        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="camReturn" hidden="false" id="14" name="_camReturn" order="13"/>
+        <blocks/>
+        <events>
+            <event displayName="opendialog" enabled="true" id="1" name="event-custom" order="2" repeats="true"/>
+            <event displayName="progress" enabled="true" id="2" name="event-custom" order="3" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.SceneEvents_7" classname="scripts.SceneEvents_7" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="68" name="SceneEvents_7" oid="-1" package="scripts." sceneid="7" shared="false" type="scene">
+        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="Key Collected" hidden="false" id="1" name="_KeyCollected" order="0"/>
+        <blocks/>
+        <events>
+            <event displayName="Enters Region" enabled="true" id="2" name="event-type-region" order="2" repeats="true"/>
+            <event displayName="Actor - Actor" enabled="true" id="3" name="event-collide-actortoactor" order="5" repeats="true"/>
+            <event displayName="Enters Region" enabled="true" id="4" name="event-type-region" order="3" repeats="true"/>
+            <event displayName="Enters Region Copy" enabled="true" id="5" name="event-type-region" order="4" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_70_70_DialogBoxUI" classname="scripts.Design_70_70_DialogBoxUI" desc="" description="" design="true" drawOrder="0" id="70" name="Dialog Box UI" oid="-1" package="" shared="false" type="actor">
+        <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <number default="0.0" defaultValue="0.0" desc="1) No image, fixed size = Do not use a backgound image for the Dialog box, use dimensions specified&lt;br&gt;&#10;2) No image, variable size = Do not use an image, and let the Dialog box shrink/expand based on text&lt;br&gt;&#10;3) Image, fixed size = Use an image, and force the dialog box to that size&lt;br&gt;&#10;4) Image, variable size = Use an image and allow it to shrink/grow based on dimensions specified" dropdown="No Image, Fixed Size = 1&#10;No Image, Variable Size = 2&#10;Image, Fixed Size = 3&#10;Image, Variable Size = 4" fullname="Dialog Box Mode" hidden="false" id="1" name="DialogBoxMode" order="2"/>
+        <number default="0.0" defaultValue="0.0" desc="Dialog box width.  Used for Dialog Box modes 1 &amp; 4" dropdown="" fullname="Width" hidden="false" id="2" name="Width" order="6"/>
+        <number default="0.0" defaultValue="0.0" desc="Dialog box height.  Used for Dialog Box modes 1 &amp; 4" dropdown="" fullname="Height" hidden="false" id="3" name="Height" order="7"/>
+        <number default="0.0" defaultValue="0.0" desc="Enter the horizontal offset based on the alignment" dropdown="" fullname="Dialog Horizontal Offset" hidden="false" id="5" name="DialogHorizontalOffset" order="8"/>
+        <number default="0.0" defaultValue="0.0" desc="Enter the vertical offset based on the alignment" dropdown="" fullname="Dialog Vertical Offset" hidden="false" id="6" name="DialogVerticalOffset" order="9"/>
+        <number default="0.0" defaultValue="0.0" desc="Select where you want the dialog box to be aligned" dropdown="On Actor = 1&#10;Top Left = 2&#10;Top Right = 3&#10;Bottom Left = 4&#10;Bottom Right = 5&#10;Center = 6&#10;Top Center = 7&#10;Bottom Center = 8" fullname="Alignment" hidden="false" id="7" name="Alignment" order="1"/>
+        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="xPos" hidden="true" id="8" name="xPos" order="28"/>
+        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="yPos" hidden="true" id="9" name="yPos" order="29"/>
+        <number default="0.0" defaultValue="0.0" desc="Amount of padding to the left of the text" dropdown="" fullname="Text Left Margin" hidden="false" id="10" name="TextLeftMargin" order="10"/>
+        <number default="0.0" defaultValue="0.0" desc="Amount of padding to the right of the text" dropdown="" fullname="Text Right Margin" hidden="false" id="11" name="TextRightMargin" order="11"/>
+        <number default="0" defaultValue="0" desc="Amount of padding above the text" dropdown="" fullname="Text Top Margin" hidden="false" id="12" name="TextTopMargin" order="12"/>
+        <number default="0" defaultValue="0" desc="Amount of padding below the text" dropdown="" fullname="Text Bottom Margin" hidden="false" id="13" name="TextBottomMargin" order="13"/>
+        <actortype default="" defaultValue="" desc="The image of this actor will be used as the background for the &lt;br&gt; dialog box if mode 3 or 4 is selected above." dropdown="" fullname="Dialog Box Actor" hidden="false" id="14" name="DialogBoxActor" order="3"/>
+        <number default="0.0" defaultValue="0.0" desc="Amount of time to fade in / out the dialog box" dropdown="" fullname="Fade Time" hidden="false" id="15" name="FadeTime" order="14"/>
+        <text default="Dialog Box Core" defaultValue="Dialog Box Core" desc="" dropdown="" fullname="Core Behavior" hidden="true" id="16" name="CoreBehavior" order="27"/>
+        <boolean default="false" defaultValue="false" desc="Display the text one character at a time?" dropdown="" fullname="Use Typing Effect?" hidden="false" id="17" name="UseTypingEffect" order="18"/>
+        <number default="0.15" defaultValue="0.15" desc="Delay between each character" dropdown="" fullname="Typing Delay" hidden="false" id="18" name="TypingDelay" order="19"/>
+        <actortype default="" defaultValue="" desc="Use this image to indicate that there is more text to display" dropdown="" fullname="Text Overflow Indicator" hidden="false" id="19" name="TextOverflowIndicator" order="21"/>
+        <number default="0.0" defaultValue="0.0" desc="By default the overflow image will be placed at the bottom center.  &lt;br&gt;&#10;Enter the horizontal offset here." dropdown="" fullname="Overflow Horizontal Offset" hidden="false" id="20" name="OverflowHorizontalOffset" order="22"/>
+        <number default="0.0" defaultValue="0.0" desc="By default the overflow image will be placed at the bottom center.  &lt;br&gt;&#10;Enter the verticall offset here." dropdown="" fullname="Overflow Vertical Offset" hidden="false" id="21" name="OverflowVerticalOffset" order="23"/>
+        <actortype default="" defaultValue="" desc="This will be used as the character portrait" dropdown="" fullname="Portrait Actor Type" hidden="false" id="22" name="PortraitActorType" order="24"/>
+        <number default="0.0" defaultValue="0.0" desc="By default the portrait will display at the top left of the dialog box. &lt;br&gt;&#10;Enter the horizontal offset here" dropdown="" fullname="Portrait Horiztonal Offset" hidden="false" id="23" name="PortraitHoriztonalOffset" order="25"/>
+        <number default="0.0" defaultValue="0.0" desc="By default the portrait will display at the top left of the dialog box. &lt;br&gt;&#10;Enter the vertical offset here" dropdown="" fullname="Portrait Vertical Offset" hidden="false" id="24" name="PortraitVerticalOffset" order="26"/>
+        <sound default="" defaultValue="" desc="Sound to play for each character" dropdown="" fullname="Typing Sound" hidden="false" id="25" name="TypingSound" order="20"/>
+        <font default="" defaultValue="" desc="Select the font to use in the Dialog Box" dropdown="" fullname="Font" hidden="false" id="26" name="_Font" order="30"/>
+        <color default="" defaultValue="" desc="If a separate actor is not being used to &lt;br&gt;&#10;represent your dialog box, enter the color &lt;br&gt;&#10;you'd like to use as the default background." dropdown="" fullname="Dialog Box Color" hidden="false" id="27" name="_DialogBoxColor" order="4"/>
+        <number default="100.0" defaultValue="100.0" desc="Enter a value between 0-100 to specify &lt;br&gt;&#10;where 0 is completely transparent" dropdown="" fullname="Dialog Box Transparency" hidden="false" id="28" name="_DialogBoxTransparency" order="5"/>
+        <sound default="" defaultValue="" desc="Sound to play when opening the Dialog Box" dropdown="" fullname="Open Dialog Sound" hidden="false" id="29" name="_OpenDialogSound" order="15"/>
+        <sound default="" defaultValue="" desc="Sound to play when dislaying the next page&lt;br&gt;of the Dialog Box" dropdown="" fullname="Next Page Dialog Sound" hidden="false" id="30" name="_NextPageDialogSound" order="16"/>
+        <sound default="" defaultValue="" desc="Sound to play when closing the Dialog Box" dropdown="" fullname="Close Dialog Sound" hidden="false" id="31" name="_CloseDialogSound" order="17"/>
+        <font default="" defaultValue="" desc="Not yet implemented" dropdown="" fullname="Keyword Font" hidden="false" id="32" name="_KeywordFont" order="31"/>
+        <blocks>
+            <receiver blockID="39" id="1"/>
+            <receiver blockID="40" id="2"/>
+            <receiver blockID="106" id="3"/>
+            <receiver blockID="100" id="4"/>
+            <receiver blockID="99" id="5"/>
+            <receiver blockID="105" id="6"/>
+            <receiver blockID="101" id="7"/>
+            <receiver blockID="102" id="8"/>
+            <receiver blockID="103" id="9"/>
+            <receiver blockID="104" id="10"/>
+        </blocks>
+        <events>
+            <event displayName="DialogBoxTyping" enabled="true" id="1" name="event-custom-block" order="1" repeats="true"/>
+            <event displayName="HasOverflow" enabled="true" id="2" name="event-custom-block" order="2" repeats="true"/>
+            <event displayName="changeDBColor" enabled="true" id="3" name="event-custom-block" order="3" repeats="true"/>
+            <event displayName="changeFont" enabled="true" id="4" name="event-custom-block" order="4" repeats="true"/>
+            <event displayName="IsDisplaying" enabled="true" id="5" name="event-custom-block" order="5" repeats="true"/>
+            <event displayName="ChangeDialogImage" enabled="true" id="6" name="event-custom-block" order="6" repeats="true"/>
+            <event displayName="ChangePortrait" enabled="true" id="7" name="event-custom-block" order="7" repeats="true"/>
+            <event displayName="DisplayDialog" enabled="true" id="8" name="event-custom-block" order="8" repeats="true"/>
+            <event displayName="SetProperties" enabled="true" id="9" name="event-custom" order="9" repeats="true"/>
+            <event displayName="SetPosition" enabled="true" id="10" name="event-custom" order="10" repeats="true"/>
+            <event displayName="SetMode" enabled="true" id="11" name="event-custom" order="11" repeats="true"/>
+            <event displayName="Created" enabled="true" id="12" name="init" order="12" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_71_71_BringForward" classname="scripts.Design_71_71_BringForward" desc="" description="" design="true" drawOrder="0" id="71" name="Bring Forward" oid="-1" package="" shared="false" type="actor">
+        <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet actorid="108" attachedevent="true" class="scripts.ActorEvents_108" classname="scripts.ActorEvents_108" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="72" name="ActorEvents_108" oid="-1" package="scripts." shared="false" type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_73_73_DialogSystem" classname="scripts.Design_73_73_DialogSystem" desc="" description="" design="true" drawOrder="0" id="73" name="Dialog System" oid="-1" package="scripts" shared="false" type="scene">
+        <number default="0" defaultValue="0" desc="" dropdown="" fullname="TempDialogBoxWidth" hidden="true" id="1" name="_TempDialogBoxWidth" order="0"/>
+        <number default="0" defaultValue="0" desc="" dropdown="" fullname="TempDialogBoxHeight" hidden="true" id="2" name="_TempDialogBoxHeight" order="1"/>
+        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="DialogBoxOpen" hidden="false" id="3" name="_DialogBoxOpen" order="2"/>
+        <list default="list" defaultValue="list" desc="" dropdown="" fullname="TextToShow" hidden="false" id="4" name="_TextToShow" order="3"/>
+        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="ShowText" hidden="false" id="5" name="_ShowText" order="4"/>
+        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="ShowBox" hidden="false" id="6" name="_ShowBox" order="5"/>
+        <number default="0" defaultValue="0" desc="" dropdown="" fullname="Counter" hidden="true" id="7" name="_Counter" order="6"/>
+        <blocks/>
+        <events>
+            <event displayName="Drawing" enabled="true" id="1" name="draw" order="1" repeats="true"/>
+            <event displayName="Custom Event" enabled="true" id="2" name="event-custom" order="2" repeats="true"/>
+            <event displayName="Custom Event Copy" enabled="true" id="4" name="event-custom" order="3" repeats="true"/>
+            <event displayName="Custom Event" enabled="true" id="6" name="event-custom" order="4" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_74_74_DialogText" classname="scripts.Design_74_74_DialogText" desc="" description="" design="true" drawOrder="0" id="74" name="DialogText" oid="-1" package="scripts" shared="false" type="actor">
+        <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <list default="list" defaultValue="list" desc="" dropdown="" fullname="Dialog" hidden="false" id="1" name="_Dialog" order="1"/>
+        <blocks/>
+        <events>
+            <event displayName="Actor - Type" enabled="true" id="1" name="event-collide-actortotype" order="1" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet actorid="110" attachedevent="true" class="scripts.ActorEvents_110" classname="scripts.ActorEvents_110" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="75" name="ActorEvents_110" oid="-1" package="scripts." shared="false" type="actor">
+        <animation default="" defaultValue="" desc="" dropdown="" fullname="sqash" hidden="false" id="1" name="_sqash" order="0"/>
+        <blocks/>
+        <events>
+            <event displayName="Actor - Type" enabled="true" id="1" name="event-collide-actortotype" order="1" repeats="true"/>
+            <event displayName="Created" enabled="true" id="2" name="init" order="2" repeats="true"/>
         </events>
     </snippet>
 </pack>

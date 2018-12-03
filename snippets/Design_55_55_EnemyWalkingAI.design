@@ -53,11 +53,11 @@
     </group>
     <group eventID="2" id="-1"/>
     <group eventID="3" id="0">
-        <collide comment="false" x="15" y="15">
-            <group eventID="-1" id="-1">
-                <if comment="false" x="26" y="45">
-                    <group eventID="-1" id="-1">
-                        <setanim comment="false" x="37" y="78">
+        <collide comment="false" x="18" y="0">
+            <group eventID="3" id="-1">
+                <if comment="false" x="29" y="30">
+                    <group eventID="3" id="-1">
+                        <setanim comment="false" x="40" y="63">
                             <ACTOR eid="this" id="0"/>
                             <get-val-55-1 comment="false" id="1" x="0" y="0"/>
                         </setanim>
@@ -67,9 +67,9 @@
                         <int id="1" val="0"/>
                     </collision-right>
                 </if>
-                <if comment="false" x="26" y="122">
-                    <group eventID="-1" id="-1">
-                        <setanim comment="false" x="37" y="155">
+                <if comment="false" x="29" y="107">
+                    <group eventID="3" id="-1">
+                        <setanim comment="false" x="40" y="140">
                             <ACTOR eid="this" id="0"/>
                             <get-val-55-2 comment="false" id="1" x="0" y="0"/>
                         </setanim>

@@ -86,9 +86,6 @@ class SceneEvents_5 extends SceneScript
 	override public function init()
 	{
 		
-		/* ======================== When Creating ========================= */
-		
-		
 	}
 	
 	override public function forwardMessage(msg:String)

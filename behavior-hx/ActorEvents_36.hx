@@ -87,11 +87,11 @@ class ActorEvents_36 extends ActorScript
 		/* ======================== When Creating ========================= */
 		if(Engine.engine.getGameAttribute("Visited Tree"))
 		{
-			createRecycledActor(getActorType(68), 1325, 890, Script.FRONT);
+			createRecycledActor(getActorType(68), 1334, 894, Script.FRONT);
 		}
 		else if(!(Engine.engine.getGameAttribute("Enter Tree")))
 		{
-			createRecycledActor(getActorType(70), 1325, 890, Script.FRONT);
+			createRecycledActor(getActorType(70), 1334, 894, Script.FRONT);
 		}
 		
 		/* ========================= Type & Type ========================== */
@@ -103,6 +103,7 @@ class ActorEvents_36 extends ActorScript
 				{
 					Engine.engine.setGameAttribute("Enter Tree", false);
 					Engine.engine.setGameAttribute("Enter Socialize", true);
+					Engine.engine.setGameAttribute("Visited Tree", true);
 					if((getValueForScene("Key Manager", "_NumKeysinScene") == getValueForScene("Key Manager", "_KeyCollected")))
 					{
 						switchScene(GameModel.get().scenes.get(2).getID(), createFadeOut(2, Utils.getColorRGB(0,0,0)), createFadeIn(2, Utils.getColorRGB(0,0,0)));

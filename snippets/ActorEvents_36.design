@@ -11,9 +11,12 @@
                         <set-game-val-3 comment="false" x="37" y="97">
                             <true comment="false" id="0" x="0" y="0"/>
                         </set-game-val-3>
-                        <if comment="false" x="37" y="122">
+                        <set-game-val-7 comment="false" x="37" y="122">
+                            <true comment="false" id="0" x="0" y="0"/>
+                        </set-game-val-7>
+                        <if comment="false" x="37" y="147">
                             <group eventID="1" id="-1">
-                                <scene-change-color comment="false" x="48" y="152">
+                                <scene-change-color comment="false" x="48" y="177">
                                     <scene eid="2" id="0"/>
                                     <int id="1" val="0"/>
                                     <int id="2" val="2"/>
@@ -50,8 +53,8 @@
                     <group eventID="2" id="-1">
                         <create-actor3 comment="false" x="37" y="65">
                             <actortype eid="68" id="0"/>
-                            <int id="1" val="1325"/>
-                            <int id="2" val="890"/>
+                            <int id="1" val="1334"/>
+                            <int id="2" val="894"/>
                             <int id="3" val="0"/>
                         </create-actor3>
                     </group>
@@ -61,8 +64,8 @@
                     <group eventID="2" id="-1">
                         <create-actor3 comment="false" x="37" y="134">
                             <actortype eid="70" id="0"/>
-                            <int id="1" val="1325"/>
-                            <int id="2" val="890"/>
+                            <int id="1" val="1334"/>
+                            <int id="2" val="894"/>
                             <int id="3" val="0"/>
                         </create-actor3>
                     </group>

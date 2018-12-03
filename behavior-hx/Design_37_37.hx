@@ -112,9 +112,6 @@ class Design_37_37 extends SceneScript
 				timeTask.repeats = false;
 				return;
 			}
-		}, null);
-		runPeriodically(1000 * 2, function(timeTask:TimedTask):Void
-		{
 			if((_Foodcollected < _Foodtocollect))
 			{
 				createRecycledActor(getActorType(64), randomInt(Math.floor(0), Math.floor((getSceneWidth()))), 470, Script.FRONT);

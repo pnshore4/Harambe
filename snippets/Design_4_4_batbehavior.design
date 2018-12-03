@@ -298,15 +298,15 @@
     </group>
     <group eventID="2" id="-1"/>
     <group eventID="3" id="0">
-        <event-collide-typetotype comment="false" x="15" y="15">
+        <event-collide-typetotype comment="false" x="18" y="21">
             <group eventID="3" id="-1">
-                <if comment="false" x="26" y="47">
+                <if comment="false" x="29" y="53">
                     <group eventID="3" id="-1">
-                        <setanim comment="false" x="37" y="80">
+                        <setanim comment="false" x="40" y="86">
                             <ACTOR eid="this" id="0"/>
                             <get-val-4-3 comment="false" id="1" x="0" y="0"/>
                         </setanim>
-                        <die comment="false" x="37" y="112">
+                        <die comment="false" x="40" y="118">
                             <ACTOR eid="this" id="0"/>
                         </die>
                     </group>

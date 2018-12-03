@@ -72,16 +72,30 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 class SceneEvents_0 extends SceneScript
 {
+	public var _Dialog:Array<Dynamic>;
 	
 	
 	public function new(dummy:Int, dummy2:Engine)
 	{
 		super();
+		nameMap.set("Dialog", "_Dialog");
 		
 	}
 	
 	override public function init()
 	{
+		
+		/* ======================== When Creating ========================= */
+		sayToScene("Dialog System", "_customEvent_" + "OpenDialogBox");
+		
+		/* ======================= After N seconds ======================== */
+		runLater(1000 * 10, function(timeTask:TimedTask):Void
+		{
+			if(wrapper.enabled)
+			{
+				sayToScene("Dialog System", "_customEvent_" + "CloseDialogBox");
+			}
+		}, null);
 		
 	}
 	

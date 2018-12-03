@@ -1,0 +1,731 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+<group id="0">
+<init comment="false" x="15" y="15">
+<group id="-1">
+<dolater comment="false" x="26" y="40">
+<group id="-1">
+<say-this comment="false" x="37" y="60">
+<int id="0" val="SetMode"/>
+</say-this>
+<say-this comment="false" x="37" y="80">
+<int id="0" val="SetPosition"/>
+</say-this>
+<say-this comment="false" x="37" y="100">
+<int id="0" val="SetProperties"/>
+</say-this>
+</group>
+<int id="0" val="0.1"/>
+</dolater>
+</group>
+</init>
+</group>
+<group id="1">
+<step comment="false" x="15" y="160">
+<group id="-1"/>
+</step>
+</group>
+<group id="2">
+<collide comment="false" x="15" y="233">
+<group id="-1"/>
+</collide>
+</group>
+<group id="3">
+<draw comment="false" x="15" y="306">
+<group id="-1"/>
+</draw>
+</group>
+<group id="4">
+<receive-message comment="false" x="15" y="379">
+<group id="-1">
+<if comment="false" x="26" y="404">
+<group id="-1">
+<set-attribute comment="false" x="37" y="434">
+<ACTOR eid="this" id="0"/>
+<get-val-70-16 comment="false" id="1" x="0" y="0"/>
+<int id="2" val="useBgImage"/>
+<false comment="false" id="3" x="0" y="0"/>
+</set-attribute>
+<set-attribute comment="false" x="37" y="466">
+<ACTOR eid="this" id="0"/>
+<get-val-70-16 comment="false" id="1" x="0" y="0"/>
+<int id="2" val="useFixedSize"/>
+<true comment="false" id="3" x="0" y="0"/>
+</set-attribute>
+<set-attribute comment="false" x="37" y="498">
+<ACTOR eid="this" id="0"/>
+<get-val-70-16 comment="false" id="1" x="0" y="0"/>
+<int id="2" val="currentWidth"/>
+<roundnew comment="false" id="3" x="0" y="0">
+<int id="0" val="0"/>
+<get-val-70-2 comment="false" id="1" x="0" y="0"/>
+</roundnew>
+</set-attribute>
+<set-attribute comment="false" x="37" y="543">
+<ACTOR eid="this" id="0"/>
+<get-val-70-16 comment="false" id="1" x="0" y="0"/>
+<int id="2" val="currentHeight"/>
+<roundnew comment="false" id="3" x="0" y="0">
+<int id="0" val="0"/>
+<get-val-70-3 comment="false" id="1" x="0" y="0"/>
+</roundnew>
+</set-attribute>
+</group>
+<eq comment="false" id="0" x="0" y="0">
+<get-val-70-1 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="1"/>
+</eq>
+</if>
+<if comment="false" x="26" y="600">
+<group id="-1">
+<set-attribute comment="false" x="37" y="630">
+<ACTOR eid="this" id="0"/>
+<get-val-70-16 comment="false" id="1" x="0" y="0"/>
+<int id="2" val="useBgImage"/>
+<false comment="false" id="3" x="0" y="0"/>
+</set-attribute>
+<set-attribute comment="false" x="37" y="662">
+<ACTOR eid="this" id="0"/>
+<get-val-70-16 comment="false" id="1" x="0" y="0"/>
+<int id="2" val="useFixedSize"/>
+<false comment="false" id="3" x="0" y="0"/>
+</set-attribute>
+<set-attribute comment="false" x="37" y="694">
+<ACTOR eid="this" id="0"/>
+<get-val-70-16 comment="false" id="1" x="0" y="0"/>
+<int id="2" val="currentWidth"/>
+<roundnew comment="false" id="3" x="0" y="0">
+<int id="0" val="0"/>
+<get-val-70-2 comment="false" id="1" x="0" y="0"/>
+</roundnew>
+</set-attribute>
+</group>
+<eq comment="false" id="0" x="0" y="0">
+<get-val-70-1 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="2"/>
+</eq>
+</if>
+<if comment="false" x="26" y="751">
+<group id="-1">
+<set-attribute comment="false" x="37" y="781">
+<ACTOR eid="this" id="0"/>
+<get-val-70-16 comment="false" id="1" x="0" y="0"/>
+<int id="2" val="useBgImage"/>
+<true comment="false" id="3" x="0" y="0"/>
+</set-attribute>
+<set-attribute comment="false" x="37" y="813">
+<ACTOR eid="this" id="0"/>
+<get-val-70-16 comment="false" id="1" x="0" y="0"/>
+<int id="2" val="bgActorType"/>
+<get-val-70-14 comment="false" id="3" x="0" y="0"/>
+</set-attribute>
+<set-attribute comment="false" x="37" y="845">
+<ACTOR eid="this" id="0"/>
+<get-val-70-16 comment="false" id="1" x="0" y="0"/>
+<int id="2" val="useFixedSize"/>
+<true comment="false" id="3" x="0" y="0"/>
+</set-attribute>
+</group>
+<eq comment="false" id="0" x="0" y="0">
+<get-val-70-1 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="3"/>
+</eq>
+</if>
+<if comment="false" x="26" y="889">
+<group id="-1">
+<set-attribute comment="false" x="37" y="919">
+<ACTOR eid="this" id="0"/>
+<get-val-70-16 comment="false" id="1" x="0" y="0"/>
+<int id="2" val="useBgImage"/>
+<true comment="false" id="3" x="0" y="0"/>
+</set-attribute>
+<set-attribute comment="false" x="37" y="951">
+<ACTOR eid="this" id="0"/>
+<get-val-70-16 comment="false" id="1" x="0" y="0"/>
+<int id="2" val="bgActorType"/>
+<get-val-70-14 comment="false" id="3" x="0" y="0"/>
+</set-attribute>
+<set-attribute comment="false" x="37" y="983">
+<ACTOR eid="this" id="0"/>
+<get-val-70-16 comment="false" id="1" x="0" y="0"/>
+<int id="2" val="useFixedSize"/>
+<false comment="false" id="3" x="0" y="0"/>
+</set-attribute>
+<set-attribute comment="false" x="37" y="1015">
+<ACTOR eid="this" id="0"/>
+<get-val-70-16 comment="false" id="1" x="0" y="0"/>
+<int id="2" val="currentWidth"/>
+<roundnew comment="false" id="3" x="0" y="0">
+<int id="0" val="0"/>
+<get-val-70-2 comment="false" id="1" x="0" y="0"/>
+</roundnew>
+</set-attribute>
+<set-attribute comment="false" x="37" y="1060">
+<ACTOR eid="this" id="0"/>
+<get-val-70-16 comment="false" id="1" x="0" y="0"/>
+<int id="2" val="currentHeight"/>
+<roundnew comment="false" id="3" x="0" y="0">
+<int id="0" val="0"/>
+<get-val-70-3 comment="false" id="1" x="0" y="0"/>
+</roundnew>
+</set-attribute>
+</group>
+<eq comment="false" id="0" x="0" y="0">
+<get-val-70-1 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="4"/>
+</eq>
+</if>
+</group>
+<int id="0" val="SetMode"/>
+</receive-message>
+</group>
+<group id="5"/>
+<group id="6"/>
+<group id="7"/>
+<group id="8">
+<receive-message comment="false" x="15" y="1145">
+<group id="-1">
+<set-attribute comment="false" x="26" y="1170">
+<ACTOR eid="this" id="0"/>
+<get-val-70-16 comment="false" id="1" x="0" y="0"/>
+<int id="2" val="alignment"/>
+<roundnew comment="false" id="3" x="0" y="0">
+<int id="0" val="0"/>
+<get-val-70-7 comment="false" id="1" x="0" y="0"/>
+</roundnew>
+</set-attribute>
+<set-attribute comment="false" x="26" y="1215">
+<ACTOR eid="this" id="0"/>
+<get-val-70-16 comment="false" id="1" x="0" y="0"/>
+<int id="2" val="currentXOffset"/>
+<roundnew comment="false" id="3" x="0" y="0">
+<int id="0" val="0"/>
+<get-val-70-5 comment="false" id="1" x="0" y="0"/>
+</roundnew>
+</set-attribute>
+<set-attribute comment="false" x="26" y="1260">
+<ACTOR eid="this" id="0"/>
+<get-val-70-16 comment="false" id="1" x="0" y="0"/>
+<int id="2" val="currentYOffset"/>
+<roundnew comment="false" id="3" x="0" y="0">
+<int id="0" val="0"/>
+<get-val-70-6 comment="false" id="1" x="0" y="0"/>
+</roundnew>
+</set-attribute>
+<set-attribute comment="false" x="26" y="1305">
+<ACTOR eid="this" id="0"/>
+<get-val-70-16 comment="false" id="1" x="0" y="0"/>
+<int id="2" val="txtLeftMargin"/>
+<roundnew comment="false" id="3" x="0" y="0">
+<int id="0" val="0"/>
+<get-val-70-10 comment="false" id="1" x="0" y="0"/>
+</roundnew>
+</set-attribute>
+<set-attribute comment="false" x="26" y="1350">
+<ACTOR eid="this" id="0"/>
+<get-val-70-16 comment="false" id="1" x="0" y="0"/>
+<int id="2" val="txtRightMargin"/>
+<roundnew comment="false" id="3" x="0" y="0">
+<int id="0" val="0"/>
+<get-val-70-11 comment="false" id="1" x="0" y="0"/>
+</roundnew>
+</set-attribute>
+<set-attribute comment="false" x="26" y="1395">
+<ACTOR eid="this" id="0"/>
+<get-val-70-16 comment="false" id="1" x="0" y="0"/>
+<int id="2" val="txtTopMargin"/>
+<roundnew comment="false" id="3" x="0" y="0">
+<int id="0" val="0"/>
+<get-val-70-12 comment="false" id="1" x="0" y="0"/>
+</roundnew>
+</set-attribute>
+<set-attribute comment="false" x="26" y="1440">
+<ACTOR eid="this" id="0"/>
+<get-val-70-16 comment="false" id="1" x="0" y="0"/>
+<int id="2" val="txtBottomMargin"/>
+<roundnew comment="false" id="3" x="0" y="0">
+<int id="0" val="0"/>
+<get-val-70-13 comment="false" id="1" x="0" y="0"/>
+</roundnew>
+</set-attribute>
+<comment-short comment="false" x="26" y="1485">
+<int id="0" val="Align on Actor"/>
+</comment-short>
+<if comment="false" x="26" y="1505">
+<group id="-1">
+<set-val-70-8 comment="false" x="37" y="1535">
+                            <getsx comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+</getsx>
+                        </set-val-70-8>
+<set-val-70-9 comment="false" x="37" y="1568">
+                            <getsy comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+</getsy>
+                        </set-val-70-9>
+</group>
+<eq comment="false" id="0" x="0" y="0">
+<get-val-70-7 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="1"/>
+</eq>
+</if>
+<comment-short comment="false" x="26" y="1613">
+<int id="0" val="Align Top Left"/>
+</comment-short>
+<if comment="false" x="26" y="1633">
+<group id="-1">
+<set-val-70-8 comment="false" x="37" y="1663">
+                            <int id="0" val="0"/>
+                        </set-val-70-8>
+<set-val-70-9 comment="false" x="37" y="1683">
+                            <int id="0" val="0"/>
+                        </set-val-70-9>
+</group>
+<eq comment="false" id="0" x="0" y="0">
+<get-val-70-7 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="2"/>
+</eq>
+</if>
+<comment-short comment="false" x="26" y="1715">
+<int id="0" val="Align Top Right"/>
+</comment-short>
+<if comment="false" x="26" y="1735">
+<group id="-1">
+<set-val-70-8 comment="false" x="37" y="1765">
+                            <screenw comment="false" id="0" x="0" y="0"/>
+                        </set-val-70-8>
+<set-val-70-9 comment="false" x="37" y="1790">
+                            <int id="0" val="0"/>
+                        </set-val-70-9>
+</group>
+<eq comment="false" id="0" x="0" y="0">
+<get-val-70-7 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="3"/>
+</eq>
+</if>
+<comment-short comment="false" x="26" y="1822">
+<int id="0" val="Align Bottom Left"/>
+</comment-short>
+<if comment="false" x="26" y="1842">
+<group id="-1">
+<set-val-70-8 comment="false" x="37" y="1872">
+                            <int id="0" val="0"/>
+                        </set-val-70-8>
+<set-val-70-9 comment="false" x="37" y="1892">
+                            <screenh comment="false" id="0" x="0" y="0"/>
+                        </set-val-70-9>
+</group>
+<eq comment="false" id="0" x="0" y="0">
+<get-val-70-7 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="4"/>
+</eq>
+</if>
+<comment-short comment="false" x="26" y="1929">
+<int id="0" val="Align Bottom Right"/>
+</comment-short>
+<if comment="false" x="26" y="1949">
+<group id="-1">
+<set-val-70-8 comment="false" x="37" y="1979">
+                            <screenw comment="false" id="0" x="0" y="0"/>
+                        </set-val-70-8>
+<set-val-70-9 comment="false" x="37" y="2004">
+                            <screenh comment="false" id="0" x="0" y="0"/>
+                        </set-val-70-9>
+</group>
+<eq comment="false" id="0" x="0" y="0">
+<get-val-70-7 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="5"/>
+</eq>
+</if>
+<comment-short comment="false" x="26" y="2041">
+<int id="0" val="Align Center"/>
+</comment-short>
+<if comment="false" x="26" y="2061">
+<group id="-1">
+<set-val-70-8 comment="false" x="37" y="2091">
+                            <div comment="false" id="0" x="0" y="0">
+<screenw comment="false" id="0" x="0" y="0"/>
+<int id="1" val="2"/>
+</div>
+                        </set-val-70-8>
+<set-val-70-9 comment="false" x="37" y="2121">
+                            <div comment="false" id="0" x="0" y="0">
+<screenh comment="false" id="0" x="0" y="0"/>
+<int id="1" val="2"/>
+</div>
+                        </set-val-70-9>
+</group>
+<eq comment="false" id="0" x="0" y="0">
+<get-val-70-7 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="6"/>
+</eq>
+</if>
+<comment-short comment="false" x="26" y="2163">
+<int id="0" val="Align Top Center"/>
+</comment-short>
+<if comment="false" x="26" y="2183">
+<group id="-1">
+<set-val-70-8 comment="false" x="37" y="2213">
+                            <div comment="false" id="0" x="0" y="0">
+<screenw comment="false" id="0" x="0" y="0"/>
+<int id="1" val="2"/>
+</div>
+                        </set-val-70-8>
+<set-val-70-9 comment="false" x="37" y="2243">
+                            <int id="0" val="0"/>
+                        </set-val-70-9>
+</group>
+<eq comment="false" id="0" x="0" y="0">
+<get-val-70-7 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="7"/>
+</eq>
+</if>
+<comment-short comment="false" x="26" y="2275">
+<int id="0" val="Align Bottom Center"/>
+</comment-short>
+<if comment="false" x="26" y="2295">
+<group id="-1">
+<set-val-70-8 comment="false" x="37" y="2325">
+                            <div comment="false" id="0" x="0" y="0">
+<screenw comment="false" id="0" x="0" y="0"/>
+<int id="1" val="2"/>
+</div>
+                        </set-val-70-8>
+<set-val-70-9 comment="false" x="37" y="2355">
+                            <screenh comment="false" id="0" x="0" y="0"/>
+                        </set-val-70-9>
+</group>
+<eq comment="false" id="0" x="0" y="0">
+<get-val-70-7 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="8"/>
+</eq>
+</if>
+<set-attribute comment="false" x="26" y="2392">
+<ACTOR eid="this" id="0"/>
+<get-val-70-16 comment="false" id="1" x="0" y="0"/>
+<int id="2" val="xPos"/>
+<roundnew comment="false" id="3" x="0" y="0">
+<int id="0" val="0"/>
+<get-val-70-8 comment="false" id="1" x="0" y="0"/>
+</roundnew>
+</set-attribute>
+<set-attribute comment="false" x="26" y="2437">
+<ACTOR eid="this" id="0"/>
+<get-val-70-16 comment="false" id="1" x="0" y="0"/>
+<int id="2" val="yPos"/>
+<roundnew comment="false" id="3" x="0" y="0">
+<int id="0" val="0"/>
+<get-val-70-9 comment="false" id="1" x="0" y="0"/>
+</roundnew>
+</set-attribute>
+</group>
+<int id="0" val="SetPosition"/>
+</receive-message>
+</group>
+<group id="9">
+<receive-message comment="false" x="15" y="2510">
+<group id="-1">
+<set-attribute comment="false" x="26" y="2535">
+<ACTOR eid="this" id="0"/>
+<get-val-70-16 comment="false" id="1" x="0" y="0"/>
+<int id="2" val="currentFont"/>
+<get-val-70-26 comment="false" id="3" x="0" y="0"/>
+</set-attribute>
+<set-attribute comment="false" x="26" y="2567">
+<ACTOR eid="this" id="0"/>
+<get-val-70-16 comment="false" id="1" x="0" y="0"/>
+<int id="2" val="keywordFont"/>
+<get-val-70-32 comment="false" id="3" x="0" y="0"/>
+</set-attribute>
+<set-attribute comment="false" x="26" y="2599">
+<ACTOR eid="this" id="0"/>
+<get-val-70-16 comment="false" id="1" x="0" y="0"/>
+<int id="2" val="fadeTime"/>
+<get-val-70-15 comment="false" id="3" x="0" y="0"/>
+</set-attribute>
+<set-attribute comment="false" x="26" y="2631">
+<ACTOR eid="this" id="0"/>
+<get-val-70-16 comment="false" id="1" x="0" y="0"/>
+<int id="2" val="useTypingEffect"/>
+<get-val-70-17 comment="false" id="3" x="0" y="0"/>
+</set-attribute>
+<set-attribute comment="false" x="26" y="2663">
+<ACTOR eid="this" id="0"/>
+<get-val-70-16 comment="false" id="1" x="0" y="0"/>
+<int id="2" val="typeDelay"/>
+<get-val-70-18 comment="false" id="3" x="0" y="0"/>
+</set-attribute>
+<set-attribute comment="false" x="26" y="2695">
+<ACTOR eid="this" id="0"/>
+<get-val-70-16 comment="false" id="1" x="0" y="0"/>
+<int id="2" val="dialogBoxColor"/>
+<get-val-70-27 comment="false" id="3" x="0" y="0"/>
+</set-attribute>
+<set-attribute comment="false" x="26" y="2727">
+<ACTOR eid="this" id="0"/>
+<get-val-70-16 comment="false" id="1" x="0" y="0"/>
+<int id="2" val="dialogBoxAlpha"/>
+<div comment="false" id="3" x="0" y="0">
+<get-val-70-28 comment="false" id="0" x="0" y="0"/>
+<int id="1" val="100"/>
+</div>
+</set-attribute>
+<if comment="false" x="26" y="2764">
+<group id="-1">
+<set-attribute comment="false" x="37" y="2797">
+<ACTOR eid="this" id="0"/>
+<get-val-70-16 comment="false" id="1" x="0" y="0"/>
+<int id="2" val="typingSound"/>
+<get-val-70-25 comment="false" id="3" x="0" y="0"/>
+</set-attribute>
+</group>
+<hasvalue comment="false" id="0" x="0" y="0">
+<int id="0" val="25"/>
+</hasvalue>
+</if>
+<if comment="false" x="26" y="2841">
+<group id="-1">
+<set-attribute comment="false" x="37" y="2874">
+<ACTOR eid="this" id="0"/>
+<get-val-70-16 comment="false" id="1" x="0" y="0"/>
+<int id="2" val="openSound"/>
+<get-val-70-29 comment="false" id="3" x="0" y="0"/>
+</set-attribute>
+</group>
+<hasvalue comment="false" id="0" x="0" y="0">
+<int id="0" val="29"/>
+</hasvalue>
+</if>
+<if comment="false" x="26" y="2918">
+<group id="-1">
+<set-attribute comment="false" x="37" y="2951">
+<ACTOR eid="this" id="0"/>
+<get-val-70-16 comment="false" id="1" x="0" y="0"/>
+<int id="2" val="nextSound"/>
+<get-val-70-30 comment="false" id="3" x="0" y="0"/>
+</set-attribute>
+</group>
+<hasvalue comment="false" id="0" x="0" y="0">
+<int id="0" val="30"/>
+</hasvalue>
+</if>
+<if comment="false" x="26" y="2995">
+<group id="-1">
+<set-attribute comment="false" x="37" y="3028">
+<ACTOR eid="this" id="0"/>
+<get-val-70-16 comment="false" id="1" x="0" y="0"/>
+<int id="2" val="closeSound"/>
+<get-val-70-31 comment="false" id="3" x="0" y="0"/>
+</set-attribute>
+</group>
+<hasvalue comment="false" id="0" x="0" y="0">
+<int id="0" val="31"/>
+</hasvalue>
+</if>
+<if comment="false" x="26" y="3072">
+<group id="-1">
+<set-attribute comment="false" x="37" y="3105">
+<ACTOR eid="this" id="0"/>
+<get-val-70-16 comment="false" id="1" x="0" y="0"/>
+<int id="2" val="overflowActorType"/>
+<get-val-70-19 comment="false" id="3" x="0" y="0"/>
+</set-attribute>
+<set-attribute comment="false" x="37" y="3137">
+<ACTOR eid="this" id="0"/>
+<get-val-70-16 comment="false" id="1" x="0" y="0"/>
+<int id="2" val="overflowXOffset"/>
+<roundnew comment="false" id="3" x="0" y="0">
+<int id="0" val="0"/>
+<get-val-70-20 comment="false" id="1" x="0" y="0"/>
+</roundnew>
+</set-attribute>
+<set-attribute comment="false" x="37" y="3182">
+<ACTOR eid="this" id="0"/>
+<get-val-70-16 comment="false" id="1" x="0" y="0"/>
+<int id="2" val="overflowYOffset"/>
+<roundnew comment="false" id="3" x="0" y="0">
+<int id="0" val="0"/>
+<get-val-70-21 comment="false" id="1" x="0" y="0"/>
+</roundnew>
+</set-attribute>
+</group>
+<hasvalue comment="false" id="0" x="0" y="0">
+<int id="0" val="19"/>
+</hasvalue>
+</if>
+<if comment="false" x="26" y="3239">
+<group id="-1">
+<set-attribute comment="false" x="37" y="3272">
+<ACTOR eid="this" id="0"/>
+<get-val-70-16 comment="false" id="1" x="0" y="0"/>
+<int id="2" val="portraitActorType"/>
+<get-val-70-22 comment="false" id="3" x="0" y="0"/>
+</set-attribute>
+<set-attribute comment="false" x="37" y="3304">
+<ACTOR eid="this" id="0"/>
+<get-val-70-16 comment="false" id="1" x="0" y="0"/>
+<int id="2" val="portraitXOffset"/>
+<roundnew comment="false" id="3" x="0" y="0">
+<int id="0" val="0"/>
+<get-val-70-23 comment="false" id="1" x="0" y="0"/>
+</roundnew>
+</set-attribute>
+<set-attribute comment="false" x="37" y="3349">
+<ACTOR eid="this" id="0"/>
+<get-val-70-16 comment="false" id="1" x="0" y="0"/>
+<int id="2" val="portraitYOffset"/>
+<roundnew comment="false" id="3" x="0" y="0">
+<int id="0" val="0"/>
+<get-val-70-24 comment="false" id="1" x="0" y="0"/>
+</roundnew>
+</set-attribute>
+</group>
+<hasvalue comment="false" id="0" x="0" y="0">
+<int id="0" val="22"/>
+</hasvalue>
+</if>
+</group>
+<int id="0" val="SetProperties"/>
+</receive-message>
+</group>
+<group id="10">
+<receiver-3-103 comment="false" x="15" y="3434">
+            <group id="-1">
+<if comment="false" x="26" y="3464">
+<group id="-1">
+<say-this comment="false" x="37" y="3512">
+<int id="0" val="SetPosition"/>
+</say-this>
+</group>
+<not comment="false" id="0" x="0" y="0">
+<as-boolean comment="false" id="0" x="0" y="0">
+<get-attribute comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+<get-val-70-16 comment="false" id="1" x="0" y="0"/>
+<int id="2" val="isDisplaying"/>
+</get-attribute>
+</as-boolean>
+</not>
+</if>
+<set-attribute comment="false" x="26" y="3544">
+<ACTOR eid="this" id="0"/>
+<get-val-70-16 comment="false" id="1" x="0" y="0"/>
+<int id="2" val="currentText"/>
+<get-byobval-9-41-1 comment="false" id="3" x="0" y="0"/>
+</set-attribute>
+<say comment="false" x="26" y="3576">
+<ACTOR eid="this" id="0"/>
+<get-val-70-16 comment="false" id="1" x="0" y="0"/>
+<int id="2" val="requestDialog"/>
+</say>
+</group>
+            <get-byobval-9-41-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-9-41-1 comment="false" id="1" x="0" y="0"/>
+        </receiver-3-103>
+</group>
+<group id="11">
+<receiver-4-103 comment="false" x="15" y="3636">
+            <group id="-1">
+<set-attribute comment="false" x="26" y="3666">
+<ACTOR eid="this" id="0"/>
+<get-val-70-16 comment="false" id="1" x="0" y="0"/>
+<int id="2" val="portraitActorType"/>
+<get-byobval-9-42-1 comment="false" id="3" x="0" y="0"/>
+</set-attribute>
+</group>
+            <get-byobval-9-42-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-9-42-1 comment="false" id="1" x="0" y="0"/>
+        </receiver-4-103>
+</group>
+<group id="12">
+<receiver-5-103 comment="false" x="15" y="3726">
+            <group id="-1">
+<set-attribute comment="false" x="26" y="3756">
+<ACTOR eid="this" id="0"/>
+<get-val-70-16 comment="false" id="1" x="0" y="0"/>
+<int id="2" val="bgActorType"/>
+<get-byobval-9-43-1 comment="false" id="3" x="0" y="0"/>
+</set-attribute>
+</group>
+            <get-byobval-9-43-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-9-43-1 comment="false" id="1" x="0" y="0"/>
+        </receiver-5-103>
+</group>
+<group id="13">
+<receiver-6-103 comment="false" x="15" y="3816">
+            <group id="-1">
+<return comment="false" x="26" y="3846">
+<as-boolean comment="false" id="0" x="0" y="0">
+<get-attribute comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+<get-val-70-16 comment="false" id="1" x="0" y="0"/>
+<int id="2" val="isDisplaying"/>
+</get-attribute>
+</as-boolean>
+</return>
+</group>
+            <get-byobval-9-46-0 comment="false" id="0" x="0" y="0"/>
+        </receiver-6-103>
+</group>
+<group id="14">
+<receiver-7-103 comment="false" x="15" y="3917">
+            <group id="-1">
+<set-attribute comment="false" x="26" y="3947">
+<ACTOR eid="this" id="0"/>
+<get-val-70-16 comment="false" id="1" x="0" y="0"/>
+<int id="2" val="currentFont"/>
+<get-byobval-9-48-1 comment="false" id="3" x="0" y="0"/>
+</set-attribute>
+</group>
+            <get-byobval-9-48-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-9-48-1 comment="false" id="1" x="0" y="0"/>
+        </receiver-7-103>
+</group>
+<group id="15">
+<receiver-8-103 comment="false" x="15" y="4007">
+            <group id="-1">
+<set-attribute comment="false" x="26" y="4037">
+<ACTOR eid="this" id="0"/>
+<get-val-70-16 comment="false" id="1" x="0" y="0"/>
+<int id="2" val="dialogBoxColor"/>
+<get-byobval-9-49-1 comment="false" id="3" x="0" y="0"/>
+</set-attribute>
+</group>
+            <get-byobval-9-49-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-9-49-1 comment="false" id="1" x="0" y="0"/>
+        </receiver-8-103>
+</group>
+<group id="17">
+<receiver-9-103 comment="false" x="15" y="4097">
+            <group id="-1">
+<return comment="false" x="26" y="4127">
+<as-boolean comment="false" id="0" x="0" y="0">
+<get-attribute comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+<get-val-70-16 comment="false" id="1" x="0" y="0"/>
+<int id="2" val="hasOverflow"/>
+</get-attribute>
+</as-boolean>
+</return>
+</group>
+            <get-byobval-9-28-0 comment="false" id="0" x="0" y="0"/>
+        </receiver-9-103>
+</group>
+<group id="16">
+<receiver-10-103 comment="false" x="15" y="4198">
+            <group id="-1">
+<return comment="false" x="26" y="4228">
+<as-boolean comment="false" id="0" x="0" y="0">
+<get-attribute comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+<get-val-70-16 comment="false" id="1" x="0" y="0"/>
+<int id="2" val="isTyping"/>
+</get-attribute>
+</as-boolean>
+</return>
+</group>
+            <get-byobval-9-29-0 comment="false" id="0" x="0" y="0"/>
+        </receiver-10-103>
+</group>
+<group id="-1"/>
+</groups>

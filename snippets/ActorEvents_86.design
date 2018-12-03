@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <step comment="false" x="31" y="31">
+            <group eventID="1" id="-1">
+                <if comment="false" x="42" y="56">
+                    <group eventID="1" id="-1">
+                        <if comment="false" x="53" y="81">
+                            <group eventID="1" id="-1">
+                                <moveToBy comment="false" x="64" y="124">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="1"/>
+                                    <get-game-val-11 comment="false" id="2" x="0" y="0"/>
+                                    <get-game-val-12 comment="false" id="3" x="0" y="0"/>
+                                    <int id="4" val="0.2"/>
+                                    <int id="5" val="0"/>
+                                </moveToBy>
+                            </group>
+                            <or comment="false" id="0" x="0" y="0">
+                                <noteq comment="false" id="0" x="0" y="0">
+                                    <get-game-val-11 comment="false" id="0" x="0" y="0"/>
+                                    <get-xy comment="false" id="1" x="0" y="0">
+                                        <ACTOR eid="this" id="0"/>
+                                        <int id="1" val="0"/>
+                                    </get-xy>
+                                </noteq>
+                                <noteq comment="false" id="1" x="0" y="0">
+                                    <get-game-val-12 comment="false" id="0" x="0" y="0"/>
+                                    <get-xy comment="false" id="1" x="0" y="0">
+                                        <ACTOR eid="this" id="0"/>
+                                        <int id="1" val="1"/>
+                                    </get-xy>
+                                </noteq>
+                            </or>
+                        </if>
+                    </group>
+                    <get-game-val-13 comment="false" id="0" x="0" y="0"/>
+                </if>
+            </group>
+        </step>
+    </group>
+    <group eventID="1" id="-1"/>
+</groups>

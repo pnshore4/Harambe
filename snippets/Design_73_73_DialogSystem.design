@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <draw comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <to-screen-space comment="false" x="26" y="40"/>
+                <set-color comment="false" x="26" y="60">
+                    <color b="153" g="153" id="0" r="153"/>
+                </set-color>
+                <drawfill-roundrect comment="false" x="26" y="87">
+                    <int id="0" val="1"/>
+                    <int id="1" val="5"/>
+                    <int id="2" val="5"/>
+                    <get-val-73-1 comment="false" id="3" x="0" y="0"/>
+                    <get-val-73-2 comment="false" id="4" x="0" y="0"/>
+                    <int id="5" val="10"/>
+                </drawfill-roundrect>
+                <set-stroke-color comment="false" x="26" y="119">
+                    <color b="51" g="51" id="0" r="51"/>
+                </set-stroke-color>
+                <set-thickness comment="false" x="26" y="146">
+                    <int id="0" val="5"/>
+                </set-thickness>
+                <drawfill-roundrect comment="false" x="26" y="166">
+                    <int id="0" val="0"/>
+                    <int id="1" val="5"/>
+                    <int id="2" val="5"/>
+                    <get-val-73-1 comment="false" id="3" x="0" y="0"/>
+                    <get-val-73-2 comment="false" id="4" x="0" y="0"/>
+                    <int id="5" val="10"/>
+                </drawfill-roundrect>
+                <if comment="false" x="26" y="198">
+                    <group eventID="1" id="-1">
+                        <set-val-73-7 comment="false" x="37" y="223">
+                            <int id="0" val="0"/>
+                        </set-val-73-7>
+                        <for-each comment="false" x="37" y="243">
+                            <group eventID="1" id="-1">
+                                <draw-text comment="false" x="48" y="268">
+                                    <for-each-item comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="15"/>
+                                    <plus comment="false" id="2" x="0" y="0">
+                                        <int id="0" val="9"/>
+                                        <times comment="false" id="1" x="0" y="0">
+                                            <int id="0" val="20"/>
+                                            <get-val-73-7 comment="false" id="1" x="0" y="0"/>
+                                        </times>
+                                    </plus>
+                                </draw-text>
+                                <incdec comment="false" x="48" y="303">
+                                    <int id="0" val="7"/>
+                                    <int id="1" val="0"/>
+                                    <int id="2" val="1"/>
+                                </incdec>
+                            </group>
+                            <get-val-73-4 comment="false" id="0" x="0" y="0"/>
+                        </for-each>
+                    </group>
+                    <get-val-73-3 comment="false" id="0" x="0" y="0"/>
+                </if>
+            </group>
+        </draw>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <event-custom comment="false" x="51" y="42">
+            <group eventID="2" id="-1">
+                <incdec comment="false" x="62" y="67">
+                    <int id="0" val="2"/>
+                    <int id="1" val="0"/>
+                    <div comment="false" id="2" x="0" y="0">
+                        <minus comment="false" id="0" x="0" y="0">
+                            <screen-wh comment="false" id="0" x="0" y="0">
+                                <int id="0" val="0"/>
+                            </screen-wh>
+                            <times comment="false" id="1" x="0" y="0">
+                                <int id="0" val="5"/>
+                                <int id="1" val="2"/>
+                            </times>
+                        </minus>
+                        <int id="1" val="60"/>
+                    </div>
+                </incdec>
+                <incdec comment="false" x="62" y="117">
+                    <int id="0" val="2"/>
+                    <int id="1" val="0"/>
+                    <div comment="false" id="2" x="0" y="0">
+                        <int id="0" val="120"/>
+                        <int id="1" val="60"/>
+                    </div>
+                </incdec>
+                <if comment="false" x="62" y="149">
+                    <group eventID="2" id="-1">
+                        <set-val-73-1 comment="false" x="73" y="179">
+                            <minus comment="false" id="0" x="0" y="0">
+                                <screen-wh comment="false" id="0" x="0" y="0">
+                                    <int id="0" val="0"/>
+                                </screen-wh>
+                                <times comment="false" id="1" x="0" y="0">
+                                    <int id="0" val="5"/>
+                                    <int id="1" val="2"/>
+                                </times>
+                            </minus>
+                        </set-val-73-1>
+                        <set-val-73-2 comment="false" x="73" y="217">
+                            <int id="0" val="120"/>
+                        </set-val-73-2>
+                        <set-val-73-3 comment="false" x="73" y="237">
+                            <true comment="false" id="0" x="0" y="0"/>
+                        </set-val-73-3>
+                        <set-val-73-5 comment="false" x="73" y="262">
+                            <true comment="false" id="0" x="0" y="0"/>
+                        </set-val-73-5>
+                    </group>
+                    <moreeq comment="false" id="0" x="0" y="0">
+                        <get-val-73-2 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="120"/>
+                    </moreeq>
+                </if>
+                <else comment="false" x="62" y="299">
+                    <group eventID="2" id="-1">
+                        <dolater comment="false" x="73" y="319">
+                            <group eventID="2" id="-1">
+                                <say-this comment="false" x="84" y="346">
+                                    <int id="0" val="OpenDialogBox"/>
+                                </say-this>
+                            </group>
+                            <int id="0" val="0.015"/>
+                            <ACTOR eid="lastcreated" id="2"/>
+                        </dolater>
+                    </group>
+                </else>
+            </group>
+            <int id="0" val="OpenDialogBox"/>
+        </event-custom>
+    </group>
+    <group eventID="2" id="-1"/>
+    <group eventID="4" id="0">
+        <event-custom comment="false" x="129" y="70">
+            <group eventID="2" id="-1">
+                <if comment="false" x="140" y="95">
+                    <group eventID="4" id="-1">
+                        <set-val-73-5 comment="false" x="151" y="120">
+                            <false comment="false" id="0" x="0" y="0"/>
+                        </set-val-73-5>
+                    </group>
+                    <get-val-73-5 comment="false" id="0" x="0" y="0"/>
+                </if>
+                <incdec comment="false" x="140" y="157">
+                    <int id="0" val="2"/>
+                    <int id="1" val="1"/>
+                    <div comment="false" id="2" x="0" y="0">
+                        <minus comment="false" id="0" x="0" y="0">
+                            <screen-wh comment="false" id="0" x="0" y="0">
+                                <int id="0" val="0"/>
+                            </screen-wh>
+                            <times comment="false" id="1" x="0" y="0">
+                                <int id="0" val="5"/>
+                                <int id="1" val="2"/>
+                            </times>
+                        </minus>
+                        <int id="1" val="60"/>
+                    </div>
+                </incdec>
+                <incdec comment="false" x="140" y="207">
+                    <int id="0" val="2"/>
+                    <int id="1" val="1"/>
+                    <div comment="false" id="2" x="0" y="0">
+                        <int id="0" val="120"/>
+                        <int id="1" val="60"/>
+                    </div>
+                </incdec>
+                <if comment="false" x="140" y="239">
+                    <group eventID="4" id="-1">
+                        <set-val-73-1 comment="false" x="151" y="269">
+                            <int id="0" val="0"/>
+                        </set-val-73-1>
+                        <set-val-73-2 comment="false" x="151" y="289">
+                            <int id="0" val="0"/>
+                        </set-val-73-2>
+                        <set-val-73-3 comment="false" x="151" y="309">
+                            <false comment="false" id="0" x="0" y="0"/>
+                        </set-val-73-3>
+                        <set-val-73-6 comment="false" x="151" y="334">
+                            <false comment="false" id="0" x="0" y="0"/>
+                        </set-val-73-6>
+                    </group>
+                    <lesseq comment="false" id="0" x="0" y="0">
+                        <get-val-73-2 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="0"/>
+                    </lesseq>
+                </if>
+                <else comment="false" x="140" y="371">
+                    <group eventID="4" id="-1">
+                        <dolater comment="false" x="151" y="391">
+                            <group eventID="4" id="-1">
+                                <say-this comment="false" x="162" y="418">
+                                    <int id="0" val="CloseDialogBox"/>
+                                </say-this>
+                            </group>
+                            <int id="0" val="0.015"/>
+                            <ACTOR eid="lastcreated" id="2"/>
+                        </dolater>
+                    </group>
+                </else>
+            </group>
+            <int id="0" val="CloseDialogBox"/>
+        </event-custom>
+    </group>
+    <group eventID="4" id="-1"/>
+    <group eventID="6" id="0">
+        <event-custom comment="false" x="15" y="15">
+            <group eventID="6" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="6" id="-1">
+                        <say-this comment="false" x="37" y="65">
+                            <int id="0" val="CloseDialogBox"/>
+                        </say-this>
+                    </group>
+                    <get-val-73-3 comment="false" id="0" x="0" y="0"/>
+                </if>
+                <else comment="false" x="26" y="97">
+                    <group eventID="6" id="-1">
+                        <say-this comment="false" x="37" y="117">
+                            <int id="0" val="OpenDialogBox"/>
+                        </say-this>
+                    </group>
+                </else>
+            </group>
+            <int id="0" val="ToggleDialogBox"/>
+        </event-custom>
+    </group>
+    <group eventID="6" id="-1"/>
+</groups>

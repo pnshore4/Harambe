@@ -102,9 +102,6 @@ class Design_34_34_KeyManager extends SceneScript
 	override public function init()
 	{
 		
-		/* ======================== When Creating ========================= */
-		trace("" + ("" + "Key Manager Loaded"));
-		
 	}
 	
 	override public function forwardMessage(msg:String)
