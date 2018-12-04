@@ -342,12 +342,12 @@
             <poly data="4,20,18,55,18,55,56,20,56" density="0.1" fric="0.2" gid="-1000" id="0" name="Die" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
-    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="24" id="89" name="Enemy 1" shared="false" width="18">
-        <anim across="2" down="2" durations="100,100,100" height="48" id="0" loop="true" name="Walk Left" numframes="3" originx="9" originy="0" sync="false" version="2" width="36">
-            <poly data="4,0,0,20,0,20,24,0,24" density="0.1" fric="0.2" gid="4" id="0" name="Idle" rest="0.0" sensor="false"/>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="64" id="89" name="Enemy 1" shared="false" width="64">
+        <anim across="2" down="2" durations="100,100,100,100" height="128" id="0" loop="true" name="Walk Left" numframes="4" originx="32" originy="0" sync="false" version="2" width="128">
+            <poly data="4,0,0,64,0,64,64,0,64" density="0.1" fric="0.2" gid="-1000" id="0" name="Walk Left" rest="0.0" sensor="false"/>
         </anim>
-        <anim across="2" down="2" durations="100,100,100" height="48" id="1" loop="true" name="Kid Right" numframes="3" originx="9" originy="12" sync="false" version="2" width="36">
-            <poly data="4,0,0,18,0,18,24,0,24" density="0.1" fric="0.2" gid="-1000" id="0" name="Kid Right" rest="0.0" sensor="false"/>
+        <anim across="2" down="2" durations="100,100,100,100" height="128" id="1" loop="true" name="Kid Right" numframes="4" originx="32" originy="32" sync="false" version="2" width="128">
+            <poly data="4,0,0,64,0,64,64,0,64" density="0.1" fric="0.2" gid="-1000" id="0" name="Kid Right" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="80" id="111" name="Enemy 1" shared="false" width="80">

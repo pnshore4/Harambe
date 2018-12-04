@@ -70,30 +70,49 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class SceneEvents_0 extends SceneScript
+class SceneEvents_9 extends SceneScript
 {
-	public var _Dialog:Array<Dynamic>;
 	
 	
 	public function new(dummy:Int, dummy2:Engine)
 	{
 		super();
-		nameMap.set("Dialog", "_Dialog");
 		
 	}
 	
 	override public function init()
 	{
 		
-		/* ======================== When Creating ========================= */
-		sayToScene("Dialog System", "_customEvent_" + "OpenDialogBox");
-		
-		/* ======================= After N seconds ======================== */
-		runLater(1000 * 20, function(timeTask:TimedTask):Void
+		/* ========================= When Drawing ========================= */
+		addWhenDrawingListener(null, function(g:G, x:Float, y:Float, list:Array<Dynamic>):Void
 		{
 			if(wrapper.enabled)
 			{
-				sayToScene("Dialog System", "_customEvent_" + "CloseDialogBox");
+				setColorBackground(Utils.getColorRGB(0,0,0));
+				g.setFont(getFont(62));
+				g.drawString("" + "RIP HARAMBE GONE BUT NEVER FORGOTTEN", 100, 221);
+				g.drawString("" + "We love you harambe", 100, 250);
+			}
+		});
+		
+		/* ======================= After N seconds ======================== */
+		runLater(1000 * 30, function(timeTask:TimedTask):Void
+		{
+			if(wrapper.enabled)
+			{
+				Engine.engine.setGameAttribute("Enter Cave", true);
+				Engine.engine.setGameAttribute("Enter Final", false);
+				Engine.engine.setGameAttribute("Enter Food", false);
+				Engine.engine.setGameAttribute("Enter Socialize", false);
+				Engine.engine.setGameAttribute("Enter Tree", false);
+				Engine.engine.setGameAttribute("Hit Kid", false);
+				Engine.engine.setGameAttribute("Visited Cave", false);
+				Engine.engine.setGameAttribute("Visited Food", false);
+				Engine.engine.setGameAttribute("Visited Socialize", false);
+				Engine.engine.setGameAttribute("Visited Tree", false);
+				Engine.engine.setGameAttribute("XPlayer", 0);
+				Engine.engine.setGameAttribute("YPlayer", 0);
+				switchScene(GameModel.get().scenes.get(3).getID(), createFadeOut(2, Utils.getColorRGB(0,0,0)), createFadeIn(2, Utils.getColorRGB(0,0,0)));
 			}
 		}, null);
 		

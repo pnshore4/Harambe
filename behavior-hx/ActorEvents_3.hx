@@ -98,7 +98,7 @@ class ActorEvents_3 extends ActorScript
 			if(wrapper.enabled && sameAsAny(getActorType(86), event.otherActor.getType(),event.otherActor.getGroup()))
 			{
 				recycleActor(actor);
-				switchScene(GameModel.get().scenes.get(1).getID(), createFadeOut(2, Utils.getColorRGB(0,0,0)), createFadeIn(2, Utils.getColorRGB(0,0,0)));
+				switchScene(GameModel.get().scenes.get(9).getID(), createFadeOut(2, Utils.getColorRGB(0,0,0)), createFadeIn(2, Utils.getColorRGB(0,0,0)));
 			}
 		});
 		

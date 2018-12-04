@@ -113,6 +113,15 @@ class SceneEvents_7 extends SceneScript
 			}
 		});
 		
+		/* ======================== Actor of Type ========================= */
+		addActorExitsRegionListener(getRegion(3), function(a:Actor, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled && sameAsAny(getActorType(3),a.getType(),a.getGroup()))
+			{
+				sayToScene("Dialog System", "_customEvent_" + "CloseDialogBox");
+			}
+		});
+		
 		/* ======================== Specific Actor ======================== */
 		addCollisionListener(getActor(1), function(event:Collision, list:Array<Dynamic>):Void
 		{
@@ -120,7 +129,7 @@ class SceneEvents_7 extends SceneScript
 			{
 				if(!(_KeyCollected))
 				{
-					createRecycledActor(getActorType(58), 1589, 1187, Script.FRONT);
+					createRecycledActor(getActorType(58), 1620, 1040, Script.FRONT);
 					_KeyCollected = true;
 					propertyChanged("_KeyCollected", _KeyCollected);
 				}

@@ -83,6 +83,18 @@ class SceneEvents_1 extends SceneScript
 	override public function init()
 	{
 		
+		/* ======================== When Creating ========================= */
+		sayToScene("Dialog System", "_customEvent_" + "OpenDialogBox");
+		
+		/* ======================= After N seconds ======================== */
+		runLater(1000 * 20, function(timeTask:TimedTask):Void
+		{
+			if(wrapper.enabled)
+			{
+				sayToScene("Dialog System", "_customEvent_" + "CloseDialogBox");
+			}
+		}, null);
+		
 	}
 	
 	override public function forwardMessage(msg:String)

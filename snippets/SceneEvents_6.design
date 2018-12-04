@@ -8,7 +8,7 @@
                         <if comment="false" x="37" y="69">
                             <group eventID="2" id="-1">
                                 <scene-change-color comment="false" x="48" y="99">
-                                    <scene eid="1" id="0"/>
+                                    <scene eid="8" id="0"/>
                                     <int id="1" val="0"/>
                                     <int id="2" val="2"/>
                                     <color b="0" g="0" id="3" r="0"/>
@@ -32,4 +32,28 @@
         </event-actor-region>
     </group>
     <group eventID="2" id="-1"/>
+    <group eventID="3" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="3" id="-1">
+                <scene-say comment="false" x="26" y="40">
+                    <int id="0" val="Dialog System"/>
+                    <int id="1" val="OpenDialogBox"/>
+                </scene-say>
+            </group>
+        </init>
+    </group>
+    <group eventID="3" id="-1"/>
+    <group eventID="4" id="0">
+        <event-delay comment="false" x="15" y="15">
+            <group eventID="4" id="-1">
+                <scene-say comment="false" x="26" y="42">
+                    <int id="0" val="Dialog System"/>
+                    <int id="1" val="CloseDialogBox"/>
+                </scene-say>
+            </group>
+            <int id="0" val="20"/>
+            <ACTOR eid="lastcreated" id="2"/>
+        </event-delay>
+    </group>
+    <group eventID="4" id="-1"/>
 </groups>

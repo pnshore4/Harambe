@@ -21,8 +21,8 @@
                     <group eventID="3" id="-1">
                         <create-actor3 comment="false" x="37" y="77">
                             <actortype eid="58" id="0"/>
-                            <int id="1" val="1589"/>
-                            <int id="2" val="1187"/>
+                            <int id="1" val="1620"/>
+                            <int id="2" val="1040"/>
                             <int id="3" val="0"/>
                         </create-actor3>
                         <set-val-68-1 comment="false" x="37" y="104">
@@ -67,4 +67,18 @@
         </event-type-region>
     </group>
     <group eventID="5" id="-1"/>
+    <group eventID="6" id="0">
+        <event-type-region comment="false" x="15" y="15">
+            <group eventID="4" id="-1">
+                <scene-say comment="false" x="26" y="47">
+                    <int id="0" val="Dialog System"/>
+                    <int id="1" val="CloseDialogBox"/>
+                </scene-say>
+            </group>
+            <int id="0" val="1"/>
+            <REGION eid="3" id="1"/>
+            <actortype eid="3" id="2"/>
+        </event-type-region>
+    </group>
+    <group eventID="6" id="-1"/>
 </groups>

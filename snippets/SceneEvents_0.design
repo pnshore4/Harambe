@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <groups>
     <group eventID="1" id="0">
-        <event-delay comment="false" x="15" y="15">
+        <event-delay comment="false" x="12" y="29">
             <group eventID="1" id="-1">
-                <scene-say comment="false" x="26" y="42">
+                <scene-say comment="false" x="23" y="56">
                     <int id="0" val="Dialog System"/>
                     <int id="1" val="CloseDialogBox"/>
                 </scene-say>
             </group>
-            <int id="0" val="10"/>
+            <int id="0" val="20"/>
             <ACTOR eid="lastcreated" id="2"/>
         </event-delay>
     </group>
     <group eventID="1" id="-1"/>
-    <group eventID="2" id="0">
+    <group eventID="4" id="0">
         <init comment="false" x="15" y="15">
-            <group eventID="2" id="-1">
+            <group eventID="4" id="-1">
                 <scene-say comment="false" x="26" y="40">
                     <int id="0" val="Dialog System"/>
                     <int id="1" val="OpenDialogBox"/>
@@ -23,5 +23,5 @@
             </group>
         </init>
     </group>
-    <group eventID="2" id="-1"/>
+    <group eventID="4" id="-1"/>
 </groups>

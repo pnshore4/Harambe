@@ -10,64 +10,59 @@
                     <font eid="62" id="0"/>
                 </set-font-new>
                 <draw-text comment="false" x="26" y="94">
-                    <int id="0" val="Harambe lives to see another day!"/>
+                    <int id="0" val="RIP HARAMBE GONE BUT NEVER FORGOTTEN"/>
                     <int id="1" val="100"/>
-                    <int id="2" val="150"/>
+                    <int id="2" val="221"/>
                 </draw-text>
                 <draw-text comment="false" x="26" y="114">
-                    <int id="0" val="The world did not lose another hero."/>
+                    <int id="0" val="We love you harambe"/>
                     <int id="1" val="100"/>
-                    <int id="2" val="200"/>
-                </draw-text>
-                <draw-text comment="false" x="26" y="134">
-                    <int id="0" val="Harambe is the hero we need, not the one we deserve"/>
-                    <int id="1" val="100"/>
-                    <int id="2" val="270"/>
+                    <int id="2" val="250"/>
                 </draw-text>
             </group>
         </draw>
     </group>
     <group eventID="1" id="-1"/>
     <group eventID="2" id="0">
-        <event-delay comment="false" x="8" y="23">
+        <event-delay comment="false" x="15" y="15">
             <group eventID="2" id="-1">
-                <set-game-val-0 comment="false" x="19" y="50">
+                <set-game-val-0 comment="false" x="26" y="42">
                     <true comment="false" id="0" x="0" y="0"/>
                 </set-game-val-0>
-                <set-game-val-4 comment="false" x="19" y="75">
+                <set-game-val-4 comment="false" x="26" y="67">
                     <false comment="false" id="0" x="0" y="0"/>
                 </set-game-val-4>
-                <set-game-val-1 comment="false" x="19" y="100">
+                <set-game-val-1 comment="false" x="26" y="92">
                     <false comment="false" id="0" x="0" y="0"/>
                 </set-game-val-1>
-                <set-game-val-3 comment="false" x="19" y="125">
+                <set-game-val-3 comment="false" x="26" y="117">
                     <false comment="false" id="0" x="0" y="0"/>
                 </set-game-val-3>
-                <set-game-val-2 comment="false" x="19" y="150">
+                <set-game-val-2 comment="false" x="26" y="142">
                     <false comment="false" id="0" x="0" y="0"/>
                 </set-game-val-2>
-                <set-game-val-13 comment="false" x="19" y="175">
+                <set-game-val-13 comment="false" x="26" y="167">
                     <false comment="false" id="0" x="0" y="0"/>
                 </set-game-val-13>
-                <set-game-val-9 comment="false" x="19" y="200">
+                <set-game-val-9 comment="false" x="26" y="192">
                     <false comment="false" id="0" x="0" y="0"/>
                 </set-game-val-9>
-                <set-game-val-10 comment="false" x="19" y="225">
+                <set-game-val-10 comment="false" x="26" y="217">
                     <false comment="false" id="0" x="0" y="0"/>
                 </set-game-val-10>
-                <set-game-val-8 comment="false" x="19" y="250">
+                <set-game-val-8 comment="false" x="26" y="242">
                     <false comment="false" id="0" x="0" y="0"/>
                 </set-game-val-8>
-                <set-game-val-7 comment="false" x="19" y="275">
+                <set-game-val-7 comment="false" x="26" y="267">
                     <false comment="false" id="0" x="0" y="0"/>
                 </set-game-val-7>
-                <set-game-val-11 comment="false" x="19" y="300">
+                <set-game-val-11 comment="false" x="26" y="292">
                     <int id="0" val="0"/>
                 </set-game-val-11>
-                <set-game-val-12 comment="false" x="19" y="320">
+                <set-game-val-12 comment="false" x="26" y="312">
                     <int id="0" val="0"/>
                 </set-game-val-12>
-                <scene-change-color comment="false" x="19" y="340">
+                <scene-change-color comment="false" x="26" y="332">
                     <scene eid="3" id="0"/>
                     <int id="1" val="0"/>
                     <int id="2" val="2"/>

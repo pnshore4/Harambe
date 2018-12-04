@@ -5,7 +5,7 @@
         <blocks/>
         <events>
             <event displayName="After N secs" enabled="true" id="1" name="event-delay" order="1" repeats="true"/>
-            <event displayName="Created" enabled="true" id="2" name="init" order="2" repeats="true"/>
+            <event displayName="Created" enabled="true" id="4" name="init" order="3" repeats="true"/>
         </events>
     </snippet>
     <snippet actorid="3" attachedevent="true" class="scripts.ActorEvents_3" classname="scripts.ActorEvents_3" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="1" name="ActorEvents_3" oid="-1" package="scripts." shared="false" type="actor">
@@ -127,7 +127,10 @@
     </snippet>
     <snippet attachedevent="true" class="scripts.SceneEvents_1" classname="scripts.SceneEvents_1" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="11" name="SceneEvents_1" oid="-1" package="scripts." sceneid="1" shared="false" type="scene">
         <blocks/>
-        <events/>
+        <events>
+            <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
+            <event displayName="After N secs" enabled="true" id="2" name="event-delay" order="2" repeats="true"/>
+        </events>
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_12_12_HealthManager" classname="scripts.Design_12_12_HealthManager" desc="The Health Manager will track the Actor's current health, as well as provide blocks for healing and damaging the Actor.  It can also send messages to other behaviors to allow for a wide range of functionality." description="The Health Manager will track the Actor's current health, as well as provide blocks for healing and damaging the Actor.  It can also send messages to other behaviors to allow for a wide range of functionality." design="true" drawOrder="0" id="12" name="Health Manager" oid="-1" package="scripts" shared="false" type="actor">
         <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
@@ -256,7 +259,10 @@
     </snippet>
     <snippet attachedevent="true" class="scripts.SceneEvents_2" classname="scripts.SceneEvents_2" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="19" name="SceneEvents_2" oid="-1" package="scripts." sceneid="2" shared="false" type="scene">
         <blocks/>
-        <events/>
+        <events>
+            <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
+            <event displayName="After N secs" enabled="true" id="2" name="event-delay" order="2" repeats="true"/>
+        </events>
     </snippet>
     <snippet actorid="39" attachedevent="true" class="scripts.ActorEvents_39" classname="scripts.ActorEvents_39" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="20" name="ActorEvents_39" oid="-1" package="scripts." shared="false" type="actor">
         <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="Origin X Position" hidden="true" id="1" name="_OriginXPosition" order="0"/>
@@ -336,7 +342,10 @@
     <snippet attachedevent="true" class="scripts.SceneEvents_5" classname="scripts.SceneEvents_5" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="27" name="SceneEvents_5" oid="-1" package="scripts." sceneid="5" shared="false" type="scene">
         <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="Apple Collected" hidden="false" id="1" name="_AppleCollected" order="0"/>
         <blocks/>
-        <events/>
+        <events>
+            <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
+            <event displayName="After N secs" enabled="true" id="2" name="event-delay" order="2" repeats="true"/>
+        </events>
     </snippet>
     <snippet actorid="50" attachedevent="true" class="scripts.ActorEvents_50" classname="scripts.ActorEvents_50" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="28" name="ActorEvents_50" oid="-1" package="scripts." shared="false" type="actor">
         <scene default="" defaultValue="" desc="" dropdown="" fullname="which scene" hidden="false" id="1" name="_whichscene" order="0"/>
@@ -450,6 +459,8 @@
         <blocks/>
         <events>
             <event displayName="Enters Region" enabled="true" id="2" name="event-actor-region" order="2" repeats="true"/>
+            <event displayName="Created" enabled="true" id="3" name="init" order="3" repeats="true"/>
+            <event displayName="After N secs" enabled="true" id="4" name="event-delay" order="4" repeats="true"/>
         </events>
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_55_55_EnemyWalkingAI" classname="scripts.Design_55_55_EnemyWalkingAI" desc="For platformers - an actor will have movement similar to the Goomba from Super Mario Bros - actor will walk back anf forth horizontally, and change direction when colliding with an object.  &#10;&#10;Just configure the walking animations &amp; speed." description="For platformers - an actor will have movement similar to the Goomba from Super Mario Bros - actor will walk back anf forth horizontally, and change direction when colliding with an object.  &#10;&#10;Just configure the walking animations &amp; speed." design="true" drawOrder="0" id="55" name="Enemy Walking AI" oid="-1" package="scripts" shared="false" type="actor">
@@ -571,9 +582,10 @@
         <blocks/>
         <events>
             <event displayName="Enters Region" enabled="true" id="2" name="event-type-region" order="2" repeats="true"/>
-            <event displayName="Actor - Actor" enabled="true" id="3" name="event-collide-actortoactor" order="5" repeats="true"/>
+            <event displayName="Actor - Actor" enabled="true" id="3" name="event-collide-actortoactor" order="6" repeats="true"/>
             <event displayName="Enters Region" enabled="true" id="4" name="event-type-region" order="3" repeats="true"/>
             <event displayName="Enters Region Copy" enabled="true" id="5" name="event-type-region" order="4" repeats="true"/>
+            <event displayName="Enters Region Copy Copy" enabled="true" id="6" name="event-type-region" order="5" repeats="false"/>
         </events>
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_70_70_DialogBoxUI" classname="scripts.Design_70_70_DialogBoxUI" desc="" description="" design="true" drawOrder="0" id="70" name="Dialog Box UI" oid="-1" package="" shared="false" type="actor">
@@ -652,7 +664,7 @@
         <list default="list" defaultValue="list" desc="" dropdown="" fullname="TextToShow" hidden="false" id="4" name="_TextToShow" order="3"/>
         <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="ShowText" hidden="false" id="5" name="_ShowText" order="4"/>
         <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="ShowBox" hidden="false" id="6" name="_ShowBox" order="5"/>
-        <number default="0" defaultValue="0" desc="" dropdown="" fullname="Counter" hidden="true" id="7" name="_Counter" order="6"/>
+        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="Counter" hidden="true" id="7" name="_Counter" order="6"/>
         <blocks/>
         <events>
             <event displayName="Drawing" enabled="true" id="1" name="draw" order="1" repeats="true"/>
@@ -675,6 +687,20 @@
         <events>
             <event displayName="Actor - Type" enabled="true" id="1" name="event-collide-actortotype" order="1" repeats="true"/>
             <event displayName="Created" enabled="true" id="2" name="init" order="2" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.SceneEvents_8" classname="scripts.SceneEvents_8" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="76" name="SceneEvents_8" oid="-1" package="scripts." sceneid="8" shared="false" type="scene">
+        <blocks/>
+        <events>
+            <event displayName="Drawing" enabled="true" id="1" name="draw" order="1" repeats="true"/>
+            <event displayName="After N secs" enabled="true" id="2" name="event-delay" order="2" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.SceneEvents_9" classname="scripts.SceneEvents_9" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="77" name="SceneEvents_9" oid="-1" package="scripts." sceneid="9" shared="false" type="scene">
+        <blocks/>
+        <events>
+            <event displayName="Drawing" enabled="true" id="1" name="draw" order="1" repeats="true"/>
+            <event displayName="After N secs" enabled="true" id="2" name="event-delay" order="2" repeats="true"/>
         </events>
     </snippet>
 </pack>

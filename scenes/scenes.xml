@@ -8,4 +8,6 @@
     <scene desc="" format="3.4.0" id="5" name="Collect Food Level"/>
     <scene desc="" format="3.4.0" id="6" name="Final Level"/>
     <scene desc="" format="3.4.0" id="7" name="Socialize Level"/>
+    <scene desc="" format="3.4.0" id="8" name="Win Scene"/>
+    <scene desc="" format="3.4.0" id="9" name="Lose Scene"/>
 </scenes>

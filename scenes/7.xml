@@ -2,13 +2,15 @@
 <scene depth="1" desc="" eventsnippetid="68" extheight="1408" extwidth="3968" extx="-64" exty="-64" format="3.4.0" gravx="-0.0" gravy="45.0" height="1280" id="7" name="Socialize Level" revision="" savecount="0" tiled="1" tileh="64" tilew="64" type="standard" width="3840">
     <layers>
         <color-bg blue="128" green="128" red="128"/>
+        <background blendMode="normal" customScrollFactor="false" id="1" locked="true" name="CaveBackground" opacity="100" order="1" rid="2" scrollFactorX="1.0" scrollFactorY="1.0" visible="true"/>
         <layer blendMode="normal" color="100,168,234" id="0" locked="false" name="Layer 0" opacity="100" order="0" scrollFactorX="1.0" scrollFactorY="1.0" visible="true"/>
     </layers>
     <joints/>
     <regions>
-        <region b="64" g="64" h="622" id="0" name="Region 0" pts="4,0.0,0.0,0.0,622.0,477.0,622.0,477.0,0.0" r="64" type="box" w="477" x="418" y="588"/>
-        <region b="64" g="64" h="625" id="1" name="Region 1" pts="4,0.0,0.0,0.0,625.0,510.0,625.0,510.0,0.0" r="64" type="box" w="510" x="961" y="589"/>
-        <region b="64" g="64" h="630" id="2" name="Region 2" pts="4,509.0,0.0,509.0,630.0,0.0,630.0,0.0,0.0" r="64" type="box" w="509" x="1537" y="585"/>
+        <region b="64" g="64" h="622" id="0" name="Region 0" pts="4,477.0,0.0,477.0,622.0,0.0,622.0,0.0,0.0" r="64" type="box" w="477" x="418" y="588"/>
+        <region b="64" g="64" h="625" id="1" name="Region 1" pts="4,510.0,0.0,510.0,625.0,0.0,625.0,0.0,0.0" r="64" type="box" w="510" x="961" y="589"/>
+        <region b="64" g="64" h="630" id="2" name="Region 2" pts="4,0.0,0.0,0.0,630.0,509.0,630.0,509.0,0.0" r="64" type="box" w="509" x="1537" y="585"/>
+        <region b="64" g="64" h="388" id="3" name="Region 3" pts="4,317.0,0.0,317.0,388.0,0.0,388.0,0.0,0.0" r="64" type="box" w="317" x="65" y="828"/>
     </regions>
     <terrainRegions/>
     <actors>
@@ -46,8 +48,9 @@
                     <prop id="2147483647" list="0" val="thisactor"/>
                     <prop id="1" list="1" val="">
                         <text order="0" value="Philip: Hi there Harambe!"/>
-                        <text order="1" value="Harambe: Hi there, I lost my way to my cage could you help me out?"/>
-                        <text order="2" value="Philip: I would recommend you go talk to John"/>
+                        <text order="1" value="Harambe: Hi there, I lost my way to my cagecould you help"/>
+                        <text order="2" value="me out?"/>
+                        <text order="3" value="Philip: I would recommend you go talk to John"/>
                     </prop>
                 </s>
                 <s enabled="true" id="75"/>
@@ -64,7 +67,9 @@
                 <s enabled="true" id="74">
                     <prop id="2147483647" list="0" val="thisactor"/>
                     <prop id="1" list="1" val="">
-                        <text order="0" value="Oh Hello"/>
+                        <text order="0" value="Harambe: Hey, John Philip said you can help me get to my"/>
+                        <text order="1" value="cage!"/>
+                        <text order="2" value="John: Yes! Peter has the key to your cage"/>
                     </prop>
                 </s>
                 <s enabled="true" id="75"/>
@@ -81,7 +86,10 @@
                 <s enabled="true" id="74">
                     <prop id="2147483647" list="0" val="thisactor"/>
                     <prop id="1" list="1" val="">
-                        <text order="0" value="What's good my dude"/>
+                        <text order="0" value="Harambe: Hey Peter, Can I get the keys to my cage?"/>
+                        <text order="1" value="Peter: Sure. but watch out there is a human"/>
+                        <text order="2" value="kid that seems like he's about to jump in your"/>
+                        <text order="3" value="cage"/>
                     </prop>
                 </s>
                 <s enabled="true" id="75"/>
@@ -109,7 +117,9 @@
             <prop id="1" list="0" val="0"/>
             <prop id="2" list="0" val="0"/>
             <prop id="3" list="0" val="false"/>
-            <prop id="4" list="1" val=""/>
+            <prop id="4" list="1" val="">
+                <text order="0" value="Socialize with gorillas to get to the next level"/>
+            </prop>
             <prop id="5" list="0" val="false"/>
             <prop id="6" list="0" val="false"/>
             <prop id="7" list="0" val="0"/>
